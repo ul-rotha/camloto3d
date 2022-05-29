@@ -15,7 +15,8 @@
 
 .count-text[b-r35j2b5c43] {
     font-size: 30px;
-    font-family: 'Khmer OS Content' font-weight: normal;
+    font-family: 'Khmer OS Content'; 
+    font-weight: normal;
     margin-top: 10px;
     margin-bottom: 0;
     text-align: center;
@@ -30,7 +31,7 @@
 
 #logo[b-r35j2b5c43] {
     height: 150px;
-    width:175px;
+    width:150px;
 }
 
 
