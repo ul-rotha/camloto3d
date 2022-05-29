@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ulrotha\\source\\repos\\Gambling\\Gambling\\Gambling.csproj": {}
+    "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\Gambling.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ulrotha\\source\\repos\\Gambling\\Gambling\\Gambling.csproj": {
+    "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\Gambling.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ulrotha\\source\\repos\\Gambling\\Gambling\\Gambling.csproj",
+        "projectUniqueName": "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\Gambling.csproj",
         "projectName": "Gambling",
-        "projectPath": "C:\\Users\\ulrotha\\source\\repos\\Gambling\\Gambling\\Gambling.csproj",
+        "projectPath": "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\Gambling.csproj",
         "packagesPath": "C:\\Users\\ulrotha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ulrotha\\source\\repos\\Gambling\\Gambling\\obj\\",
+        "outputPath": "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ulrotha\\AppData\\Roaming\\NuGet\\NuGet.Config",
