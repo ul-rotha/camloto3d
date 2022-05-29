@@ -1,0 +1,91 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+text {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    pointer-events: none;
+}
+
+#chart {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 0;
+    left: 0;
+}
+
+#question {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: 0;
+    left: 520px;
+}
+
+    #question h1 {
+        font-size: 50px;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        top: 50%;
+        -webkit-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+    }
+
+#wheelOfFortune {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+#wheel {
+    display: block;
+}
+
+#spin {
+    font: 1.5em/0 sans-serif;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 30%;
+    margin: -15%;
+    background: #fff;
+    color: #fff;
+    box-shadow: 0 0 0 8px currentColor, 0 0px 15px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    transition: 0.8s;
+}
+
+    #spin::after {
+        content: "";
+        position: absolute;
+        top: -17px;
+        border: 10px solid transparent;
+        border-bottom-color: currentColor;
+        border-top: none;
+    }
