@@ -1,12 +1,29 @@
 using Gambling;
+using Gambling.Hubs;
+using SignalR.MessageWorker;
+using SignalR.Classes;
 
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddSignalR();
-builder.Services.AddHostedService<BroadCastService>();
 
+builder.Services.AddSignalR(hubOption =>
+{
+    hubOption.EnableDetailedErrors = true;
+});
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      builder =>
+                      {
+                          builder.WithOrigins("https://localhost:7111/");
+                          //builder.AllowAnyOrigin();
+                          builder.AllowAnyMethod();
+                          builder.AllowAnyHeader();
+                      });
+});
 
 var app = builder.Build();
 
@@ -24,10 +41,9 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
-
+app.UseCors(MyAllowSpecificOrigins);
 app.MapRazorPages();
-
-app.MapHub<ChatHub>("/chatHub");
+app.MapHub<Gambling.Hubs.ChatHub>("/chatHub");
 
 
 app.Run();

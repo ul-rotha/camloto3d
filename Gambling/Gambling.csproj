@@ -24,4 +24,13 @@
     </Content>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controller\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BarCode" Version="2022.5.5918" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
 </Project>
