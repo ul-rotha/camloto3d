@@ -15,12 +15,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\chanp\OneDrive\Documents\GitHub\camloto3d\Gambling
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/betnow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYmV0bm93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/Index_win.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXhfd2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJpbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/Privacy.cshtml]

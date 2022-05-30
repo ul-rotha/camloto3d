@@ -1,0 +1,126 @@
+﻿@page
+@model SignalR.Pages.loginModel
+@{
+     ViewData["Title"] = "Login";
+}
+
+
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+
+<style>
+    .option-margin{
+        margin:5px 10px;
+    }
+</style>
+
+
+<div>
+     
+    <input type="hidden" id="hd_placeid" value="0" />
+   <div class="div-popup" id="div_alert" style="display:none;">
+        <div class="div-popup-close"><span class="alert-popup-title" id="div_popup_title">Change password</span><span class="span-close" onclick="closepopup()">X</span></div>
+        <div id="div_passworddetail">
+          <div >
+                <div class="div-option-button">
+                <span class="titile-password">Current Password</span>
+                <span>
+                    <input type="password" value="" style="float:left;" class="textbox" id="txtcurentpassword" />
+                </span>
+                <span onclick="viewpassword(0)" onmouseout="hidepassword(0)" style="padding: 0px 10px;line-height: 30px;font-size: 16pt;line-height: 1.5;">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </span>
+                </div>
+                 <div class="div-option-button">
+                <span class="titile-password">New Password</span>
+                <span>
+                    <input type="password" value="" style="float:left;" class="textbox" id="txtnewpassword" placeholder="6 characters up" />
+                </span>
+                <span onclick="viewpassword(1)" onmouseout="hidepassword(1)" style="padding: 0px 10px;line-height: 30px;font-size: 16pt;line-height: 1.5;">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </span>
+
+                </div>
+                 <div class="div-option-button">
+                <span class="titile-password">Retype new password</span>
+                <span>
+                    <input type="password" value="" style="float:left;" class="textbox" id="txtretypenewpassword" />
+                </span>
+                <span onclick="viewpassword(2)" onmouseout="hidepassword(2)" style="padding: 0px 10px;line-height: 30px;font-size: 16pt;line-height: 1.5;">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </span>
+                
+                </div>
+                <div class="div-option-button div-changepassword">
+                                <span class="button-option" onclick="changepassword()">Update</span>
+                                
+                </div>
+                <div id="div_info" class="div-info"></div>
+            </div>   
+
+        </div>
+    </div>
+    <div class="div-container">
+        <div class="calculator" style="display:none;text-align:center;" id="div_calculator">
+            <table style="width:100%">
+                <tr>
+                    <td>
+                      <div style="text-align:left;margin-bottom: 25px;display:block;"><span onclick="logout()" style="background-color: #f73;padding: 10px;border-radius: 10px;color: white;font-size: large;"><i class="fas fa-sign-out"></i></span></div>
+                    </td>
+                    <td style="text-align:right">
+                        <div style="text-align:right;margin-bottom: 25px;display:block;"><span onclick="showchangepassword()" style="background-color: #f73;padding: 10px;border-radius: 10px;color: white;font-size: large;"><i class="fas fa-key"></i></span></div>
+                    </td>
+                </tr>
+            </table>
+            <div id="span_betting" class="div-viewform">
+                <input type="button" class="button-viewform" value="ភ្នាល់" onclick="viewform('betting')" />
+            </div>
+            <div id="span_withdrawal" class="div-viewform">
+                <input type="button" class="button-viewform" value="ទូទាត់រង្វាន់" onclick="viewform('withdrawal')" />
+            </div>            
+
+            <div id="span_report" class="div-viewform">
+                <input type="button" class="button-viewform" value="របាយការណ៌" onclick="viewform('report')" />
+            </div>
+             <div id="span_user" class="div-viewform">
+                <input type="button" class="button-viewform" value="បង្កើតអ្នកប្រើប្រាស់" onclick="viewform('user')" />
+            </div>
+                          <div id="span_display" class="div-viewform" style="display:block;">
+                <input type="button" class="button-viewform" value="លទ្ធផល" onclick="viewform('display')" />
+            </div>
+
+        </div>
+
+        <div class="login" id="div_login" style="display:none;">
+             <div style="font-size:xx-large;text-align:center;">
+            <img src='images/logo.png' style='width:150px;'>
+    
+    </div>
+            <div class="div-user">
+            <div class="div-username">Username:</div> <input type="text" class="div-input-text" id="txt_username" />
+            </div>
+            <div class="div-user">
+            <div class="div-username">Password:</div> <input type="password" class="div-input-text" id="txt_password" />
+            </div>
+            
+            <div class="div-button-login">
+                <input type="button" class="button-print" value="Login" onclick="login()" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<link href="~/css/betting.css?v=4" rel="stylesheet" />
+
+
+<script src="~/js/login.js?v=7"></script>
+
+
+<link href="~/css/mycss.css?v=4" rel="stylesheet" />
+<link href="~/css/login.css?v=7" rel="stylesheet" />
+
+
+
+

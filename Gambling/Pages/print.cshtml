@@ -1,0 +1,30 @@
+﻿@page
+@model SignalR.Pages.printModel
+@{
+}
+
+ <div class="div-popup" id="div_alert" style="display:none;">
+         <div class="div-popup-detail">
+        <div class="confirm-popup-title" id="div_alert_title">តើអ្នកដកប្រាក់ឈ្នះនេះមែនទេ?</div>
+        <div class="div-confirm-action" id="div_confirm_action">
+            
+            <span class="span-confirm-action"><input type="button" value="បោះពុម្ពឡើងវិញ" class="button-round" onclick="reprint()" /></span>
+            <span class="span-confirm-action"><input type="button" value="បិទ" class="button-round" onclick="closepopup()" /></span>
+        </div>
+        </div>
+    </div>
+
+<div id="div_receipt" onclick="closepopup()" style="width:auto">
+
+</div>
+
+<div  style="text-align:center;width:auto;margin-bottom:10px;"><img id="imgqr" src="" style="height:120px;" /></div>
+<div  style="text-align:center;width:auto;margin-bottom:60px;" id="divbettingid"></div>
+<div>.</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="~/js/print.js?v=5"></script>
+
+<link href="~/css/mycss.css?v=2" rel="stylesheet" />
+<link href="~/css/display.css" rel="stylesheet" />
+<link href="~/css/print.css?v=3" rel="stylesheet" />
