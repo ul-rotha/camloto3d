@@ -1,23 +1,21 @@
 ﻿var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
 
-connection.on("ReceiveMessage", function (user, message) {
-    console.log("hello");
-    if (user == "startGame") {
+connection.on("ReceiveMessage", function (action, message) {
+    if (action == "startGame") {
         document.getElementById("secondResult").innerHTML = "";
         StartSpin(message);
     }
-    else if (user == "resultSubGame") {
+    else if (action == "startSubGame") {
         lotoTimer.stop();
         $(".play").removeClass("lotto-ball-sub-active");
         console.log(".play" + "[key=" + message + "]");
         $(".play" + "[key=" + message + "]").addClass("lotto-ball-sub-active");
     }
-    else if (user == "newGame")
+    else if (action == "newGame")
     {
-        lotoTimer.stop();
         document.getElementById("secondResult").innerHTML = "";
     }
-    else if (user == "countDown") {      
+    else if (action == "countDown") {
         countdown(message);
     }
 });

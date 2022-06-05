@@ -1,5 +1,6 @@
 //var CANVAS_WIDTH = 768;
-var CANVAS_WIDTH = 450;
+//var CANVAS_HEIGHT = 1280;
+var CANVAS_WIDTH = 500;
 var CANVAS_HEIGHT = 1280;
 
 var EDGEBOARD_X = 40;
@@ -15,9 +16,13 @@ var STATE_HELP    = 1;
 var STATE_LOADING_WHEEL = 2;
 var STATE_GAME    = 3;
 
-var PRIMARY_FONT = "Arial";
-var SECONDARY_FONT = "impact";
-var THIRD_FONT = "comfortaa-bold";
+//var PRIMARY_FONT = "Arial";
+//var SECONDARY_FONT = "impact";
+//var THIRD_FONT = "comfortaa-bold";
+
+var PRIMARY_FONT = "Khmer OS System";
+var SECONDARY_FONT = "Khmer OS System";
+var THIRD_FONT = "Khmer OS System";
 
 var ON_MOUSE_DOWN  = 0;
 var ON_MOUSE_UP    = 1;

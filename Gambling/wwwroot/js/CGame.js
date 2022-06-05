@@ -199,6 +199,8 @@ function CGame(oData){
     this.releaseWheel = function () {
 
         addSecondResult(_iCurWin);
+
+
         this.tryShowAd();
         //_oInterface.disableSpin(false);
         
