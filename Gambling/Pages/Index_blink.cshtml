@@ -1,0 +1,165 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="~/js/client_timer.js?v=6"></script>
+<script src="~/js/display.js?v=8"></script>
+
+
+<link rel="stylesheet" href="~/css/BallLotto.css" asp-append-version="true" />
+<div class="container pt-5">
+    <div class="row">
+        <div class="col-12 col-sm-10">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <img src="../images/logo.png" id="logo" />
+                    <div id="div_gameinfo" class="game-info"></div>
+                    <div class="right-column">
+                        <div>
+                            <div class="lotto-close-time">
+                                <div id="div_timer" class="Time"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center​">
+                    <div class="row d-flex justify-content-center">
+                        <div class="main lotto-ball" id="mainResult1"><span class="lotto-text-inner-ball">ក្រាស់</span></div>
+                        <div class="d-inline-flex pt-2">
+                            <div class="sub-play1 lotto-ball-sub" key="1"><span class="lotto-text-inner-ball-sub">x3</span></div>
+                            <div class="sub-play1 lotto-ball-sub" key="2"><span class="lotto-text-inner-ball-sub">x5</span></div>
+                            <div class="sub-play1 lotto-ball-sub" key="3"><span class="lotto-text-inner-ball-sub">x10</span></div>
+                        </div>
+
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="main lotto-ball" id="mainResult2"><span class="lotto-text-inner-ball">ស្មើ</span></div>
+                        <div class="d-inline-flex pt-2">
+                            <div class="sub-play2 lotto-ball-sub" key="1"><span class="lotto-text-inner-ball-sub">x2</span></div>
+                            <div class="sub-play2 lotto-ball-sub" key="2"><span class="lotto-text-inner-ball-sub">x10</span></div>
+                            <div class="sub-play2 lotto-ball-sub" key="3"><span class="lotto-text-inner-ball-sub">x20</span></div>
+                        </div>
+
+                    </div>
+
+                    <div class="row d-flex justify-content-center">
+                        <div class="main lotto-ball" id="mainResult3"><span class="lotto-text-inner-ball">ស្តើង</span></div>
+                        <div class="d-inline-flex pt-2">
+                            <div class="sub-play3 lotto-ball-sub" key="1"><span class="lotto-text-inner-ball-sub">x3</span></div>
+                            <div class="sub-play3 lotto-ball-sub" key="2"><span class="lotto-text-inner-ball-sub">x5</span></div>
+                            <div class="sub-play3 lotto-ball-sub" key="3"><span class="lotto-text-inner-ball-sub">x10</span></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-12 col-sm-2">
+            <p class="recent-title">Recent</p>
+            <div id="recent"></div>
+        </div>
+    </div>
+</div>
+
+@*<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/chat.js"></script>
+    <script src="~/js/timer.js"></script>
+*@
+@section scripts
+{
+<script>
+
+    var current = 0;
+    var result = 0;
+
+    var resultSub = 0;
+    var currentSub = 0;
+
+    var mainTimer;
+    var subTimer;
+
+    $(document).ready(function(){
+        getRecent();
+    });
+
+
+    function getRecent()
+    {
+        for (let i = 0; i < 10; i++) {
+            var r = `<div class="row">
+                    <div class="d-flex justify-content-between">
+                        <div>#18594 14:55:57</div>
+                        <div><a href="#" class="text-warning text-decoration-none">>></a></div>
+                    </div>
+                    <div class="latest">
+                        <span>ក្រាស់</span>
+                        <span>x10</span>
+                    </div>
+                </div>`;
+            document.getElementById("recent").innerHTML += r;
+        }
+    }
+
+
+    function StartGame() {
+       current = 0;
+       result = 0;
+       mainTimer = new Timer(function() {
+            RandomMain();
+        }, 90);
+    }
+
+
+    function RandomMain(){
+        var arr = $(".main");
+        if (arr.length > 0){
+        arr.removeClass("lotto-ball-active");
+        arr.eq(current).addClass("lotto-ball-active");
+
+        current = current + 1;
+        result = current;
+        if(current == arr.length)
+            current = 0;
+        }
+    }
+
+    function ResultMain(index) {
+       mainTimer.stop();
+       RandomSub();
+    }
+
+
+    function StartSubGame() {
+       currentSub = 0;
+       resultSub = 0;
+       subTimer = new Timer(function() {
+            RandomSub();
+        }, 90);
+    }
+
+    function RandomSub(){
+        var arrSub = $(".sub-play" + result);
+        if (arrSub.length > 0)
+        {
+            arrSub.removeClass("lotto-ball-sub-active");
+            arrSub.eq(currentSub).addClass("lotto-ball-sub-active");
+
+            currentSub = currentSub + 1;
+            if(currentSub == arrSub.length)
+                currentSub = 0;
+        }
+    }
+
+    function ResultSub(index) {
+       subTimer.stop();
+    }
+
+</script>
+}

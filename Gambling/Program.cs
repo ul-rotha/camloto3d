@@ -8,7 +8,8 @@ var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddHostedService<messageworker>();
+//builder.Services.AddHostedService<messageworker>();
+builder.Services.AddHostedService<BroadCastService>();
 builder.Services.AddRazorPages();
 
 builder.Services.AddSignalR(hubOption =>
@@ -45,7 +46,7 @@ app.UseRouting();
 app.UseAuthorization();
 app.UseCors(MyAllowSpecificOrigins);
 app.MapRazorPages();
-app.MapHub<Gambling.Hubs.ChatHub>("/chatHub");
+app.MapHub<ChatHub>("/chatHub");
 
 app.MapPost("api/betting", (ClBetting clbetting) =>
 {

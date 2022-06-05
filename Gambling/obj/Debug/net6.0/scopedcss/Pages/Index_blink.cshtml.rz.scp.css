@@ -1,0 +1,37 @@
+.counter[b-juirgopydg] {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    border-radius: 5px;
+}
+
+.count-title[b-juirgopydg] {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.count-text[b-juirgopydg] {
+    font-size: 30px;
+    font-family: 'Khmer OS Content'; 
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.fa-2x[b-juirgopydg] {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #4ad1e5;
+}
+
+#logo[b-juirgopydg] {
+    height: 150px;
+    width:150px;
+}
+
+
+

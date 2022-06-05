@@ -36,6 +36,44 @@
 
 
 
+/* _content/Gambling/Pages/Index_blink.cshtml.rz.scp.css */
+.counter[b-juirgopydg] {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    border-radius: 5px;
+}
+
+.count-title[b-juirgopydg] {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.count-text[b-juirgopydg] {
+    font-size: 30px;
+    font-family: 'Khmer OS Content'; 
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.fa-2x[b-juirgopydg] {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #4ad1e5;
+}
+
+#logo[b-juirgopydg] {
+    height: 150px;
+    width:150px;
+}
+
+
+
 /* _content/Gambling/Pages/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */

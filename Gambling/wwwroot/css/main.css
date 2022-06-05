@@ -1,97 +1,102 @@
-#canvasContainer {
-    position: relative;
-    width: 300px;
+root { 
+    display: block;
 }
- 
-#canvas {
-    z-index: 1;
-}
- 
-#prizePointer {
-    position: absolute;
-    left: 125px;
-    top: 10px;
-    z-index: 999;
-}
+
+/*body{
+    background-color: #000000;
+    background-repeat: repeat-x;
+    background-position: top;
+    background-image: url(../sprites/bg_tile.jpg);    
+}*/
 
 /*
-Description:
-    Contains all the styles for the winning wheel page.
-    
-Verison History:
-    2012-01-28, Douglas McKechie
-    - Created based off earlier version.
-    
-    2015-09-26, Douglas McKechie
-    - Minor updates for the 2.0 winwheel example.
-*/
-
-body
-{
-    font-family: arial;
-}
-
-/* Sets the background image for the wheel */
-td.the_wheel
-{
-    background-image: url('../file/wheel_back.png');
-    background-position: center;
-    background-repeat: none;
-}
-
-/* Do some css reset on selected elements */
-h1, p
-{
+body {
     margin: 0;
+    background-color: #052d40;
+    background-image: linear-gradient(180deg,#052d40,rgba(14,90,136,.8901960784313725),#052d40),url(../images/bg01.gif);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    color: #fff;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}*/
+
+* {
+    user-select: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
 }
 
-div.power_controls
-{
-    margin-right:70px;
+::selection { background: transparent;color:inherit; }
+::-moz-selection { background: transparent;color:inherit; }
+
+#canvas{
+    position: fixed;
 }
 
-div.html5_logo
-{
-    margin-left:70px;
+canvas {
+	-ms-touch-action: none;
 }
 
-/* Styles for the power selection controls */
-table.power
-{
-    background-color: #cccccc;
-    cursor: pointer;
-    border:1px solid #333333;
+.ani_hack{
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent; /* mobile webkit */
 }
 
-table.power th
-{
-    background-color: white;
-    cursor: default;
+/***************FONTS*******************/
+
+@font-face {
+  font-family: 'ComicSansMS-Bold';
+  src: url('ComicSansMS-Bold.eot?#iefix') format('embedded-opentype'),  url('ComicSansMS-Bold.woff') format('woff'), url('ComicSansMS-Bold.ttf')  format('truetype'), url('ComicSansMS-Bold.svg#ComicSansMS-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-td.pw1
-{
-    background-color: #6fe8f0;
+@font-face {
+    font-family: 'impact';
+    src: url('impact.eot');
+    src: url('impact.eot?#iefix') format('embedded-opentype'),
+         url('impact.woff') format('woff'),
+         url('impact.ttf') format('truetype'),
+         url('impact.svg#impact') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-td.pw2
-{
-    background-color: #86ef6f;
+@font-face {
+    font-family: 'comfortaa-bold';
+    src: url('comfortaa-bold-webfont.eot');
+    src: url('comfortaa-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('comfortaa-bold-webfont.woff') format('woff'),
+         url('comfortaa-bold-webfont.ttf') format('truetype'),
+         url('comfortaa-bold-webfont.svg#comfortaa-bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-td.pw3
-{
-    background-color: #ef6f6f;
+.check-fonts{
+        position:fixed;
+        opacity:0;
 }
 
-/* Style applied to the spin button once a power has been selected */
-.clickable
-{
-    cursor: pointer;
+.check-font-1{
+        font-family: 'impact';
+        
 }
-
-/* Other misc styles */
-.margin_bottom
-{
-    margin-bottom: 5px;
+.check-font-2{
+        font-family: 'comfortaa-bold';
 }

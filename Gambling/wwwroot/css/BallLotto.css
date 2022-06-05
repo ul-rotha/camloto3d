@@ -25,22 +25,19 @@
     margin-right: 5px;
     border: solid 3px #842029;
 }
-.test-css{
-    font-size:small;
-}
 
 .lotto-text-inner-ball-sub {
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bold;
-    line-height: 100px;
+    line-height: 150px;
     font-family: Khmer OS Muol light;
 }
 
 .lotto-ball-sub {
     border-radius: 50%;
     background: radial-gradient( circle at 30% 30%, #f8f9fa, #838485 );
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     text-align: center;
     margin-right: 5px;
     color: #842029;
@@ -49,8 +46,8 @@
 .lotto-ball-sub-active {
     border-radius: 50%;
     background: radial-gradient( circle at 30% 30%, #f73, #915709 );
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     text-align: center;
     color: white;
     margin-right: 5px;
@@ -92,7 +89,7 @@
     margin-right: 5px;
 }
 
-#countdown {
+#div_timer {
     font-size: 130px;
     font-weight: 800;
     line-height: 135px;
@@ -106,7 +103,7 @@ body {
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover !important;
-    color: #fff;
+    color: #FFF;
     -webkit-user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;

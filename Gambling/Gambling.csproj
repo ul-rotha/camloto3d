@@ -29,6 +29,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\sounds\game_over.ogg" />
+    <None Include="wwwroot\sounds\press_button.ogg" />
+    <None Include="wwwroot\sounds\reel.ogg" />
+    <None Include="wwwroot\sounds\start_reel.ogg" />
+    <None Include="wwwroot\sounds\win.ogg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="BarCode" Version="2022.5.5918" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
   </ItemGroup>
