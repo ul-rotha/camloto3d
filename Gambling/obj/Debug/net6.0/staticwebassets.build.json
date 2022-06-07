@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1qCCTsdHyCaFglCtiJD+GD0C6jvcdXp7CRXXFS7A13o=",
+  "Hash": "Ua16ozpTVE7L6srkRuX3tJUsggT6dq/DHZ1cX5tXLBk=",
   "Source": "Gambling",
   "BasePath": "_content/Gambling",
   "Mode": "Default",
@@ -2582,6 +2582,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sounds\\win.ogg"
+    },
+    {
+      "Identity": "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\winning.mp3",
+      "SourceId": "Gambling",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "BasePath": "_content/Gambling",
+      "RelativePath": "sounds/winning.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sounds\\winning.mp3"
     },
     {
       "Identity": "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\200x200.jpg",

@@ -25,6 +25,7 @@ function CMenu() {
             _pStartPosAudio = { x: CANVAS_WIDTH - (oSprite.width / 4) - 10, y: (oSprite.height / 2) + 14 };
             _oAudioToggle = new CToggle(_pStartPosAudio.x, _pStartPosAudio.y, oSprite, s_bAudioActive);
             _oAudioToggle.addEventListener(ON_MOUSE_UP, this._onAudioToggle, this);
+
         }
 
         var oSprite = s_oSpriteLibrary.getSprite('but_credits');
@@ -73,11 +74,13 @@ function CMenu() {
 
         new CWheel();
         s_oMenu._onButPlayRelease();
-
-
+        
         //setTimeout(function () {
         //    s_oMenu._onButPlayRelease();
         //}, 2000);
+
+        
+        
     };
 
     this.unload = function () {

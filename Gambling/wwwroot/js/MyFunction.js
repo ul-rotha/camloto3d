@@ -1,4 +1,4 @@
-﻿var lotoTimer;
+﻿var lotoTimer = null;
 var current = 0;
 var result = 0;
 
@@ -38,7 +38,7 @@ function StartSubGame() {
     result = 0;
     lotoTimer = new Timer(function () {
         RandomValue();
-    }, 200);
+    }, 90);
 }
 
 

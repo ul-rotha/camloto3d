@@ -4,15 +4,20 @@ connection.on("ReceiveMessage", function (action, message) {
     if (action == "startGame") {
         document.getElementById("secondResult").innerHTML = "";
         StartSpin(message);
+        if (lotoTimer != null) {
+            clearTimeout(lotoTimer);
+            console.log(lotoTimer);
+        }
+            
     }
     else if (action == "startSubGame") {
         lotoTimer.stop();
+        playSound("winning", 1, false);
         $(".play").removeClass("lotto-ball-sub-active");
         console.log(".play" + "[key=" + message + "]");
         $(".play" + "[key=" + message + "]").addClass("lotto-ball-sub-active");
     }
-    else if (action == "newGame")
-    {
+    else if (action == "newGame") {
         document.getElementById("secondResult").innerHTML = "";
     }
     else if (action == "countDown") {

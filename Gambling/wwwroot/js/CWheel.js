@@ -252,8 +252,8 @@ function CWheel(){
         
         var iNumSpinFake = MIN_FAKE_SPIN + Math.floor(Math.random()*3);
         var iBorderSegmentsToAvoid = 16;
-        var iOffsetFrame = iBorderSegmentsToAvoid + Math.random()*(iFrameHeight - 2*iBorderSegmentsToAvoid);
-        
+        var iOffsetFrame = iFrameHeight/2;//iBorderSegmentsToAvoid + Math.random()*(iFrameHeight - 2*iBorderSegmentsToAvoid);
+        //console.log(iOffsetFrame);
         /////////FORWARD ROTATION
         /*
         var iTrueRotation = (iFrameToReach * iFrameHeight + iOffsetFrame);

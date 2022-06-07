@@ -63,6 +63,8 @@ function CMain(oData) {
         s_aSoundsInfo.push({ path: './sounds/', filename: 'start_reel', loop: false, volume: 1, ingamename: 'start_reel' });
         s_aSoundsInfo.push({ path: './sounds/', filename: 'win', loop: false, volume: 1, ingamename: 'win' });
 
+        s_aSoundsInfo.push({ path: './sounds/', filename: 'winning', loop: false, volume: 1, ingamename: 'winning' });
+
         RESOURCE_TO_LOAD += s_aSoundsInfo.length;
 
         s_aSounds = new Array();
