@@ -66,7 +66,7 @@ function CSpriteLibrary(){
                 },500);
             };
             _oSpritesToLoad[szKey].oSprite.src = _oSpritesToLoad[szKey].szPath;
-        }
+        } 
     };
     
     this.setLoaded = function(szKey){

@@ -22,12 +22,12 @@ function CCreditsPanel(){
         _oListener = _oHitArea.on("click", this._onLogoButRelease);
         s_oStage.addChild(_oHitArea);
         
-        new createjs.Tween.get(_oFade).to({alpha:0.7},500);
+        createjs.Tween.get(_oFade).to({alpha:0.7},500);
         
         _oPanelContainer = new createjs.Container();        
         s_oStage.addChild(_oPanelContainer);
         
-        var oSprite = s_oSpriteLibrary.getSprite('credits_panel');
+        var oSprite = s_oSpriteLibrary.getSprite('msg_box');
         var oPanel = createBitmap(oSprite);        
         oPanel.regX = oSprite.width/2;
         oPanel.regY = oSprite.height/2;
@@ -36,50 +36,22 @@ function CCreditsPanel(){
         _oPanelContainer.x = CANVAS_WIDTH/2;
         _oPanelContainer.y = CANVAS_HEIGHT + oSprite.height/2;  
         _pStartPanelPos = {x: _oPanelContainer.x, y: _oPanelContainer.y};
-        new createjs.Tween.get(_oPanelContainer).to({y:CANVAS_HEIGHT/2 - 40},500, createjs.Ease.quartIn);
-        
+        createjs.Tween.get(_oPanelContainer).to({y:CANVAS_HEIGHT/2 - 40},500, createjs.Ease.quartIn);
 
-        var iWidth = oSprite.width-230;
-        var iHeight = 70;
-        var iX = 0;
-        var iY = -80;
-        var oTitleStroke = new CTLText(_oPanelContainer, 
-                    iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
-                    30, "center", "#000", THIRD_FONT, 1,
-                    2, 2,
-                    TEXT_DEVELOPED,
-                    true, true, false,
-                    false );
-        oTitleStroke.setOutline(5);            
-        var oTitle = new CTLText(_oPanelContainer, 
-                    iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
-                    30, "center", "#ff0", THIRD_FONT, 1,
-                    2, 2,
-                    TEXT_DEVELOPED,
-                    true, true, false,
-                    false );
+        var oTitle = new createjs.Text("DEVELOPED BY"," 50px "+PRIMARY_FONT, "#ffffff");
+        oTitle.y = -100;
+        oTitle.textAlign = "center";
+        oTitle.textBaseline = "middle";
+        oTitle.lineWidth = 300;
+        _oPanelContainer.addChild(oTitle);
+
+        var oLink = new createjs.Text("www.codethislab.com"," 50px "+PRIMARY_FONT, "#ffffff");
+        oLink.y = 90;
+        oLink.textAlign = "center";
+        oLink.textBaseline = "middle";
+        oLink.lineWidth = 300;
+        _oPanelContainer.addChild(oLink);
         
-        var iWidth = oSprite.width-230;
-        var iHeight = 70;
-        var iX = 0;
-        var iY = 80;
-        var szText = "www.codethislab.com";
-        var oLinkStroke = new CTLText(_oPanelContainer, 
-                    iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
-                    30, "center", "#000", THIRD_FONT, 1,
-                    2, 2,
-                    szText,
-                    true, true, false,
-                    false );
-        oLinkStroke.setOutline(5); 
-        var oLink = new CTLText(_oPanelContainer, 
-                    iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
-                    30, "center", "#ff0", THIRD_FONT, 1,
-                    2, 2,
-                    szText,
-                    true, true, false,
-                    false );
-       
         var oSprite = s_oSpriteLibrary.getSprite('ctl_logo');
         _oLogo = createBitmap(oSprite);
         _oLogo.regX = oSprite.width/2;
@@ -87,7 +59,7 @@ function CCreditsPanel(){
         _oPanelContainer.addChild(_oLogo);
       
         var oSprite = s_oSpriteLibrary.getSprite('but_exit');
-        _oButExit = new CGfxButton(212, -126, oSprite, _oPanelContainer);
+        _oButExit = new CGfxButton(298, -200, oSprite, _oPanelContainer);
         _oButExit.addEventListener(ON_MOUSE_UP, this.unload, this);
         
     };
@@ -96,15 +68,18 @@ function CCreditsPanel(){
         
         _oButExit.setClickable(false);
         
-        new createjs.Tween.get(_oFade).to({alpha:0},500);
-        new createjs.Tween.get(_oPanelContainer).to({y:_pStartPanelPos.y},400, createjs.Ease.backIn).call(function(){
+        createjs.Tween.get(_oFade).to({alpha:0},500);
+        createjs.Tween.get(_oPanelContainer).to({y:_pStartPanelPos.y},400, createjs.Ease.backIn).call(function(){
             s_oStage.removeChild(_oFade);
             s_oStage.removeChild(_oPanelContainer);
+            s_oStage.removeChild(_oHitArea);
 
             _oButExit.unload();
         }); 
         
         _oHitArea.off("click",_oListener);
+        
+        
     };
     
     this._onLogoButRelease = function(){

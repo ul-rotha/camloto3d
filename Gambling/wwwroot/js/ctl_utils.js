@@ -1,7 +1,7 @@
 var s_iScaleFactor = 1;
-var s_bIsIphone = false;
 var s_iOffsetX;
 var s_iOffsetY;
+var s_bIsIphone = false;
 
 /**
  * jQuery.browser.mobile (http://detectmobilebrowser.com/)
@@ -36,6 +36,7 @@ function getSize(Name) {
         var divElement = document.createElement("div");
         divElement.id = "vpw-test-d";
         divElement.style.cssText = "position:absolute;top:-1000px";
+            
         // Getting specific on the CSS selector so it won't get overridden easily
         divElement.innerHTML = "<style>@media(" + name + ":" + documentElement["client" + Name] + "px){body#vpw-test-b div#vpw-test-d{" + name + ":7px!important}}</style>";
         bodyElement.appendChild(divElement);
@@ -73,25 +74,7 @@ function onOrientationChange() {
         // you're in LANDSCAPE mode   
         sizeHandler();
     }
-
 }
-
-function getIOSWindowHeight() {
-    // Get zoom level of mobile Safari
-    // Note, that such zoom detection might not work correctly in other browsers
-    // We use width, instead of height, because there are no vertical toolbars :)
-    var zoomLevel = document.documentElement.clientWidth / window.innerWidth;
-
-    // window.innerHeight returns height of the visible area. 
-    // We multiply it by zoom and get out real height.
-    return window.innerHeight * zoomLevel;
-};
-
-// You can also get height of the toolbars that are currently displayed
-function getHeightOfIOSToolbars() {
-    var tH = (window.orientation === 0 ? screen.height : screen.width) - getIOSWindowHeight();
-    return tH > 1 ? tH : 0;
-};
 
 function isChrome() {
     var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
@@ -124,14 +107,32 @@ function isIOS() {
     return false;
 }
 
-//THIS FUNCTION MANAGES THE CANVAS SCALING TO FIT PROPORTIONALLY THE GAME TO THE CURRENT DEVICE RESOLUTION
+function getIOSWindowHeight() {
+    // Get zoom level of mobile Safari
+    // Note, that such zoom detection might not work correctly in other browsers
+    // We use width, instead of height, because there are no vertical toolbars :)
+    var zoomLevel = document.documentElement.clientWidth / window.innerWidth;
 
+    // window.innerHeight returns height of the visible area. 
+    // We multiply it by zoom and get out real height.
+    return window.innerHeight * zoomLevel;
+};
+
+// You can also get height of the toolbars that are currently displayed
+function getHeightOfIOSToolbars() {
+    var tH = (window.orientation === 0 ? screen.height : screen.width) - getIOSWindowHeight();
+    return tH > 1 ? tH : 0;
+};
+
+//THIS FUNCTION MANAGES THE CANVAS SCALING TO FIT PROPORTIONALLY THE GAME TO THE CURRENT DEVICE RESOLUTION
 function sizeHandler() {
     window.scrollTo(0, 1);
 
     if (!$("#canvas")) {
         return;
     }
+
+
 
     var h;
     if (platform.name.toLowerCase() === "safari") {
@@ -148,6 +149,7 @@ function sizeHandler() {
 
     var destW = Math.round(CANVAS_WIDTH * multiplier);
     var destH = Math.round(CANVAS_HEIGHT * multiplier);
+
 
     var iAdd = 0;
     if (destH < h) {
@@ -193,52 +195,42 @@ function sizeHandler() {
         s_oMenu.refreshButtonPos(s_iOffsetX, s_iOffsetY);
     }
 
-    $("#canvas").css("width", destW + "px");
-    $("#canvas").css("height", destH + "px");
+
+    if (s_bIsIphone) {
+        canvas = document.getElementById('canvas');
+        s_oStage.canvas.width = destW * 2;
+        s_oStage.canvas.height = destH * 2;
+        canvas.style.width = destW + "px";
+        canvas.style.height = destH + "px";
+        var iScale = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
+        s_iScaleFactor = iScale * 2;
+        s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor;
+    } else if (s_bMobile || isChrome()) {
+        $("#canvas").css("width", destW + "px");
+        $("#canvas").css("height", destH + "px");
+    } else {
+        s_oStage.canvas.width = destW;
+        s_oStage.canvas.height = destH;
+
+        s_iScaleFactor = Math.min(destW / CANVAS_WIDTH, destH / CANVAS_HEIGHT);
+        s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor;
+    }
 
     if (fOffsetY < 0) {
         $("#canvas").css("top", fOffsetY + "px");
     } else {
+        // centered game
         fOffsetY = (h - destH) / 2;
         $("#canvas").css("top", fOffsetY + "px");
     }
 
-    fOffsetX = 0;
-    $("#canvas").css("left", fOffsetX + "px");
+
+    //$("#canvas").css("left",fOffsetX+"px");
+
 
     fullscreenHandler();
 
 };
-
-function stopSound(szSound) {
-    if (DISABLE_SOUND_MOBILE === false || s_bMobile === false) {
-        s_aSounds[szSound].stop();
-    }
-}
-
-function playSound(szSound, iVolume, bLoop) {
-    if (DISABLE_SOUND_MOBILE === false || s_bMobile === false) {
-
-        s_aSounds[szSound].play();
-        s_aSounds[szSound].volume(iVolume);
-        s_aSounds[szSound].loop(bLoop);
-
-        return s_aSounds[szSound];
-    }
-    return null;
-}
-
-function setVolume(szSound, iVolume) {
-    if (DISABLE_SOUND_MOBILE === false || s_bMobile === false) {
-        s_aSounds[szSound].volume(iVolume);
-    }
-}
-
-function setMute(bMute, szSound) {
-    if (DISABLE_SOUND_MOBILE === false || s_bMobile === false) {
-        s_aSounds[szSound].mute(bMute);
-    }
-}
 
 function _checkOrientation(iWidth, iHeight) {
     if (s_bMobile && ENABLE_CHECK_ORIENTATION) {
@@ -261,6 +253,50 @@ function _checkOrientation(iWidth, iHeight) {
         }
     }
 }
+
+function playSound(szSound, iVolume, bLoop) {
+    if (DISABLE_SOUND_MOBILE === false || s_bMobile === false) {
+
+        s_aSounds[szSound].play();
+        s_aSounds[szSound].volume(iVolume);
+        s_aSounds[szSound].loop(bLoop);
+
+        //var oPointer = createjs.Sound.play(szSound,{loop: iLoop,volume:iVolume});
+        return s_aSounds[szSound];
+    }
+    return null;
+}
+
+function stopSound(szSound) {
+    if (DISABLE_SOUND_MOBILE === false || s_bMobile === false) {
+        s_aSounds[szSound].stop();
+    }
+}
+
+function setVolume(szSound, iVolume) {
+    if (DISABLE_SOUND_MOBILE === false || s_bMobile === false) {
+        s_aSounds[szSound].volume(iVolume);
+    }
+}
+
+function setMute(szSound, bMute) {
+    if (DISABLE_SOUND_MOBILE === false || s_bMobile === false) {
+        s_aSounds[szSound].mute(bMute);
+    }
+}
+
+function fadeSound(szSound, from, to, duration) {
+    if (DISABLE_SOUND_MOBILE === false || s_bMobile === false) {
+        s_aSounds[szSound].fade(from, to, duration);
+    }
+}
+
+function soundPlaying(szSound) {
+    if (DISABLE_SOUND_MOBILE === false || s_bMobile === false) {
+        return s_aSounds[szSound].playing();
+    }
+}
+
 
 function createBitmap(oSprite, iWidth, iHeight) {
     var oBmp = new createjs.Bitmap(oSprite);
@@ -292,6 +328,11 @@ function createSprite(oSpriteSheet, szState, iRegX, iRegY, iWidth, iHeight) {
     return oRetSprite;
 }
 
+function pad(n, width, z) {
+    z = z || '0';
+    n = n + '';
+    return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+}
 
 function randomFloatBetween(minValue, maxValue, precision) {
     if (typeof (precision) === 'undefined') {
@@ -446,10 +487,6 @@ function formatTime(iTime) {
     }
 
     return szRet;
-}
-
-function formatValue(iValue) {
-    return TEXT_CURRENCY + iValue.toFixed(2);
 }
 
 function degreesToRadians(iAngle) {
@@ -680,6 +717,16 @@ function getParamValue(paramName) {
     }
 }
 
+String.prototype.format = function () {
+    var s = this,
+        i = arguments.length;
+
+    while (i--) {
+        s = s.replace(new RegExp('\\{' + i + '\\}', 'gm'), arguments[i]);
+    }
+    return s;
+};
+
 
 function fullscreenHandler() {
     if (!ENABLE_FULLSCREEN || !screenfull.isEnabled) {
@@ -691,11 +738,12 @@ function fullscreenHandler() {
     if (s_oInterface !== null) {
         s_oInterface.resetFullscreenBut();
     }
+
     if (s_oMenu !== null) {
         s_oMenu.resetFullscreenBut();
     }
-
 }
+
 
 if (screenfull.isEnabled) {
     screenfull.on('change', function () {
@@ -704,9 +752,9 @@ if (screenfull.isEnabled) {
         if (s_oInterface !== null) {
             s_oInterface.resetFullscreenBut();
         }
+
         if (s_oMenu !== null) {
             s_oMenu.resetFullscreenBut();
         }
-
     });
 }

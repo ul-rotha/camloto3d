@@ -25,9 +25,7 @@ CTLText.prototype = {
             };
             
             this._iFontSize = iFontSize;
-        }       
-        
-        //trace(this._oText.text + "-->fontsizedebug:"+iFontSize);
+        }        
     },
     
     __verticalAlign : function(){
@@ -112,9 +110,14 @@ CTLText.prototype = {
         this._oText.alpha = iAlpha;
     },
     
-    setY : function(iNewY){
-        this._oText.y = iNewY;
-        this._y = iNewY;
+    setX : function(iX){
+        this._x = iX;
+        this._oText.x = iX;
+    },
+    
+    setY : function(iY){
+        this._y = iY;
+        this._oText.y = iY;
     },
     
     removeTweens : function(){

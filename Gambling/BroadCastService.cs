@@ -21,7 +21,7 @@ namespace Gambling
         }
 
 
-        private const int second = 20;
+        private const int second = 300;
         int i = second;
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {

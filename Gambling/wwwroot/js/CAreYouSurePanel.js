@@ -1,4 +1,4 @@
-function CAreYouSurePanel() {
+function CAreYouSurePanel(oConfirmFunction, oNegateFunction) {
 
     var _oButYes;
     var _oButNo;
@@ -9,16 +9,14 @@ function CAreYouSurePanel() {
     
     var _pStartPanelPos;
 
-    this._init = function () {
-        s_oGame.stopUpdate();
-        
+    this._init = function (oConfirmFunction, oNegateFunction) {
         _oFade = new createjs.Shape();
         _oFade.graphics.beginFill("black").drawRect(0,0,CANVAS_WIDTH,CANVAS_HEIGHT);
         _oFade.alpha = 0;
         _oListener = _oFade.on("mousedown",function(){});
         s_oStage.addChild(_oFade);
         
-        new createjs.Tween.get(_oFade).to({alpha:0.7},500);
+        createjs.Tween.get(_oFade).to({alpha:0.7},500);
         
         _oPanelContainer = new createjs.Container();        
         s_oStage.addChild(_oPanelContainer);
@@ -32,24 +30,16 @@ function CAreYouSurePanel() {
         _oPanelContainer.x = CANVAS_WIDTH/2;
         _oPanelContainer.y = CANVAS_HEIGHT + oSprite.height/2;  
         _pStartPanelPos = {x: _oPanelContainer.x, y: _oPanelContainer.y};
-        new createjs.Tween.get(_oPanelContainer).to({y:CANVAS_HEIGHT/2 - 40},500, createjs.Ease.quartIn);
-        
-        var iWidth = oSprite.width-100;
-        var iHeight = 70;
+        createjs.Tween.get(_oPanelContainer).to({y:CANVAS_HEIGHT/2 - 40},500, createjs.Ease.quartIn);
+
         var iX = 0;
-        var iY = -oSprite.height/2 + 180;
-        var oTitleStroke = new CTLText(_oPanelContainer, 
-                    iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
-                    34, "center", "#000", THIRD_FONT, 1,
-                    2, 2,
-                    TEXT_ARE_SURE,
-                    true, true, false,
-                    false );
-        oTitleStroke.setOutline(5);
+        var iY = -oSprite.height/2 + 160;
+        var iWidth = 400;
+        var iHeight = 60;
         var oTitle = new CTLText(_oPanelContainer, 
-                    iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
-                    34, "center", "#fff", THIRD_FONT, 1,
-                    2, 2,
+                    iX - iWidth/2, iY - iHeight/2, iWidth, iHeight, 
+                    iHeight, "center", "#fff", PRIMARY_FONT, 1,
+                    0, 0,
                     TEXT_ARE_SURE,
                     true, true, false,
                     false );
@@ -66,25 +56,25 @@ function CAreYouSurePanel() {
         _oButNo.setClickable(false);
         _oButYes.setClickable(false);
         
-        new createjs.Tween.get(_oFade).to({alpha:0},500);
-        new createjs.Tween.get(_oPanelContainer).to({y:_pStartPanelPos.y},400, createjs.Ease.backIn).call(function(){
-
+        createjs.Tween.get(_oFade).to({alpha:0},500);
+        createjs.Tween.get(_oPanelContainer).to({y:_pStartPanelPos.y},400, createjs.Ease.backIn).call(function(){
             _oParent.unload();
-            s_oGame.onExit();
-            
+            if(oConfirmFunction){
+                oConfirmFunction();
+            }
         }); 
     };
 
     this._onButNo = function () {
-        s_oGame.startUpdate();
-        
         _oButNo.setClickable(false);
         _oButYes.setClickable(false);
         
-        new createjs.Tween.get(_oFade).to({alpha:0},500);
-        new createjs.Tween.get(_oPanelContainer).to({y:_pStartPanelPos.y},400, createjs.Ease.backIn).call(function(){
+        createjs.Tween.get(_oFade).to({alpha:0},500);
+        createjs.Tween.get(_oPanelContainer).to({y:_pStartPanelPos.y},400, createjs.Ease.backIn).call(function(){
             _oParent.unload();
-            
+            if(oNegateFunction){
+                oNegateFunction();
+            }
         }); 
     };
 
@@ -99,6 +89,6 @@ function CAreYouSurePanel() {
     };
 
     _oParent = this;
-    this._init();
+    this._init(oConfirmFunction, oNegateFunction);
 }
 

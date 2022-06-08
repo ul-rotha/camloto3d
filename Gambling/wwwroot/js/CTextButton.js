@@ -2,21 +2,23 @@ function CTextButton(iXPos,iYPos,oSprite,szText,szFont,szColor,iFontSize, bStand
     
     var _bDisable;
     
+    var _oListenerMouseDown;
+    var _oListenerMouseUp;
+    var _oListenerMouseOver;
+    
     var _aCbCompleted;
     var _aCbOwner;
     var _oButton;
     var _oText;
     var _oTextBack;
     var _oButtonBg;
-    var _oListenerMouseDown;
-    var _oListenerMouseUp;
     
     this._init =function(iXPos,iYPos,oSprite,szText,szFont,szColor,iFontSize, bStandard, oParentContainer){
         _bDisable = false;
         
         _aCbCompleted=new Array();
         _aCbOwner =new Array();
-
+        
         _oButtonBg = createBitmap( oSprite);           
 
         var iStepShadow = Math.ceil(iFontSize/20);
@@ -71,10 +73,16 @@ function CTextButton(iXPos,iYPos,oSprite,szText,szFont,szColor,iFontSize, bStand
     };
     
     this.unload = function(){
-       _oButton.off("mousedown", _oListenerMouseDown);
-       _oButton.off("pressup", _oListenerMouseUp);
-       
-       oParentContainer.removeChild(_oButton);
+       if(s_bMobile){
+            _oButton.off("mousedown", _oListenerMouseDown);
+            _oButton.off("pressup" , _oListenerMouseUp);
+        } else {
+            _oButton.off("mousedown", _oListenerMouseDown);
+            _oButton.off("mouseover", _oListenerMouseOver);
+            _oButton.off("pressup" , _oListenerMouseUp);
+        }
+        
+        oParentContainer.removeChild(_oButton);
     };
     
     this.setVisible = function(bVisible){
@@ -90,10 +98,14 @@ function CTextButton(iXPos,iYPos,oSprite,szText,szFont,szColor,iFontSize, bStand
     };
     
     this._initListener = function(){
-       oParent = this;
-
-       _oListenerMouseDown = _oButton.on("mousedown", this.buttonDown);
-       _oListenerMouseUp = _oButton.on("pressup" , this.buttonRelease);      
+       if(s_bMobile){
+            _oListenerMouseDown   = _oButton.on("mousedown", this.buttonDown);
+            _oListenerMouseUp     = _oButton.on("pressup" , this.buttonRelease);
+        } else {
+            _oListenerMouseDown   = _oButton.on("mousedown", this.buttonDown);
+            _oListenerMouseOver   = _oButton.on("mouseover", this.buttonOver);
+            _oListenerMouseUp     = _oButton.on("pressup" , this.buttonRelease);
+        }      
     };
     
     this.addEventListener = function( iEvent,cbCompleted, cbOwner ){
@@ -128,6 +140,15 @@ function CTextButton(iXPos,iYPos,oSprite,szText,szFont,szColor,iFontSize, bStand
        }
     };
     
+    this.buttonOver = function(evt){
+        if(!s_bMobile){
+            if(_bDisable){
+                return;
+            }
+            evt.target.cursor = "pointer";
+        }  
+    };
+    
     this.enable = function(){
         _bDisable = false;
         
@@ -145,10 +166,6 @@ function CTextButton(iXPos,iYPos,oSprite,szText,szFont,szColor,iFontSize, bStand
 
     };
     
-    this.removeShadow = function(){
-        _oTextBack.visible = false;
-    },
-    
     this.fadeOut = function(){
         this.setClickable(false);
         createjs.Tween.get(_oButton).to({alpha:0}, 500);
@@ -157,6 +174,10 @@ function CTextButton(iXPos,iYPos,oSprite,szText,szFont,szColor,iFontSize, bStand
     this.fadeIn = function(){
         this.setClickable(true);
         createjs.Tween.get(_oButton).to({alpha:1}, 500);
+    };
+    
+    this.hideShadow = function(){
+        _oTextBack.visible = false;
     };
     
     this.setTextPosition = function(iX, iY){
@@ -171,11 +192,10 @@ function CTextButton(iXPos,iYPos,oSprite,szText,szFont,szColor,iFontSize, bStand
     };
     
     this.setTextHeight = function(iY){
-        
         var iStepShadow = Math.ceil(iFontSize/20);
         _oTextBack.y = iY + iStepShadow;
         _oText.y = iY;
-    };
+    };  
     
     this.setPosition = function(iXPos,iYPos){
          _oButton.x = iXPos;

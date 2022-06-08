@@ -1,46 +1,90 @@
-function CInterface(){
-    var _pStartPosFullscreen;
-    var _fRequestFullScreen = null;
-    var _fCancelFullScreen = null;
-    var _oButFullscreen;
+function CInterface(oBgContainer){
     var _oAudioToggle;
     var _oButExit;
-    var _oButSpin;
+    var _oButFullscreen;
+    var _oGUIExpandible;
+    
+    var _iCurHandPos;
+    
+    var _oBetNum;
     var _oButPlus;
     var _oButMin;
-    var _oHelpPanel=null;    
-    var _iCurAlpha;
     var _oCreditNum;
-    var _oMoneyNum;
-    var _oBetNum;
-    var _oParent;
-    var _oTextHighLight;
-    var _oNumSpin;
+    var _oHandAnim;
+
+    var _fRequestFullScreen = null;
+    var _fCancelFullScreen = null;
     
     var _pStartPosExit;
     var _pStartPosAudio;
+    var _pStartPosFullscreen;
     
-    this._init = function(){
-        _oParent = this;
-        _iCurAlpha = 0;
+    this._init = function(oBgContainer){      
         
+        var oSprite = s_oSpriteLibrary.getSprite('hand_anim');
+        var iWidth = oSprite.width/6;
+        var iHeight = oSprite.height/4;
+        var oData = {   framerate: 20,
+                        images: [oSprite], 
+                        // width, height & registration point of each sprite
+                        "frames": [
+                                [1, 1, 256, 230, 0, 0, 0],
+                                [259, 1, 256, 230, 0, 0, 0],
+                                [517, 1, 256, 230, 0, 0, 0],
+                                [775, 1, 256, 230, 0, 0, 0],
+                                [1033, 1, 256, 230, 0, 0, 0],
+                                [1291, 1, 256, 230, 0, 0, 0],
+                                [1, 233, 256, 230, 0, 0, 0],
+                                [259, 233, 256, 230, 0, 0, 0],
+                                [517, 233, 256, 230, 0, 0, 0],
+                                [775, 233, 256, 230, 0, 0, 0],
+                                [1033, 233, 256, 230, 0, 0, 0],
+                                [1291, 233, 256, 230, 0, 0, 0],
+                                [1, 465, 256, 230, 0, 0, 0],
+                                [259, 465, 256, 230, 0, 0, 0],
+                                [517, 465, 256, 230, 0, 0, 0],
+                                [775, 465, 256, 230, 0, 0, 0],
+                                [1033, 465, 256, 230, 0, 0, 0],
+                                [1291, 465, 256, 230, 0, 0, 0],
+                                [1, 697, 256, 230, 0, 0, 0],
+                                [259, 697, 256, 230, 0, 0, 0],
+                                [517, 697, 256, 230, 0, 0, 0],
+                                [775, 697, 256, 230, 0, 0, 0]
+                            ],
+                        animations:{"idle": [0,21]}
+                   };
+                   
+        var oSpriteSheet = new createjs.SpriteSheet(oData);
+        _iCurHandPos = 0;
+        _oHandAnim = createSprite(oSpriteSheet, "idle",iWidth/2,iHeight/2,iWidth,iHeight);
+        var oPos = s_oGame.getSlotPosition(_iCurHandPos);
+        _oHandAnim.x = oPos.x;
+        _oHandAnim.y = oPos.y;
+        _oHandAnim.regX = iWidth/2 - 30;
+        _oHandAnim.regY = iHeight/2;
+        _oHandAnim.on("animationend", this._moveHand);
+        s_oStage.addChild(_oHandAnim);
+            
+            
         var oExitX;        
         
         var oSprite = s_oSpriteLibrary.getSprite('but_exit');
-        _pStartPosExit = {x: CANVAS_WIDTH - (oSprite.width/2)- 10, y: (oSprite.height/2) + 14};
+        _pStartPosExit = {x: CANVAS_WIDTH - (oSprite.width/2)- 10, y: (oSprite.height/2) + 10};
         _oButExit = new CGfxButton(_pStartPosExit.x, _pStartPosExit.y, oSprite,s_oStage);
         _oButExit.addEventListener(ON_MOUSE_UP, this._onExit, this);
         
-        oExitX = CANVAS_WIDTH - (oSprite.width/2) - 112;
-        _pStartPosAudio = {x: oExitX, y: (oSprite.height/2) + 14};
+        oExitX = _pStartPosExit.x - (oSprite.width) - 10;
+        _pStartPosAudio = {x: oExitX, y: (oSprite.height/2) + 10};
         
         if(DISABLE_SOUND_MOBILE === false || s_bMobile === false){
             var oSprite = s_oSpriteLibrary.getSprite('audio_icon');
-            _oAudioToggle = new CToggle(_pStartPosAudio.x,_pStartPosAudio.y,oSprite,s_bAudioActive);
+            _oAudioToggle = new CToggle(_pStartPosAudio.x,_pStartPosAudio.y,oSprite,s_bAudioActive, s_oStage);
             _oAudioToggle.addEventListener(ON_MOUSE_UP, this._onAudioToggle, this);          
-        }      
-		
-	var doc = window.document;
+            
+            oExitX = _pStartPosAudio.x - (oSprite.width/2) - 10;
+        }
+
+        var doc = window.document;
         var docEl = doc.documentElement;
         _fRequestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
         _fCancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
@@ -49,173 +93,82 @@ function CInterface(){
             _fRequestFullScreen = false;
         }
         
-        if(DISABLE_SOUND_MOBILE === false || s_bMobile === false){
-            oExitX = _pStartPosAudio.x - oSprite.width/2 -10;
-        }
-        
-        
         if (_fRequestFullScreen && screenfull.isEnabled){
-            oSprite = s_oSpriteLibrary.getSprite('but_fullscreen');
-            _pStartPosFullscreen = {x:oExitX , y:oSprite.height/2 + 14};
-
-            _oButFullscreen = new CToggle(_pStartPosFullscreen.x,_pStartPosFullscreen.y,oSprite,s_bFullscreen,true);
-            _oButFullscreen.addEventListener(ON_MOUSE_UP, this._onFullscreenRelease, this);
+            oSprite = s_oSpriteLibrary.getSprite("but_fullscreen")
+            _pStartPosFullscreen = {x:oExitX,y:oSprite.height/2+10};
+            _oButFullscreen = new CToggle(_pStartPosFullscreen.x,_pStartPosFullscreen.y,oSprite,s_bFullscreen,s_oStage);
+            _oButFullscreen.addEventListener(ON_MOUSE_UP,this._onFullscreenRelease,this);
         }
-
-        var oGuiContainer = new createjs.Container();
-        oGuiContainer.x = CANVAS_WIDTH/2 + 210;
-        oGuiContainer.y = 76;
-        oGuiContainer.scaleX = oGuiContainer.scaleY = 0.9;
-        s_oStage.addChild(oGuiContainer);
-
-        var oSprite = s_oSpriteLibrary.getSprite('gui_panel');
-        var oGuiBg = createBitmap(oSprite);
-        oGuiBg.regX = oSprite.width/2;
-        oGuiBg.regY = oSprite.height/2;
-        oGuiBg.y = 760;
-        oGuiContainer.addChild(oGuiBg);
-
-        var oSprite = s_oSpriteLibrary.getSprite('logo_game');
-        var oLogo = createBitmap(oSprite);
-        oLogo.regX = oSprite.width/2;
-        oLogo.regY = oSprite.height/2;
-        oLogo.y = 376;
-        oGuiContainer.addChild(oLogo);
-
+        
         //////////////////////// BET CONTROLLER /////////////////////////
         var oControllerContainer = new createjs.Container();
-        oControllerContainer.y = CANVAS_HEIGHT - 330;
-        oGuiContainer.addChild(oControllerContainer);
+        oControllerContainer.x = 854;
+        oControllerContainer.y = 1650;
+        oBgContainer.addChild(oControllerContainer);
 
         var oSprite = s_oSpriteLibrary.getSprite('bet_panel');
         var oBetBg = createBitmap(oSprite);
         oBetBg.regX = oSprite.width/2;
         oBetBg.regY = oSprite.height/2;
-        oBetBg.y = -100;
         oControllerContainer.addChild(oBetBg);
-        
-        var iWidth = oSprite.width-20;
-        var iHeight = oSprite.height-20;
+
         var iX = oBetBg.x;
-        var iY = oBetBg.y-2;
+        var iY = oBetBg.y;
+        var iWidth = oSprite.width - 100;
+        var iHeight = 36;
         _oBetNum = new CTLText(oControllerContainer, 
-                    iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
-                    26, "center", "#fff", THIRD_FONT, 1,
-                    2, 2,
-                    formatValue(START_BET),
+                    iX - iWidth/2, iY - iHeight/2, iWidth, iHeight, 
+                    iHeight, "center", "#fff", PRIMARY_FONT, 1,
+                    0, 0,
+                    sprintf(TEXT_CURRENCY, START_BET.toFixed(2)),
                     true, true, false,
                     false );
-                    
-        var oSprite = s_oSpriteLibrary.getSprite('but_spin');
-        _oButSpin = new CTextButton(0,0,oSprite,TEXT_SPIN,THIRD_FONT,"#ffffff",60, false, oControllerContainer);
-        _oButSpin.enable();
-        _oButSpin.addEventListener(ON_MOUSE_UP, this._onButSpinRelease, this);
 
         var oSprite = s_oSpriteLibrary.getSprite('but_plus');
-        _oButPlus = new CTextButton(98, -100, oSprite,TEXT_PLUS,THIRD_FONT,"#ffffff",60, false, oControllerContainer);
+        _oButPlus = new CTextButton(160, 0, oSprite,TEXT_PLUS,PRIMARY_FONT,"#0083ea",80, false, oControllerContainer);
         _oButPlus.enable();
         _oButPlus.addEventListener(ON_MOUSE_UP, this._onButPlusRelease, this);
+        _oButPlus.setTextPosition(1,26);
+        _oButPlus.hideShadow();
 
         var oSprite = s_oSpriteLibrary.getSprite('but_plus');
-        _oButMin = new CTextButton(-98,-100, oSprite,TEXT_MIN,THIRD_FONT,"#ffffff",60, false, oControllerContainer);
+        _oButMin = new CTextButton(-160,0, oSprite,TEXT_MIN,PRIMARY_FONT,"#0083ea",80, false, oControllerContainer);
         _oButMin.enable();
         _oButMin.addEventListener(ON_MOUSE_UP, this._onButMinRelease, this);
-        _oButMin.setTextPosition(-2,10);
-
-
+        _oButMin.setTextPosition(2,26);
+        _oButMin.hideShadow();
+        
         ///////////////////////CREDITS PANEL///////////////////////
-        var oSprite = s_oSpriteLibrary.getSprite('credits_money_panel');
+        var oSprite = s_oSpriteLibrary.getSprite('credits_panel');
         var oCreditsBg = createBitmap(oSprite);
         oCreditsBg.regX = oSprite.width/2;
         oCreditsBg.regY = oSprite.height/2;
-        oCreditsBg.y = 600;
-        oGuiContainer.addChild(oCreditsBg);
-
-        var iYOffset = 28;
-        var iWidth = 180;
-        var iHeight = 40;
-        var iX = oCreditsBg.x+2;
-        var iY = oCreditsBg.y-iYOffset+2;
-        var oCreditTextBack = new CTLText(oGuiContainer, 
-                    iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
-                    30, "center", "#000", THIRD_FONT, 1,
-                    2, 2,
-                    TEXT_CREDITS,
-                    true, true, false,
-                    false );
-        var iX = oCreditsBg.x;
-        var iY = oCreditsBg.y-iYOffset;
-        var oCreditText = new CTLText(oGuiContainer, 
-                    iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
-                    30, "center", "#ff0", THIRD_FONT, 1,
-                    2, 2,
-                    TEXT_CREDITS,
+        oCreditsBg.x = 332;
+        oCreditsBg.y = oControllerContainer.y;
+        oBgContainer.addChild(oCreditsBg);
+        
+        var iX = oCreditsBg.x+10;
+        var iY = oCreditsBg.y;
+        var iWidth = oSprite.width - 90;
+        var iHeight = 36;
+        _oCreditNum = new CTLText(oBgContainer, 
+                    iX - iWidth/2, iY - iHeight/2, iWidth, iHeight, 
+                    iHeight, "center", "#fff", PRIMARY_FONT, 1,
+                    0, 0,
+                    sprintf(TEXT_CURRENCY, START_CREDIT.toFixed(2)),
                     true, true, false,
                     false );
 
-        var iWidth = 140;
-        var iHeight = 40;
-        var iX = oCreditsBg.x;
-        var iY = oCreditsBg.y+20;
-        _oCreditNum = new CTLText(oGuiContainer, 
-                    iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
-                    28, "center", "#fff", THIRD_FONT, 1,
-                    2, 2,
-                    formatValue(START_CREDIT),
-                    true, true, false,
-                    false );
-
-        ///////////////////////WIN PANEL///////////////////////
-        var oSprite = s_oSpriteLibrary.getSprite('win_panel');
-        var oWinBg = createBitmap(oSprite);
-        oWinBg.regX = oSprite.width/2;
-        oWinBg.regY = oSprite.height/2;
-        oWinBg.y = 740;
-        oGuiContainer.addChild(oWinBg);
-
-        var iYOffset = 24;       
-        var iWidth = 180;
-        var iHeight = 40;
-        var iX = oWinBg.x+2;
-        var iY = oWinBg.y-iYOffset+2;
-        var oWinTextBack = new CTLText(oGuiContainer, 
-                    iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
-                    30, "center", "#000", THIRD_FONT, 1,
-                    2, 2,
-                    TEXT_WIN,
-                    true, true, false,
-                    false );
-        var iX = oWinBg.x;
-        var iY = oWinBg.y-iYOffset;
-        var oWinText = new CTLText(oGuiContainer, 
-                    iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
-                    30, "center", "#ff0", THIRD_FONT, 1,
-                    2, 2,
-                    TEXT_WIN,
-                    true, true, false,
-                    false );
-
-        var iWidth = 180;
-        var iHeight = 40;
-        var iX = oWinBg.x;
-        var iY = oWinBg.y + 24;
-        _oMoneyNum = new CTLText(oGuiContainer, 
-                    iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
-                    28, "center", "#fff", THIRD_FONT, 1,
-                    2, 2,
-                    formatValue(0),
-                    true, true, false,
-                    false );
-       
-        _oTextHighLight = new CTLText(oGuiContainer, 
-                    iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
-                    28, "center", "#ff0", THIRD_FONT, 1,
-                    2, 2,
-                    formatValue(0),
-                    true, true, false,
-                    false );
-                    _oTextHighLight.setAlpha(0);
-       
+        var oSprite = s_oSpriteLibrary.getSprite('but_settings');
+        _oGUIExpandible = new CGUIExpandible(_pStartPosExit.x, _pStartPosExit.y, oSprite, s_oStage);
+        _oGUIExpandible.addButton(_oButExit);
+        _oGUIExpandible.addButton(_oAudioToggle);
+        if (_fRequestFullScreen && screenfull.isEnabled){
+            _oGUIExpandible.addButton(_oButFullscreen);
+        }
+        
+        
+        
         this.refreshButtonPos(s_iOffsetX,s_iOffsetY);
     };
     
@@ -226,51 +179,32 @@ function CInterface(){
         }
 
         _oButExit.unload();
-        _oButSpin.unload();
-        if (_fRequestFullScreen && screenfull.isEnabled){
-            _oButFullscreen.unload();
-        }
-        
-        s_oInterface = null;
-    };
 
-    this.refreshCredit = function(iValue){        
-        _oCreditNum.refreshText( formatValue(iValue) );
+        if (_fRequestFullScreen && screenfull.isEnabled) {
+            _oButFullscreen.unload();
+        }        
+
+        _oButMin.unload();
+        _oButPlus.unload();
+
+        _oGUIExpandible.unload();
+
+        s_oInterface = null;
+        
     };
     
-    this.clearMoneyPanel = function(){
-        _oTextHighLight.setAlpha(0);
-        createjs.Tween.removeTweens(_oTextHighLight.getText()); 
-    };
-
-    this.refreshMoney = function(iValue){
-        _oMoneyNum.refreshText( formatValue(iValue) );
-        _oTextHighLight.refreshText( formatValue(iValue) );  
+    this.refreshButtonPos = function(iNewX,iNewY){
+        _oGUIExpandible.refreshPos(iNewX,iNewY);
     };
 
     this.refreshBet = function(iValue){
-        _oBetNum.refreshText( formatValue(iValue) );
-    };
-
-    this.refreshNumSpin = function(iValue){
-        _oNumSpin.refreshText( iValue );
-    };
-
-    this.animWin = function(){
-        if(_iCurAlpha === 1){
-            _iCurAlpha = 0;
-            createjs.Tween.get(_oTextHighLight.getText()).to({alpha:_iCurAlpha }, 150,createjs.Ease.cubicOut).call(function(){_oParent.animWin();});
-        }else{
-            _iCurAlpha = 1;
-            createjs.Tween.get(_oTextHighLight.getText()).to({alpha:_iCurAlpha }, 150,createjs.Ease.cubicOut).call(function(){_oParent.animWin();});
-        }
-        
-    };
-
-    this._onButSpinRelease = function(){
-        s_oGame.spinWheel();
+        _oBetNum.refreshText( sprintf(TEXT_CURRENCY, iValue.toFixed(2)) );
     };
     
+    this.refreshCredit = function(iValue){        
+        _oCreditNum.refreshText( sprintf(TEXT_CURRENCY, iValue.toFixed(2)) );
+    };
+   
     this._onButPlusRelease = function(){
         s_oGame.modifyBonus("plus");
     };
@@ -278,62 +212,53 @@ function CInterface(){
     this._onButMinRelease = function(){
         s_oGame.modifyBonus("min");
     };
-
-    this.disableSpin = function(bDisable){
-        if(bDisable === true){
-            _oButSpin.disable();
-            _oButPlus.disable();
-            _oButMin.disable();
-        } else {
-            _oButSpin.enable();
-            _oButPlus.enable();
-            _oButMin.enable();
-        }        
-    };
     
-    this.enterInFreeSpinMode = function(iNumFreeSpin){
-        _oButMin.fadeOut();
-        _oButPlus.fadeOut();
+    this.hideControls = function(){
+        _oButMin.setVisible(false);
+        _oButPlus.setVisible(false);
         
-        createjs.Tween.get(_oBetNum).to({"alpha":0}, 500).call(function(){
-            _oBetNum.refreshText( "x"+iNumFreeSpin );
-            _oBetNum.setColor( "#fff000" );
-            createjs.Tween.get(_oBetNum).to({"alpha":1}, 500);
-        });
+        this.setHelpVisible(false);
     };
     
-    this.exitFromFreeSpinMode = function(iBetValue){
-        _oButMin.fadeIn();
-        _oButPlus.fadeIn();
+    this.showControls = function(){
+        _oButMin.setVisible(true);
+        _oButPlus.setVisible(true);
         
-        createjs.Tween.get(_oBetNum).to({"alpha":0}, 500).call(function(){
-            _oBetNum.refreshText( formatValue(iBetValue) );
-            _oBetNum.setColor( "#FFFFFF" );
-            createjs.Tween.get(_oBetNum).to({"alpha":1}, 500);
-        });
+        this.setHelpVisible(true);
     };
     
-    this.refreshButtonPos = function(iNewX,iNewY){
-        _oButExit.setPosition(_pStartPosExit.x - iNewX,iNewY + _pStartPosExit.y);
-        if(DISABLE_SOUND_MOBILE === false || s_bMobile === false){
-			_oAudioToggle.setPosition(_pStartPosAudio.x - iNewX,iNewY + _pStartPosAudio.y);
-		}
-		if (_fRequestFullScreen && screenfull.isEnabled){
-            _oButFullscreen.setPosition(_pStartPosFullscreen.x - iNewX,_pStartPosFullscreen.y + iNewY);
+    this.setHelpVisible = function(bVal){
+       _oHandAnim.visible = bVal;
+       if(bVal){
+           _oHandAnim.gotoAndPlay("idle");
+       }
+    };
+    
+    this._moveHand = function(){
+        _iCurHandPos++;
+        if(_iCurHandPos === NUM_INSERT_TUBE){
+            _iCurHandPos = 0;
         }
-    };
+        var oPos = s_oGame.getSlotPosition(_iCurHandPos);
+        _oHandAnim.x = oPos.x;
+        _oHandAnim.y = oPos.y;
+
+    };  
     
-    this._onAudioToggle = function () {
+    this._onAudioToggle = function(){
         Howler.mute(s_bAudioActive);
         s_bAudioActive = !s_bAudioActive;
     };
-	
-    this.resetFullscreenBut = function(){
-	if (_fRequestFullScreen && screenfull.isEnabled){
-		_oButFullscreen.setActive(s_bFullscreen);
-	}
+    
+    this._onExit = function(){
+        new CAreYouSurePanel(s_oGame.onExit);
     };
-
+    
+    this.resetFullscreenBut = function(){
+        if (_fRequestFullScreen && screenfull.isEnabled){
+            _oButFullscreen.setActive(s_bFullscreen);
+        }
+    };
         
     this._onFullscreenRelease = function(){
 	if(s_bFullscreen) { 
@@ -345,18 +270,9 @@ function CInterface(){
 	sizeHandler();
     };
     
-    this._onExit = function(){
-        /*
-        $(s_oMain).trigger("end_session");
-        
-        s_oGame.onExit();  
-        */
-        new CAreYouSurePanel();
-    };
-    
     s_oInterface = this;
     
-    this._init();
+    this._init(oBgContainer);
     
     return this;
 }

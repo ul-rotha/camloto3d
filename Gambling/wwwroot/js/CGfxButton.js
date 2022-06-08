@@ -9,11 +9,12 @@ function CGfxButton(iXPos,iYPos,oSprite, oParentContainer){
     var _aParams = [];
     
     var _oButton;
+    var _oButtonSprite;
     var _oTween;
     var _oParent;
     var _oListenerMouseDown;
     var _oListenerMouseUp;
-    var _oListenerMouseMove;
+    var _oListenerMouseOver;
     
     this._init =function(iXPos,iYPos,oSprite, oParentContainer){
         _bDisabled = false;
@@ -23,14 +24,16 @@ function CGfxButton(iXPos,iYPos,oSprite, oParentContainer){
         _aCbCompleted=new Array();
         _aCbOwner =new Array();
         
-        _oButton = createBitmap( oSprite);
+        _oButton = new createjs.Container();
         _oButton.x = iXPos;
         _oButton.y = iYPos; 
-        _oButton.scaleX =   _oButton.scaleY = _iScaleFactor;                         
-        _oButton.regX = oSprite.width/2;
-        _oButton.regY = oSprite.height/2;
-       
-        oParentContainer.addChild(_oButton);        
+        _oButton.scaleX =   _oButton.scaleY = _iScaleFactor;
+        oParentContainer.addChild(_oButton);
+        
+        _oButtonSprite = createBitmap( oSprite);      
+        _oButtonSprite.regX = oSprite.width/2;
+        _oButtonSprite.regY = oSprite.height/2;
+        _oButton.addChild(_oButtonSprite);        
         
         this._initListener();
     };
@@ -41,11 +44,13 @@ function CGfxButton(iXPos,iYPos,oSprite, oParentContainer){
             _oButton.off("pressup" , _oListenerMouseUp);
         } else {
             _oButton.off("mousedown", _oListenerMouseDown);
-            _oButton.off("mouseover", _oListenerMouseMove);
+            _oButton.off("mouseover", _oListenerMouseOver);
             _oButton.off("pressup" , _oListenerMouseUp);
         }
         
-       oParentContainer.removeChild(_oButton);
+        _oButton.parent.removeChild(_oButton);
+        
+        //oParentContainer.removeChild(_oButton);
     };
     
     this.setVisible = function(bVisible){
@@ -62,7 +67,7 @@ function CGfxButton(iXPos,iYPos,oSprite, oParentContainer){
             _oListenerMouseUp = _oButton.on("pressup" , this.buttonRelease);
         } else {
             _oListenerMouseDown = _oButton.on("mousedown", this.buttonDown);
-            _oListenerMouseMove = _oButton.on("mouseover", this.buttonOver);
+            _oListenerMouseOver = _oButton.on("mouseover", this.buttonOver);
             _oListenerMouseUp = _oButton.on("pressup" , this.buttonRelease);
         }     
     };
@@ -113,8 +118,16 @@ function CGfxButton(iXPos,iYPos,oSprite, oParentContainer){
         }  
     };
     
+    this.addText = function(szText){
+        var oScoreText = new createjs.Text(szText," 50px "+PRIMARY_FONT, "#ffffff");
+        oScoreText.textAlign = "center";
+        oScoreText.textBaseline = "middle";
+        oScoreText.lineWidth = 200;
+        _oButton.addChild(oScoreText);
+    };
+    
     this.pulseAnimation = function () {
-        _oTween = createjs.Tween.get(_oButton).to({scaleX: _iScaleFactor*0.9, scaleY: _iScaleFactor*0.9}, 850, createjs.Ease.quadOut).to({scaleX: _iScaleFactor, scaleY: _iScaleFactor}, 650, createjs.Ease.quadIn).call(function () {
+        _oTween = createjs.Tween.get(_oButton).to({scaleX: _iScaleFactor*1.1, scaleY: _iScaleFactor*1.1}, 850, createjs.Ease.quadOut).to({scaleX: _iScaleFactor, scaleY: _iScaleFactor}, 650, createjs.Ease.quadIn).call(function () {
             _oParent.pulseAnimation();
         });
     };
@@ -149,7 +162,11 @@ function CGfxButton(iXPos,iYPos,oSprite, oParentContainer){
     this.getY = function(){
         return _oButton.y;
     };
-
+        
+    this.getPos = function(){
+        return {x: _oButton.x, y: _oButton.y};
+    };
+        
     _oParent = this;
     this._init(iXPos,iYPos,oSprite, oParentContainer);
     

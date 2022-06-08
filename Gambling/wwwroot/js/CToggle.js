@@ -1,12 +1,15 @@
-function CToggle(iXPos,iYPos,oSprite,bActive){
+function CToggle(iXPos,iYPos,oSprite,bActive, oParentContainer){
     var _bActive;
+    
+    var _oListenerMouseDown;
+    var _oListenerMouseUp;
+    var _oListenerMouseOver;
+    
     var _aCbCompleted;
     var _aCbOwner;
     var _oButton;
-    var _oListenerMouseDown;
-    var _oListenerMouseUp;
     
-    this._init = function(iXPos,iYPos,oSprite,bActive){
+    this._init = function(iXPos,iYPos,oSprite,bActive, oParentContainer){
         _aCbCompleted=new Array();
         _aCbOwner =new Array();
         
@@ -25,22 +28,35 @@ function CToggle(iXPos,iYPos,oSprite,bActive){
         _oButton.x = iXPos;
         _oButton.y = iYPos; 
         _oButton.stop();
-        _oButton.cursor = "pointer";
-        s_oStage.addChild(_oButton);
+        
+        oParentContainer.addChild(_oButton);
         
         this._initListener();
     };
     
     this.unload = function(){
-       _oButton.off("mousedown", _oListenerMouseDown);
-       _oButton.off("pressup" , _oListenerMouseUp);
-	   
-       s_oStage.removeChild(_oButton);
+        if(s_bMobile){
+            _oButton.off("mousedown", _oListenerMouseDown);
+            _oButton.off("pressup" , _oListenerMouseUp);
+        } else {
+            _oButton.off("mousedown", _oListenerMouseDown);
+            _oButton.off("mouseover", _oListenerMouseOver);
+            _oButton.off("pressup" , _oListenerMouseUp);
+        }
+        
+        _oButton.parent.removeChild(_oButton);
+        //oParentContainer.removeChild(_oButton);
     };
     
     this._initListener = function(){
-       _oListenerMouseDown = _oButton.on("mousedown", this.buttonDown);
-       _oListenerMouseUp = _oButton.on("pressup" , this.buttonRelease);      
+        if(s_bMobile){
+            _oListenerMouseDown   = _oButton.on("mousedown", this.buttonDown);
+            _oListenerMouseUp     = _oButton.on("pressup" , this.buttonRelease);
+        } else {
+            _oListenerMouseDown   = _oButton.on("mousedown", this.buttonDown);
+            _oListenerMouseOver   = _oButton.on("mouseover", this.buttonOver);
+            _oListenerMouseUp     = _oButton.on("pressup" , this.buttonRelease);
+        }     
     };
     
     this.addEventListener = function( iEvent,cbCompleted, cbOwner ){
@@ -57,7 +73,8 @@ function CToggle(iXPos,iYPos,oSprite,bActive){
         _oButton.scaleX = 1;
         _oButton.scaleY = 1;
         
-
+        playSound('click', 1, false);
+        
         _bActive = !_bActive;
         _oButton.gotoAndStop("state_"+_bActive);
 
@@ -70,11 +87,16 @@ function CToggle(iXPos,iYPos,oSprite,bActive){
         _oButton.scaleX = 0.9;
         _oButton.scaleY = 0.9;
 
-        playSound("click",1,false);
-
        if(_aCbCompleted[ON_MOUSE_DOWN]){
            _aCbCompleted[ON_MOUSE_DOWN].call(_aCbOwner[ON_MOUSE_DOWN]);
        }
+    };
+    
+    this.buttonOver = function(evt){
+        if(!s_bMobile){
+            
+            evt.target.cursor = "pointer";
+        }  
     };
     
     this.setPosition = function(iXPos,iYPos){
@@ -82,5 +104,9 @@ function CToggle(iXPos,iYPos,oSprite,bActive){
          _oButton.y = iYPos;
     };
     
-    this._init(iXPos,iYPos,oSprite,bActive);
+    this.getButtonImage = function(){
+        return _oButton;
+    };
+    
+    this._init(iXPos,iYPos,oSprite,bActive, oParentContainer);
 }

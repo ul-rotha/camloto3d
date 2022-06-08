@@ -1,0 +1,223 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<link rel="stylesheet" href="~/css/reset.css" type="text/css">
+<link rel="stylesheet" href="~/css/main.css" type="text/css">
+<link rel="stylesheet" href="~/css/orientation_utils.css" type="text/css">
+<link rel="stylesheet" href="~/css/BallLotto.css" type="text/css">
+
+
+
+@*
+    <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />*@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+<meta name="msapplication-tap-highlight" content="no" />
+
+
+@section scripts
+{
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script type="text/javascript" src="~/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="~/js/easeljs-NEXT.min.js"></script>
+<script type="text/javascript" src="~/js/tweenjs.js"></script>
+<script type="text/javascript" src="~/js/platform.js"></script>
+<script type="text/javascript" src="~/js/howler.min.js"></script>
+<script type="text/javascript" src="~/js/screenfull.js"></script>
+<script type="text/javascript" src="~/js/ctl_utils.js"></script>
+<script type="text/javascript" src="~/js/sprite_lib.js"></script>
+<script type="text/javascript" src="~/js/settings.js"></script>
+<script type="text/javascript" src="~/js/CLang.js"></script>
+<script type="text/javascript" src="~/js/CPreloader.js"></script>
+<script type="text/javascript" src="~/js/CMain.js"></script>
+<script type="text/javascript" src="~/js/CTextButton.js"></script>
+<script type="text/javascript" src="~/js/CToggle.js"></script>
+<script type="text/javascript" src="~/js/CGfxButton.js"></script>
+<script type="text/javascript" src="~/js/CMenu.js"></script>
+<script type="text/javascript" src="~/js/CGame.js"></script>
+<script type="text/javascript" src="~/js/CFormatText.js"></script>
+<script type="text/javascript" src="~/js/CInterface.js"></script>
+<script type="text/javascript" src="~/js/CHelpPanel.js"></script>
+<script type="text/javascript" src="~/js/CEndPanel.js"></script>
+<script type="text/javascript" src="~/js/CWheel.js"></script>
+<script type="text/javascript" src="~/js/CReel.js"></script>
+<script type="text/javascript" src="~/js/CLeds.js"></script>
+<script type="text/javascript" src="~/js/CCircularList.js"></script>
+<script type="text/javascript" src="~/js/CComplexFrame.js"></script>
+<script type="text/javascript" src="~/js/CLoadingPanel.js"></script>
+<script type="text/javascript" src="~/js/CCreditsPanel.js"></script>
+<script type="text/javascript" src="~/js/CAreYouSurePanel.js"></script>
+<script type="text/javascript" src="js/CCTLText.js"></script>
+@*<script src="~/js/client_timer.js?v=6"></script>
+    <script src="~/js/display.js?v=8"></script>*@
+
+
+<script src="~/js/MyFunction.js"></script>
+<script src="~/js/chat.js"></script>
+<script src="~/js/timer.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+
+        let arrResult = [
+        ['x3','x5','x1'],
+        ['x2','x10','x20'],
+        ['x3','x5','x10']
+    ];
+
+        $(document).ready(function () {
+            var oMain = new CMain({
+                start_credit: 0,      //Starting credits value
+                start_bet: 0,          //Base starting bet. Will increment with multiplier in game
+                max_multiplier: 5,      //Max multiplier value
+
+                bank_cash: 4000,       //Starting credits owned by the bank. When a player win, founds will be subtract from here. When a player lose or bet, founds will be added here. If bank is 0, players always lose, in order to fill the bank.
+
+                wheel_spin_time: 12,    //Time (in seconds) of a spin
+
+                //MONEY_WHEEL_SETTINGS sets the values and probability of each prize in the wheel. Value*max_multiplier shouldn't exceed 9999999.
+                //      -prize: THE AMOUNT WON BY THE PLAYER; IN CASE OF FREE SPIN, the "prize" MEAN NUM OF FREE SPINS.
+                //      -type: POINT IF THE PRIZE IS A MULTI-FREESPINS OR A STANDARD PRIZE
+                //      -background: THE BACKGROUND IMAGE NAME IN sprites/money_prize_images FOLDER
+                //      -textcolor: THE COLOR OF THE PRIZE TEXT
+                //      -textcolorstroke: THE COLOR STROKE OF THE PRIZE TEXT
+                //      -win_occurrence: THE OCCURENCY WIN OF THAT PRIZE. THE RATIO IS CALCULATED BY THE FORMULA: (single win occurrence/sum of all occurrence). For instance, the 1000 dollars prize here, have occurrence 1/116 because the sum of all slices occurrences is 116.
+                money_wheel_settings: [
+                    { prize: 'ក្រាស់', type: "prize", background: "bg_0", textcolor: "#ff7800", textstrokecolor: "#FFFFFF", win_occurrence: 1 },
+                    { prize: 'ស្មើ', type: "prize", background: "bg_1", textcolor: "#FFFFFF", textstrokecolor: "#a20303", win_occurrence: 16 },
+                    { prize: 'ស្តើង', type: "prize", background: "bg_2", textcolor: "#FFFFFF", textstrokecolor: "#c203e3", win_occurrence: 4 },
+                    { prize: 'ក្រាស់', type: "prize", background: "bg_0", textcolor: "#ff7800", textstrokecolor: "#FFFFFF", win_occurrence: 1 },
+                    { prize: 'ស្មើ', type: "prize", background: "bg_1", textcolor: "#FFFFFF", textstrokecolor: "#a20303", win_occurrence: 16 },
+                    { prize: 'ស្តើង', type: "prize", background: "bg_2", textcolor: "#FFFFFF", textstrokecolor: "#c203e3", win_occurrence: 4 },
+                    //{prize: 10,     type: "prize", background: "bg_4", textcolor: "#FFFFFF",   textstrokecolor: "#018ab9",    win_occurrence:12},
+                    //{prize: 20,     type: "prize", background: "bg_5", textcolor: "#FFFFFF",   textstrokecolor: "#0b8a02",    win_occurrence:7},
+                    //{prize: 0,      type: "prize", background: "bg_1", textcolor: "#FFFFFF",   textstrokecolor: "#a20303",    win_occurrence:16},
+                    //{prize: 15,     type: "prize", background: "bg_6", textcolor: "#FFFFFF",   textstrokecolor: "#cf6906",    win_occurrence:10},
+                    //{prize: 0,      type: "prize", background: "bg_1", textcolor: "#FFFFFF",   textstrokecolor: "#a20303",    win_occurrence:16}
+                    /////////ADD HERE MORE SLOT IF YOU WANT
+                ],
+                total_money_backgrounds_in_folder: 6,  ////SET HERE THE EXACT NUMBER OF BACKGROUND IMAGES IN GAME FOLDER IF YOU WANT ADD MORE DIFFERENT IMAGES
+
+
+                show_credits: false,                      //SET THIS VALUE TO FALSE IF YOU DON'T WANT TO SHOW CREDITS BUTTON
+                fullscreen: false,                        //SET THIS TO FALSE IF YOU DON'T WANT TO SHOW FULLSCREEN BUTTON
+                check_orientation: false,                 //SET TO FALSE IF YOU DON'T WANT TO SHOW ORIENTATION ALERT ON MOBILE DEVICES
+                audio_enable_on_startup: true,          //ENABLE/DISABLE AUDIO WHEN GAME STARTS
+
+                //////////////////////////////////////////////////////////////////////////////////////////
+                ad_show_counter: 5     //NUMBER OF SPIN BEFORE AD SHOWN
+                //
+                //// THIS FUNCTIONALITY IS ACTIVATED ONLY WITH CTL ARCADE PLUGIN.///////////////////////////
+                /////////////////// YOU CAN GET IT AT: /////////////////////////////////////////////////////////
+                // http://codecanyon.net/item/ctl-arcade-wordpress-plugin/13856421?s_phrase=&s_rank=27 ///////////
+
+            });
+
+            $(oMain).on("recharge", function (evt) {
+                //INSERT HERE YOUR RECHARGE SCRIPT THAT RETURNS MONEY TO RECHARGE
+                var iMoney = 100;
+                if (s_oGame !== null) {
+                    s_oGame.addCredits(iMoney);
+                }
+            });
+
+            $(oMain).on("start_session", function (evt) {
+                if (getParamValue('ctl-arcade') === "true") {
+                    parent.__ctlArcadeStartSession();
+                }
+                //...ADD YOUR CODE HERE EVENTUALLY
+            });
+
+            $(oMain).on("end_session", function (evt) {
+                if (getParamValue('ctl-arcade') === "true") {
+                    parent.__ctlArcadeEndSession();
+                }
+                //...ADD YOUR CODE HERE EVENTUALLY
+            });
+
+            $(oMain).on("save_score", function (evt, iScore) {
+                if (getParamValue('ctl-arcade') === "true") {
+                    parent.__ctlArcadeSaveScore({ score: iScore });
+                }
+                //...ADD YOUR CODE HERE EVENTUALLY
+            });
+
+            $(oMain).on("show_interlevel_ad", function (evt) {
+                if (getParamValue('ctl-arcade') === "true") {
+                    parent.__ctlArcadeShowInterlevelAD();
+                }
+                //...ADD YOUR CODE HERE EVENTUALLY
+            });
+
+            $(oMain).on("share_event", function (evt, iScore) {
+                if (getParamValue('ctl-arcade') === "true") {
+                    parent.__ctlArcadeShareEvent({
+                        img: TEXT_SHARE_IMAGE,
+                        title: TEXT_SHARE_TITLE,
+                        msg: TEXT_SHARE_MSG1 + iScore + TEXT_SHARE_MSG2,
+                        msg_share: TEXT_SHARE_SHARE1 + iScore + TEXT_SHARE_SHARE1
+                    });
+                }
+            });
+
+            $(oMain).on("bet_placed", function (evt, iTotBet) {
+                //...ADD YOUR CODE HERE EVENTUALLY
+            });
+
+            if (isIOS()) {
+                setTimeout(function () { sizeHandler(); }, 200);
+            } else {
+                sizeHandler();
+            }
+            getRecent();
+        });
+</script>
+
+}
+
+
+<div class="row">
+    <div class="col-3"><canvas id="canvas" class='ani_hack' width="500" height="1280"></canvas></div>
+    <div class="col-9 align-self-center">
+
+        <div class="row pt-2">
+            <div class="col-9">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="~/images/logo.png" style="height:150px; padding-left:10px" />
+                        </div>
+                        <div class="col-9">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="font-style-2">05/06/2022</span>
+                                    <span class="font-style-2">13:21:52</span>
+                                    <div class="gameid float-end">ឆ្នោតទី 21297</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 offset-4 float-end" id="div_timer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="" id="result"></div>
+                    <div class="pt-2" id="secondResult" style="padding-left:50px"></div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <h1 style="font-size:20px; padding-left:10px">Recent</h1>
+                <div id="recent" style="border-left: 1px solid #ddd; padding-left:10px"></div>
+            </div>
+        </div>
+    </div>
+</div>
+

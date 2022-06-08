@@ -1,18 +1,10 @@
-function CGame(oData) {
+function CGame(oData){
+    var _bStartGame;
 
-    var _bInitGame;
-
-    var _iTimeIdle;
-    var _iTimeWin;
-    var _iCurAnim;
-    var _iGameState;
-    var _iSpinMode;
-    var _iFreeSpinCounter;
+    var _iColToLaunchBall;
     var _iMultiply;
     var _iCurBet;
     var _iCurCredit;
-    var _iCurWin;
-    var _iAdCounter;
     var _iBankCash;
 
     var _aProbability;
@@ -20,426 +12,356 @@ function CGame(oData) {
     var _oInterface;
     var _oEndPanel = null;
     var _oParent;
-    var _oWheelContainer;
-    var _oWheel;
-    var _oLeds;
+    var _oBallGenerator;
+    var _oInsertTubeController;
+    var _oScoreBasketController;
+    var _oBgContainer;
+    var _oBoardContainer;
+    var _oMidContainer;
+    var _oForegroundContainer;
+    var _aBoard;
+    var _oCurBall = null;
+    
+    this._init = function(){
+        
+        setVolume("soundtrack", SOUNDTRACK_VOLUME_IN_GAME);
+        
+        _bStartGame=true;
 
-    this._init = function () {
         _iMultiply = 1;
-        _iTimeIdle = 0;
-        _iTimeWin = 0;
-        _iCurBet = START_BET.toFixed(2) / 1;
-        _iCurCredit = START_CREDIT.toFixed(2) / 1;
-        _iCurWin = -1;
-        _iGameState = STATE_IDLE;
-        _iSpinMode = SPIN_MODE_NORMAL;
-        _iAdCounter = 0;
+        _iCurBet = START_BET.toFixed(2)/1;
+        _iCurCredit = START_CREDIT.toFixed(2)/1;
         _iBankCash = BANK_CASH;
-        _iFreeSpinCounter = 0;
+        
+        var oBg = createBitmap(s_oSpriteLibrary.getSprite('bg_game'));
+        s_oStage.addChild(oBg);
 
-        //var oBg = createBitmap(s_oSpriteLibrary.getSprite('bg_game'));
+        var oSprite = s_oSpriteLibrary.getSprite('logo_game');
+        var oLogo = createBitmap(oSprite);
+        oLogo.regX = oSprite.width/2;
+        oLogo.regY = oSprite.height/2;
+        oLogo.x = CANVAS_WIDTH/2;
+        oLogo.y = 250;
 
-        //s_oStage.addChild(oBg);
+        _oBgContainer = new createjs.Container();
+        s_oStage.addChild(_oBgContainer);
 
-        _aProbability = new Array();
+        _oBoardContainer = new createjs.Container();
+        s_oStage.addChild(_oBoardContainer);
 
-        _bInitGame = true;
+        _oMidContainer = new createjs.Container();
+        s_oStage.addChild(_oMidContainer);
 
-        _oWheelContainer = new createjs.Container();
-        _oWheelContainer.scaleX = _oWheelContainer.scaleY = 1.2;
-        s_oStage.addChild(_oWheelContainer);
+        _oForegroundContainer = new createjs.Container();
+        s_oStage.addChild(_oForegroundContainer);
 
-        this.attachWheel();
+        this._setBoard();
+        NUM_INSERT_TUBE = _aBoard[0].length;
 
-        //_oInterface = new CInterface(); 
+        var oSprite = s_oSpriteLibrary.getSprite('side_left');
+        var oSideLeft = createBitmap(oSprite);
+        oSideLeft.x = 100;
+        _oForegroundContainer.addChild(oSideLeft);
 
-        //new CHelpPanel();
+        var oSprite = s_oSpriteLibrary.getSprite('side_right');
+        var oSideRight = createBitmap(oSprite);
+        oSideRight.regX = oSprite.width;
+        oSideRight.x = CANVAS_WIDTH-100;
+        _oForegroundContainer.addChild(oSideRight);
 
+        BALL_RADIUS = s_oSpriteLibrary.getSprite('ball').height/2;
+        _oBallGenerator = new CBallGenerator(_oMidContainer);
+        
+        _oInsertTubeController = new CInsertTubeController(_oMidContainer);
+
+        _oScoreBasketController = new CScoreBasketController(_oBgContainer);
+
+        
         this._initProbability();
 
-        if (_iCurCredit < START_BET) {
+
+        //_oInterface = new CInterface(_oBgContainer);
+
+        _oInsertTubeController.showSlots();
+
+        $(s_oMain).trigger("start_level",1);
+
+        this.checkEndGame();
+
+    };
+    
+    this._setBoard = function(){
+        var iRow = BOARD_ROW;
+        var iCol = BOARD_COL;
+        _aBoard = new Array();
+        for(var i=0; i<iRow; i++){
+            _aBoard[i] = new Array();
+            for(var j=0; j<iCol-((i+1)%2); j++){
+                var iX;
+                if(i%2 === 0){
+                    iX = j*CELL_SIZE;
+                } else {
+                    iX = -CELL_SIZE/2 +j*CELL_SIZE;
+                }
+                var iY = i*CELL_SIZE/2;
+                _aBoard[i][j] = new CCell(iX, iY, _oBoardContainer, i, j/*, _oActionContainer*/);
+                
+                ////REMOVE STAKE
+                if(i === BOARD_ROW-1 || (i%2 === 1 && (j===0 || j === BOARD_COL-1) )){
+                    _aBoard[i][j].removeStake();
+                }
+            }
+        }
+
+        _oBoardContainer.regX = (_oBoardContainer.getBounds().x) + _oBoardContainer.getBounds().width/2;
+        _oBoardContainer.regY = (_oBoardContainer.getBounds().y) + _oBoardContainer.getBounds().height/2;
+        _oBoardContainer.x = CANVAS_WIDTH/2;
+        _oBoardContainer.y = CANVAS_HEIGHT/2-29;
+
+        new CGridMapping(_aBoard);
+    };
+    
+    this._initProbability = function(){
+        _aProbability = new Array();
+        for(var i=0; i<PRIZE_PROBABILITY.length; i++){
+            for(var j=0; j<PRIZE_PROBABILITY[i]; j++){
+                _aProbability.push(i);
+            }            
+        }            
+    };
+    
+    this.launch = function(iStartCol){
+        _iColToLaunchBall = iStartCol;
+        
+        this._placeBet();
+        
+        this.setBall();
+        
+        _oInsertTubeController.hideSlots();
+        _oBallGenerator.shiftBallAnimation();
+
+        var oDestBall = s_oGame.getBallPivotCellPos(0, iStartCol);
+        _oCurBall.launchAnim(oDestBall);
+        
+    };
+    
+    this._placeBet = function(){
+        _iCurCredit -= _iCurBet;
+        _iBankCash += _iCurBet;
+
+        //_oInterface.hideControls();
+        //_oInterface.refreshCredit(_iCurCredit.toFixed(2)/1);
+        
+        $(s_oMain).trigger("bet_placed",[_iCurBet]);
+    };
+    
+    this.setBall = function(){
+        _oCurBall = _oBallGenerator.getNextBall();
+
+        var oCurBallPos = _oCurBall.getPos();
+        var oNewPos = _oBoardContainer.globalToLocal(oCurBallPos.x*s_iScaleFactor, oCurBallPos.y*s_iScaleFactor);
+
+        _oBoardContainer.addChild(_oCurBall.getSprite());
+        _oCurBall.setPos(oNewPos);
+    };
+    
+    this.getFallPath = function(){
+        var iEndCol = this._setEndCol();
+        var aPath = s_oGridMapping.getRandomPathFromColToCol(_iColToLaunchBall,iEndCol);
+        
+        for(var i=0; i<aPath.length; i++){
+            _aBoard[aPath[i].row][aPath[i].col].highlight(true);
+        }
+        
+        var aNewPath = this.getPathCopy(aPath);
+        
+        _oCurBall.startPathAnim(aNewPath, 500);
+
+        _oCurBall = null;
+    };
+    
+    this.ballArrived = function(iDestCol){
+
+        if(PRIZE[iDestCol] * _iMultiply >= _iCurBet){
+            playSound('ball_in_basket', 1, false);
+        } else {
+            playSound('ball_in_basket_negative', 1, false);
+        }
+
+        var iProfit = PRIZE[iDestCol] * _iMultiply/_iCurBet;
+        _oScoreBasketController.litBasket(iDestCol, iProfit);
+       
+        _iCurCredit += PRIZE[iDestCol] * _iMultiply;
+        _iBankCash -= PRIZE[iDestCol] * _iMultiply;
+
+        $(s_oMain).trigger("save_score",[_iCurCredit]);
+
+        _oInsertTubeController.showSlots();
+        
+        //_oInterface.showControls();
+        //_oInterface.refreshCredit(_iCurCredit.toFixed(2)/1);
+        
+        this.checkEndGame();
+        
+    };
+    
+    this.checkEndGame = function(){
+        if(_iCurCredit < START_BET){
             this.gameOver();
             return;
-        }
-
-        //setTimeout(function () {
-        //    s_oGame.spinWheel(5);
-        //}, 4000);
-
-
-    };
-
-    this.attachWheel = function () {
-
-        var pCenterWheel = { x: 200, y: CANVAS_HEIGHT / 2 - 105 };
-        s_oWheel.attachWheel(pCenterWheel.x, pCenterWheel.y, _oWheelContainer);
-
-        _oLeds = new CLeds(pCenterWheel.x, pCenterWheel.y, _oWheelContainer);
-        _iCurAnim = _oLeds.getState();
-
-        _oWheel = s_oWheel;
-    };
-
-    this._initProbability = function () {
-
-        var aPrizeLength = new Array();
-
-        for (var i = 0; i < MONEY_WHEEL_SETTINGS.length; i++) {
-            aPrizeLength[i] = MONEY_WHEEL_SETTINGS[i].win_occurrence;
-        }
-
-        for (var i = 0; i < aPrizeLength.length; i++) {
-            for (var j = 0; j < aPrizeLength[i]; j++) {
-                _aProbability.push(i);
-            }
+        }        
+        
+        if(_iMultiply > _iCurCredit/START_BET ){
+            _iMultiply = Math.floor(_iCurCredit/START_BET);
+            _iCurBet = (_iMultiply * START_BET).toFixed(2)/1;
+            //_oInterface.refreshBet(_iCurBet);  
+            
+            _oScoreBasketController.refreshText(_iMultiply);
         }
     };
-
-    this.modifyBonus = function (szType) {
-        if (szType === "plus") {
-            //_iCurBet += START_BET;
+    
+    this.modifyBonus = function(szType){
+        if(szType === "plus"){
             _iMultiply++;
         } else {
-            //_iCurBet -= START_BET;
             _iMultiply--;
         }
-
-        if (_iMultiply > MAX_MULTIPLIER) {
+        
+        if(_iMultiply > MAX_MULTIPLIER){
             _iMultiply = MAX_MULTIPLIER;
-        } else if (_iMultiply < 1) {
+        } else if(_iMultiply < 1) {
             _iMultiply = 1;
-        } else if (_iMultiply > _iCurCredit / START_BET) {
-            _iMultiply = Math.floor(_iCurCredit / START_BET);
+        } else if(_iMultiply > _iCurCredit/START_BET){
+            _iMultiply = Math.floor(_iCurCredit/START_BET);
         }
-
-
-        _iCurBet = (START_BET * _iMultiply).toFixed(2) / 1;
-
-
+        
+        
+        _iCurBet = (START_BET*_iMultiply).toFixed(2)/1;
+	
         //_oInterface.refreshBet(_iCurBet);
-        _oWheel.setText(_iMultiply);
+        _oScoreBasketController.refreshText(_iMultiply);
+
     };
-
-    this.addCredits = function (iNewCredits) {
-        _iCurCredit += iNewCredits;
-
-        //_oInterface.refreshCredit(_iCurCredit.toFixed(2)/1);
-    };
-
-    this.tryShowAd = function () {
-        _iAdCounter++;
-        if (_iAdCounter === AD_SHOW_COUNTER) {
-            _iAdCounter = 0;
-            $(s_oMain).trigger("show_interlevel_ad");
-        }
-    };
-
-    this._getBetPrize = function (i) {
+   
+    this._setEndCol = function(){
         //DETECT ALL POSSIBLE PRIZE LOWER THEN BANK
-        //var iCurPrize;
-        //var aAllPossiblePrize = new Array();
-        //for(var i=0; i<_aProbability.length; i++){
-        //    iCurPrize = MONEY_WHEEL_SETTINGS[_aProbability[i]].prize*_iMultiply;
+        var iCurPrize;
+        var aAllPossiblePrize = new Array();
+        for(var i=0; i<_aProbability.length; i++){
+            iCurPrize = PRIZE[_aProbability[i]]*_iMultiply;
 
-        //    if(iCurPrize <= _iBankCash || MONEY_WHEEL_SETTINGS[_aProbability[i]].type === "freespin"){
-        //        aAllPossiblePrize.push({prize:iCurPrize,index:i});
-        //    } 
-        //}
-        //var iPrizeToChoose = aAllPossiblePrize[Math.floor(Math.random()*aAllPossiblePrize.length)].index;      
-
-        //return _aProbability[iPrizeToChoose];
-        return i;
-    };
-
-    this.spinWheel = function (i) {
-        //_oInterface.disableSpin(true);
-        _iGameState = STATE_SPIN;
-        _iTimeWin = 0;
-
-        $(s_oMain).trigger("bet_placed", _iCurBet);
-
-        //_oWheel.setText(_iMultiply);
-
-        //this.setNewRound();
-
-        //if (_iSpinMode === SPIN_MODE_FREE) {
-            //_iFreeSpinCounter--;
-
-            //_oInterface.enterInFreeSpinMode(_iFreeSpinCounter);
-
-        //} else {
-            //_oInterface.refreshMoney(0);
-            //_iCurCredit -= _iCurBet;
-            //_iBankCash += _iCurBet;
-
-            //_oInterface.refreshCredit(_iCurCredit.toFixed(2)/1);
-        //}
-
-        //SELECT PRIZE      
-        _iCurWin = this._getBetPrize(i);
-
-
-
-        playSound("start_reel", 1, false);
-        playSound("reel", 0.2, true);
-
-
-        //SPIN
-        _oWheel.spin(_iCurWin);
-    };
-
-    this.setNewRound = function () {
-        if (_iCurWin < 0) {
-            return;
+            if(iCurPrize <= _iBankCash){
+                aAllPossiblePrize.push({prize:iCurPrize,index:i});
+            } 
         }
+        
+        var iPrizeToChoose = aAllPossiblePrize[Math.floor(Math.random()*aAllPossiblePrize.length)].index;      
 
-        //_oInterface.refreshCredit(_iCurCredit.toFixed(2)/1);
-        //_oInterface.clearMoneyPanel();
-
-        _iCurWin = -1;
+        return 4;//_aProbability[iPrizeToChoose];
     };
-
-    this.releaseWheel = function () {
-
-        addSecondResult(_iCurWin);
-
-
-        //this.tryShowAd();
-        //_oInterface.disableSpin(false);
-
-        stopSound("reel");
-
-
-        //if(MONEY_WHEEL_SETTINGS[_iCurWin].prize > _iCurBet || MONEY_WHEEL_SETTINGS[_iCurWin].type === "freespin"){
-        //    _iGameState = STATE_WIN;
-        //    playSound("win",1,false);
-
-        //} else {
-        //    _iGameState = STATE_LOSE;
-        //    playSound("game_over",1,false);
-        //}
-
-        playSound("win", 1, false);
-
-
-        //if (MONEY_WHEEL_SETTINGS[_iCurWin].type === "prize") {
-        //    s_oGame.setWinPrize();
-        //}
-
-        //this.checkSpinMode();
-
-        //if (_iSpinMode === SPIN_MODE_NORMAL) {
-        //    if (_iCurCredit < START_BET) {
-        //        this.gameOver();
-
-        //        return;
-        //    }
-        //    if (_iMultiply > _iCurCredit / START_BET) {
-        //        _iMultiply = Math.floor(_iCurCredit / START_BET);
-        //        _iCurBet = (_iMultiply * START_BET).toFixed(2) / 1;
-        //        _oInterface.refreshBet(_iCurBet);
-        //        _oWheel.setText(_iMultiply);
-        //    }
-        //} else {
-        //    this.spinWheel();
-        //}
+    
+    this.getBall = function(){
+        return _oCurBall;
     };
-
-    this.setWinPrize = function () {
-        //_oInterface.refreshMoney(MONEY_WHEEL_SETTINGS[_iCurWin].prize * _iMultiply);
-
-        //_iCurCredit += MONEY_WHEEL_SETTINGS[_iCurWin].prize * _iMultiply;
-        //_iBankCash -= MONEY_WHEEL_SETTINGS[_iCurWin].prize * _iMultiply;
-
-        //$(s_oMain).trigger("save_score",[_iCurCredit]);
-
-        //_oInterface.refreshCredit(_iCurCredit.toFixed(2)/1);
-
-        //if (MONEY_WHEEL_SETTINGS[_iCurWin].prize > 0) {
-            //_oInterface.animWin();
-        //}
-
+    
+    this.getBoard = function(){
+        return _aBoard;
     };
-
-    this.checkSpinMode = function () {
-
-        if (MONEY_WHEEL_SETTINGS[_iCurWin].type === "freespin") {
-            _iFreeSpinCounter += MONEY_WHEEL_SETTINGS[_iCurWin].prize;
-            //_oInterface.enterInFreeSpinMode(_iFreeSpinCounter);
-
-            if (_iSpinMode === SPIN_MODE_NORMAL) {
-                _iSpinMode = SPIN_MODE_FREE;
-            }
-
-        } else {
-            if (_iSpinMode === SPIN_MODE_FREE) {
-                if (_iFreeSpinCounter === 0) {
-                    _iSpinMode = SPIN_MODE_NORMAL;
-
-                    if (_iMultiply > _iCurCredit / START_BET) {
-                        _iMultiply = Math.floor(_iCurCredit / START_BET);
-                        _iCurBet = (_iMultiply * START_BET).toFixed(2) / 1;
-                        //_oInterface.refreshBet(_iCurBet);    
-                        _oWheel.setText(_iMultiply);
-                    }
-
-                    //_oInterface.exitFromFreeSpinMode(_iCurBet);
-                }
-            }
+    
+    this.getBallPivotCellPos = function(iRow, iCol){
+        return _aBoard[iRow][iCol].getCenterOfBallOnPivot();
+    };
+    
+    this.getPathCopy = function(aPath){
+        var aNewPath = new Array();
+        for(var i=0; i<aPath.length; i++){
+            aNewPath.push(aPath[i])
         }
+        
+        return aNewPath;
     };
-
-    this.unload = function () {
-        if (DISABLE_SOUND_MOBILE === false || s_bMobile === false) {
-            if (s_bAudioActive) {
-                Howler.mute(false);
-            }
-        }
-
-        _bInitGame = false;
-
+   
+    this.restartGame = function () {
+        $(s_oMain).trigger("show_interlevel_ad");
+        
+        _iMultiply = 1;
+        _iCurBet = START_BET.toFixed(2)/1;
+        _iBankCash = BANK_CASH;
+        
+        _oScoreBasketController.refreshText(_iMultiply);
+        //_oInterface.refreshCredit(_iCurCredit);
+        //_oInterface.refreshBet(_iCurBet);
+        //_oInterface.showControls();
+    };        
+    
+    this.addNewCredits = function(iCreditsToAdd){
+        _iCurCredit += iCreditsToAdd.toFixed(2)/1;
+        //_oInterface.refreshCredit(_iCurCredit);
+    };
+    
+    this.unload = function(){
+        _bStartGame = false;
+        
         //_oInterface.unload();
-        if (_oEndPanel !== null) {
+        if(_oEndPanel !== null){
             _oEndPanel.unload();
         }
-        s_oWheel.unload();
+        
+        _oScoreBasketController.unload();
+        
         createjs.Tween.removeAllTweens();
         s_oStage.removeAllChildren();
-
     };
-
-    this.onExit = function () {
-
-        stopSound("reel");
-
-        $(s_oMain).trigger("save_score", [_iCurCredit]);
-        $(s_oMain).trigger("share_event", _iCurCredit);
+ 
+    this.onExit = function(){
+        setVolume("soundtrack", 1);
+        
         $(s_oMain).trigger("end_session");
-
-        this.unload();
+        $(s_oMain).trigger("end_level",1);
+        
+        s_oGame.unload();
         s_oMain.gotoMenu();
-
-
+    };
+    
+    this._onExitHelp = function () {
+         _bStartGame = true;
+         
+    };
+    
+    this.gameOver = function(){
+        //_oInterface.hideControls();
+        _oEndPanel = new CEndPanel(_iCurCredit);
     };
 
-    this.gameOver = function () {
-        _oEndPanel = new CEndPanel(s_oSpriteLibrary.getSprite('msg_box'));
-        _oEndPanel.show();
+    this.getSlotPosition = function (iIndex) {
+        return _oInsertTubeController.getSlotPos(iIndex);
+    };
+    
+    
+    this.sortChildren = function(obj1, obj2, options) {
+       if (obj1.y < obj2.y) { return 1; }
+       if (obj1.y > obj2.y) { return -1; }
+       return 0;
+   };
+    
+    this.update = function(){
+        _oBoardContainer.sortChildren(this.sortChildren);
     };
 
-    this._animLedIdle = function () {
-
-        _iTimeIdle += s_iTimeElaps;
-
-        if (_iTimeIdle > TIME_ANIM_IDLE) {
-            _iTimeIdle = 0;
-
-
-            var iRandAnim = Math.floor(Math.random() * _oLeds.getNumAnim());
-
-            while (iRandAnim === _iCurAnim) {
-                iRandAnim = Math.floor(Math.random() * _oLeds.getNumAnim());
-            }
-            _oLeds.changeAnim(iRandAnim);
-            _iCurAnim = iRandAnim;
-
-        }
-    };
-
-    this._animLedSpin = function () {
-        _oLeds.changeAnim(LED_SPIN);
-        _iGameState = -1;
-    };
-
-    this._animLedWin = function () {
-
-        if (_iTimeWin === 0) {
-            var iRandomWinAnim = LED_SPIN + 1 + Math.round(Math.random())
-            _oLeds.changeAnim(iRandomWinAnim);
-
-        } else if (_iTimeWin > TIME_ANIM_WIN) {
-            _iTimeIdle = TIME_ANIM_IDLE;
-            _iGameState = STATE_IDLE;
-
-            _iTimeWin = 0;
-        }
-        _iTimeWin += s_iTimeElaps;
-
-    };
-
-    this._animLedLose = function () {
-
-        if (_iTimeWin === 0) {
-            _oLeds.changeAnim(7);
-
-        } else if (_iTimeWin > TIME_ANIM_LOSE) {
-            _iTimeIdle = TIME_ANIM_IDLE;
-            _iGameState = STATE_IDLE;
-
-            _iTimeWin = 0;
-        }
-        _iTimeWin += s_iTimeElaps;
-
-    };
-
-    this.startUpdate = function () {
-        _bInitGame = true;
-        if (DISABLE_SOUND_MOBILE === false || s_bMobile === false) {
-            if (s_bAudioActive) {
-                Howler.mute(false);
-            }
-        }
-    };
-
-    this.stopUpdate = function () {
-        _bInitGame = false;
-        if (DISABLE_SOUND_MOBILE === false || s_bMobile === false) {
-            Howler.mute(true);
-        }
-    };
-
-    this.update = function () {
-        if (_bInitGame) {
-
-            _oLeds.update();
-
-
-            switch (_iGameState) {
-                case STATE_IDLE: {
-                    this._animLedIdle();
-                    break;
-                } case STATE_SPIN: {
-                    this._animLedSpin();
-                    break;
-
-                } case STATE_WIN: {
-                    this._animLedWin();
-                    break;
-                } case STATE_LOSE: {
-                    this._animLedLose();
-                    break;
-                }
-
-            }
-
-            _oWheel.update();
-
-        }
-    };
-
-    s_oGame = this;
-
+    s_oGame=this;
+    
     START_CREDIT = oData.start_credit;
     START_BET = oData.start_bet;
     MAX_MULTIPLIER = oData.max_multiplier;
 
-    AD_SHOW_COUNTER = oData.ad_show_counter;
-
     BANK_CASH = oData.bank_cash;
 
-
-
-    _oParent = this;
+    PRIZE = oData.prize;
+    PRIZE_PROBABILITY = oData.prize_probability;
+    
+    AD_SHOW_COUNTER = oData.ad_show_counter;
+    
+    _oParent=this;
     this._init();
 }
 

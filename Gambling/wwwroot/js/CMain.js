@@ -7,18 +7,19 @@ function CMain(oData) {
 
     var _oPreloader;
     var _oMenu;
+    var _oModeMenu;
     var _oHelp;
     var _oGame;
 
     this.initContainer = function () {
-
         s_oCanvas = document.getElementById("canvas");
         s_oStage = new createjs.Stage(s_oCanvas);
+        s_oStage.preventSelection = true;
         createjs.Touch.enable(s_oStage);
 
         s_bMobile = jQuery.browser.mobile;
         if (s_bMobile === false) {
-            s_oStage.enableMouseOver(20);
+            s_oStage.enableMouseOver(FPS);
             $('body').on('contextmenu', '#canvas', function (e) { return false; });
         }
 
@@ -32,17 +33,18 @@ function CMain(oData) {
         }
 
         s_oSpriteLibrary = new CSpriteLibrary();
-
         //ADD PRELOADER
+
         _oPreloader = new CPreloader();
+
     };
 
     this.preloaderReady = function () {
-        this._loadImages();
         if (DISABLE_SOUND_MOBILE === false || s_bMobile === false) {
             this._initSounds();
         }
 
+        this._loadImages();
         _bUpdate = true;
     };
 
@@ -50,20 +52,19 @@ function CMain(oData) {
         _iCurResource++;
         var iPerc = Math.floor(_iCurResource / RESOURCE_TO_LOAD * 100);
         _oPreloader.refreshLoader(iPerc);
-
     };
 
     this._initSounds = function () {
         Howler.mute(!s_bAudioActive);
 
         s_aSoundsInfo = new Array();
+
+        s_aSoundsInfo.push({ path: './sounds/', filename: 'soundtrack', loop: true, volume: 1, ingamename: 'soundtrack' });
         s_aSoundsInfo.push({ path: './sounds/', filename: 'press_button', loop: false, volume: 1, ingamename: 'click' });
         s_aSoundsInfo.push({ path: './sounds/', filename: 'game_over', loop: false, volume: 1, ingamename: 'game_over' });
-        s_aSoundsInfo.push({ path: './sounds/', filename: 'reel', loop: true, volume: 1, ingamename: 'reel' });
-        s_aSoundsInfo.push({ path: './sounds/', filename: 'start_reel', loop: false, volume: 1, ingamename: 'start_reel' });
-        s_aSoundsInfo.push({ path: './sounds/', filename: 'win', loop: false, volume: 1, ingamename: 'win' });
-
-        s_aSoundsInfo.push({ path: './sounds/', filename: 'winning', loop: false, volume: 1, ingamename: 'winning' });
+        s_aSoundsInfo.push({ path: './sounds/', filename: 'ball_collision', loop: false, volume: 1, ingamename: 'ball_collision' });
+        s_aSoundsInfo.push({ path: './sounds/', filename: 'ball_in_basket', loop: false, volume: 1, ingamename: 'ball_in_basket' });
+        s_aSoundsInfo.push({ path: './sounds/', filename: 'ball_in_basket_negative', loop: false, volume: 1, ingamename: 'ball_in_basket_negative' });
 
         RESOURCE_TO_LOAD += s_aSoundsInfo.length;
 
@@ -71,9 +72,11 @@ function CMain(oData) {
         for (var i = 0; i < s_aSoundsInfo.length; i++) {
             this.tryToLoadSound(s_aSoundsInfo[i], false);
         }
+
     };
 
     this.tryToLoadSound = function (oSoundInfo, bDelay) {
+
         setTimeout(function () {
             s_aSounds[oSoundInfo.ingamename] = new Howl({
                 src: [oSoundInfo.path + oSoundInfo.filename + '.mp3'],
@@ -109,89 +112,85 @@ function CMain(oData) {
 
 
         }, (bDelay ? 200 : 0));
+
+
     };
 
     this._loadImages = function () {
         s_oSpriteLibrary.init(this._onImagesLoaded, this._onAllImagesLoaded, this);
 
+        s_oSpriteLibrary.addSprite("logo_game", "./sprites/logo_game.png");
+        s_oSpriteLibrary.addSprite("logo_menu", "./sprites/logo_menu.png");
+
         s_oSpriteLibrary.addSprite("but_play", "./sprites/but_play.png");
         s_oSpriteLibrary.addSprite("msg_box", "./sprites/msg_box.png");
+        s_oSpriteLibrary.addSprite("credits_panel", "./sprites/credits_panel.png");
+        s_oSpriteLibrary.addSprite("ctl_logo", "./sprites/ctl_logo.png");
+        s_oSpriteLibrary.addSprite("but_credits", "./sprites/but_credits.png");
+        s_oSpriteLibrary.addSprite("but_yes", "./sprites/but_yes.png");
+        s_oSpriteLibrary.addSprite("but_no", "./sprites/but_no.png");
 
         s_oSpriteLibrary.addSprite("bg_menu", "./sprites/bg_menu.jpg");
         s_oSpriteLibrary.addSprite("bg_game", "./sprites/bg_game.jpg");
-        s_oSpriteLibrary.addSprite("ctl_logo", "./sprites/ctl_logo.png");
-        s_oSpriteLibrary.addSprite("credits_panel", "./sprites/credits_panel.png");
-        s_oSpriteLibrary.addSprite("swipe_hand", "./sprites/swipe_hand.png");
+        s_oSpriteLibrary.addSprite("side_right", "./sprites/side_right.png");
+        s_oSpriteLibrary.addSprite("side_left", "./sprites/side_left.png");
 
-        s_oSpriteLibrary.addSprite("logo_game", "./sprites/logo_game.png");
-        s_oSpriteLibrary.addSprite("gui_panel", "./sprites/gui_panel.png");
-        s_oSpriteLibrary.addSprite("but_credits", "./sprites/but_credits.png");
-        s_oSpriteLibrary.addSprite("but_fullscreen", "./sprites/but_fullscreen.png");
         s_oSpriteLibrary.addSprite("but_exit", "./sprites/but_exit.png");
         s_oSpriteLibrary.addSprite("audio_icon", "./sprites/audio_icon.png");
-        s_oSpriteLibrary.addSprite("but_yes", "./sprites/but_yes.png");
-        s_oSpriteLibrary.addSprite("but_no", "./sprites/but_no.png");
-        s_oSpriteLibrary.addSprite("but_spin", "./sprites/but_spin.png");
+        s_oSpriteLibrary.addSprite("but_fullscreen", "./sprites/but_fullscreen.png");
+        s_oSpriteLibrary.addSprite("but_restart", "./sprites/but_restart.png");
+        s_oSpriteLibrary.addSprite("but_home", "./sprites/but_home.png");
+        s_oSpriteLibrary.addSprite("but_settings", "./sprites/but_settings.png");
+
         s_oSpriteLibrary.addSprite("but_plus", "./sprites/but_plus.png");
         s_oSpriteLibrary.addSprite("bet_panel", "./sprites/bet_panel.png");
-        s_oSpriteLibrary.addSprite("credits_money_panel", "./sprites/credits_money_panel.png");
-        s_oSpriteLibrary.addSprite("win_panel", "./sprites/win_panel.png");
-        s_oSpriteLibrary.addSprite("leds", "./sprites/leds.png");
 
-        s_oSpriteLibrary.addSprite("but_long_text", "./sprites/but_long_text.png");
-        s_oSpriteLibrary.addSprite("arrow", "./sprites/arrow.png");
-        s_oSpriteLibrary.addSprite("wheel_shadow", "./sprites/wheel_shadow.png");
-        s_oSpriteLibrary.addSprite("wheel_back", "./sprites/wheel_back.png");
-        for (var i = 0; i < NUM_MONEY_BACKGROUNDS; i++) {
-            s_oSpriteLibrary.addSprite("bg_" + i, "./sprites/money_prize_images/bg_" + i + ".png");
-        }
+        s_oSpriteLibrary.addSprite("ball", "./sprites/ball.png");
+        s_oSpriteLibrary.addSprite("stake", "./sprites/stake.png");
+        s_oSpriteLibrary.addSprite("ball_generator", "./sprites/ball_generator.png");
 
-        s_oSpriteLibrary.addSprite("borderframe", "./sprites/borderframe.png");
+        s_oSpriteLibrary.addSprite("holes_occluder", "./sprites/holes_occluder.png");
+        s_oSpriteLibrary.addSprite("hole_board_occluder", "./sprites/hole_board_occluder.png");
+
+        s_oSpriteLibrary.addSprite("basket_display", "./sprites/basket_display.jpg");
+        s_oSpriteLibrary.addSprite("hand_anim", "./sprites/hand_anim.png");
+
 
         RESOURCE_TO_LOAD += s_oSpriteLibrary.getNumSprites();
         s_oSpriteLibrary.loadSprites();
-        this._onImagesLoaded();
     };
 
     this._onImagesLoaded = function () {
         _iCurResource++;
         var iPerc = Math.floor(_iCurResource / RESOURCE_TO_LOAD * 100);
         _oPreloader.refreshLoader(iPerc);
-    };
 
-    this._onRemovePreloader = function () {
-        _oPreloader.unload();
-        this.gotoMenu();
-
-        new CWheel();
     };
 
     this._onAllImagesLoaded = function () {
 
     };
 
-    //this.gotoModeMenu = function () {
-    //    _oMenu = new CMenu();
-    //    _iState = STATE_MENU;
-    //};
+    this._onRemovePreloader = function () {
+        _oPreloader.unload();
+
+        s_oSoundtrack = playSound('soundtrack', 1, true);
+
+        this.gotoMenu();
+    };
+
+    this.onAllPreloaderImagesLoaded = function () {
+        this._loadImages();
+    };
 
     this.gotoMenu = function () {
         _oMenu = new CMenu();
         _iState = STATE_MENU;
     };
 
-    this.gotoLoadingWheel = function () {
-        _iState = STATE_LOADING_WHEEL;
-
-        s_oLoadingPanel = new CLoadingPanel();
-    };
-
     this.gotoGame = function () {
-        _iState = STATE_GAME;
-
         _oGame = new CGame(_oData);
-
-        $(s_oMain).trigger("game_start");
+        _iState = STATE_GAME;
     };
 
     this.gotoHelp = function () {
@@ -203,11 +202,7 @@ function CMain(oData) {
         _bUpdate = false;
         createjs.Ticker.paused = true;
         $("#block_game").css("display", "block");
-
-        if (DISABLE_SOUND_MOBILE === false || s_bMobile === false) {
-            Howler.mute(true);
-        }
-
+        Howler.mute(true);
     };
 
     this.startUpdate = function () {
@@ -216,10 +211,8 @@ function CMain(oData) {
         createjs.Ticker.paused = false;
         $("#block_game").css("display", "none");
 
-        if (DISABLE_SOUND_MOBILE === false || s_bMobile === false) {
-            if (s_bAudioActive) {
-                Howler.mute(false);
-            }
+        if (s_bAudioActive) {
+            Howler.mute(false);
         }
     };
 
@@ -239,60 +232,39 @@ function CMain(oData) {
             s_iCntFps = 0;
         }
 
-        switch (_iState) {
-            case STATE_GAME: {
-                _oGame.update();
-                break;
-            }
-            case STATE_LOADING_WHEEL: {
-                if (s_oLoadingPanel) {
-                    s_oLoadingPanel.update();
-                }
-                break;
-            }
-        }
-
-        if (s_oWheel !== null && !s_oWheel.isLoaded()) {
-            s_oWheel.loading();
+        if (_iState === STATE_GAME) {
+            _oGame.update();
         }
 
         s_oStage.update(event);
+
     };
 
     s_oMain = this;
 
     _oData = oData;
+
     ENABLE_CREDITS = oData.show_credits;
-    ENABLE_CHECK_ORIENTATION = oData.check_orientation;
     ENABLE_FULLSCREEN = oData.fullscreen;
-    MAX_MULTIPLIER = oData.max_multiplier;
-    MONEY_WHEEL_SETTINGS = oData.money_wheel_settings;
-    INSTANT_WHEEL_SETTINGS = oData.instant_win_wheel_settings;
-
-    NUM_MONEY_BACKGROUNDS = oData.total_money_backgrounds_in_folder;
-    NUM_IMAGES_BACKGROUNDS = oData.total_images_backgrounds_in_folder;
-
-    WHEEL_SPIN_TIME = oData.wheel_spin_time;
-
+    ENABLE_CHECK_ORIENTATION = oData.check_orientation;
     s_bAudioActive = oData.audio_enable_on_startup;
 
     this.initContainer();
 }
 var s_bMobile;
-var s_bEasyMode;
-var s_bAudioActive = false;
+var s_bAudioActive = true;
 var s_iCntTime = 0;
 var s_iTimeElaps = 0;
 var s_iPrevTime = 0;
 var s_iCntFps = 0;
 var s_iCurFps = 0;
+var s_bFullscreen = false;
+var s_aSounds = new Array();
+var s_aSoundsInfo = new Array();
 
 var s_oDrawLayer;
 var s_oStage;
 var s_oMain;
 var s_oSpriteLibrary;
+var s_oSoundtrack;
 var s_oCanvas;
-var s_bFullscreen = false;
-var s_oLoadingPanel = null;
-var s_aSounds;
-var s_aSoundsInfo;

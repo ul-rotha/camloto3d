@@ -1,106 +1,93 @@
-function CEndPanel(oSpriteBg){
+function CEndPanel(iScore){
     
-    var _oBg;
-    var _oGroup;
-    
-    var _oMsgTextBack;
-    var _oMsgText;
+    var _oButRestart;
+    var _oButHome;
     var _oFade;
-    var _oListener;
-    var _oButYes;
-    var _oButNo;
+    var _oPanelContainer;
     var _oParent;
+    var _oListener;
     
-    this._init = function(oSpriteBg){
-        
-        _oGroup = new createjs.Container();
-        _oGroup.alpha = 0;
-        _oGroup.visible=false;
+    var _pStartPanelPos;
+    
+    this._init = function(iScore){
         
         _oFade = new createjs.Shape();
+        _oFade.graphics.beginFill("black").drawRect(0,0,CANVAS_WIDTH,CANVAS_HEIGHT);
         _oFade.alpha = 0;
-        _oFade.graphics.beginFill("rgba(0,0,0,1)").drawRect(0,0,CANVAS_WIDTH,CANVAS_HEIGHT);
-        createjs.Tween.get(_oFade).to({alpha:0.7}, 500);
-        _oGroup.addChild(_oFade);
+        _oListener = _oFade.on("mousedown",function(){});
+        s_oStage.addChild(_oFade);
         
-        _oBg = createBitmap(oSpriteBg);
-        _oBg.regX = oSpriteBg.width/2;
-        _oBg.regY = oSpriteBg.height/2;
-        _oBg.x = CANVAS_WIDTH/2;
-        _oBg.y = CANVAS_HEIGHT/2;
-        _oGroup.addChild(_oBg);
+        createjs.Tween.get(_oFade).to({alpha:0.7},500);
         
-        var iYOffset = 24;       
-        var iWidth = oSpriteBg.width - 70;
-        var iHeight = 80;
-        var iX = _oBg.x;
-        var iY = _oBg.y-iYOffset;
-        _oMsgTextBack = new CTLText(_oGroup, 
-                    iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
-                    30, "center", "#000", THIRD_FONT, 1.2,
-                    2, 2,
-                    " ",
+        _oPanelContainer = new createjs.Container();        
+        s_oStage.addChild(_oPanelContainer);
+        
+        var oSprite = s_oSpriteLibrary.getSprite('msg_box');
+        var oPanel = createBitmap(oSprite);        
+        oPanel.regX = oSprite.width/2;
+        oPanel.regY = oSprite.height/2;
+        _oPanelContainer.addChild(oPanel);
+        
+        _oPanelContainer.x = CANVAS_WIDTH/2;
+        _oPanelContainer.y = CANVAS_HEIGHT + oSprite.height/2;  
+        _pStartPanelPos = {x: _oPanelContainer.x, y: _oPanelContainer.y};
+        createjs.Tween.get(_oPanelContainer).to({y:CANVAS_HEIGHT/2 - 40},500, createjs.Ease.quartIn);
+
+        var iX = 0;
+        var iY = -oSprite.height/2 + 180;
+        var iWidth = 600;
+        var iHeight = 200;
+        var oTitle = new CTLText(_oPanelContainer, 
+                    iX - iWidth/2, iY - iHeight/2, iWidth, iHeight, 
+                    60, "center", "#fff", PRIMARY_FONT, 1,
+                    0, 0,
+                    TEXT_GAMEOVER,
                     true, true, true,
                     false );
-        _oMsgTextBack.setOutline(5);            
-        _oMsgText = new CTLText(_oGroup, 
-                    iX-iWidth/2, iY-iHeight/2, iWidth, iHeight, 
-                    30, "center", "#fff", THIRD_FONT, 1.2,
-                    2, 2,
-                    " ",
-                    true, true, true,
-                    false );
 
-        _oButYes = new CGfxButton(_oBg.x + 180, _oBg.y + 130, s_oSpriteLibrary.getSprite('but_yes'), _oGroup);
-        _oButYes.addEventListener(ON_MOUSE_UP, this._onYes, this);
+        _oButRestart = new CGfxButton(110, 80, s_oSpriteLibrary.getSprite('but_yes'), _oPanelContainer);
+        _oButRestart.addEventListener(ON_MOUSE_UP, this._onRestart, this);
+        _oButRestart.pulseAnimation();
 
-        _oButNo = new CGfxButton(_oBg.x -180, _oBg.y + 130, s_oSpriteLibrary.getSprite('but_no'), _oGroup);
-        _oButNo.addEventListener(ON_MOUSE_UP, this._onExit, this);
-        //_oButNo.pulseAnimation();
-
-        s_oStage.addChild(_oGroup);
+        _oButHome = new CGfxButton(-110, 80, s_oSpriteLibrary.getSprite('but_home'), _oPanelContainer);
+        _oButHome.addEventListener(ON_MOUSE_UP, this._onExit, this);
+        
+        $(s_oMain).trigger("save_score",iScore);        
+        
+        
+    
+        $(s_oMain).trigger("share_event",iScore);
+        
     };
     
     this.unload = function(){
-        _oGroup.off("mousedown",_oListener);
-        _oButYes.unload();
-        _oButNo.unload();
-        
-        s_oStage.removeChild(_oGroup);
+        _oFade.off("mousedown",_oListener);
+        s_oStage.removeChild(_oFade);
+        s_oStage.removeChild(_oPanelContainer);
     };
-    
-    this._initListener = function(){
-        _oListener = _oGroup.on("mousedown",function(){});
-    };
-    
-    this.show = function(){
-        $(s_oMain).trigger("show_interlevel_ad");
-        
-        _oMsgTextBack.refreshText( TEXT_GAMEOVER );
-        _oMsgText.refreshText( TEXT_GAMEOVER );
-        
-        _oGroup.visible = true;
-        
-        createjs.Tween.get(_oGroup).to({alpha:1 }, 500).call(function() {_oParent._initListener();});
 
-    };
-    
-    this._onYes = function(){
+    this._onRestart = function(){
+        _oParent.unload();
+        s_oGame.restartGame();
+        
+        $(s_oMain).trigger("end_level",1);
+        
         $(s_oMain).trigger("recharge");
         
-        _oParent.unload();
-        
+        s_oGame.checkEndGame();
     };
     
     this._onExit = function(){
-        _oGroup.off("mousedown",_oListener);
-        s_oStage.removeChild(_oGroup);
-        $(s_oMain).trigger("end_session");        
+        
+        $(s_oMain).trigger("show_interlevel_ad");
+
+        _oParent.unload();
+        
         s_oGame.onExit();
     };
     
-    this._init(oSpriteBg);
-    
     _oParent = this;
+    this._init(iScore);
+
     return this;
 }
