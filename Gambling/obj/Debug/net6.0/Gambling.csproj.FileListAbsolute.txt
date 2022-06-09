@@ -116,3 +116,5 @@ C:\Users\ulrotha\Documents\GitHub\camloto3d\Gambling\bin\Debug\net6.0\runtimes\w
 C:\Users\ulrotha\Documents\GitHub\camloto3d\Gambling\obj\Debug\net6.0\Gambling.csproj.CopyComplete
 C:\Users\ulrotha\Documents\GitHub\camloto3d\Gambling\obj\Debug\net6.0\scopedcss\Pages\Index_blink.cshtml.rz.scp.css
 C:\Users\ulrotha\Documents\GitHub\camloto3d\Gambling\obj\Debug\net6.0\scopedcss\Pages\Index_spin_win.cshtml.rz.scp.css
+C:\Users\chanp\OneDrive\Documents\GitHub\camloto3d\Gambling\obj\Debug\net6.0\scopedcss\Pages\Index_blink.cshtml.rz.scp.css
+C:\Users\chanp\OneDrive\Documents\GitHub\camloto3d\Gambling\obj\Debug\net6.0\scopedcss\Pages\Index_spin_win.cshtml.rz.scp.css
