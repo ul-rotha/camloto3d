@@ -11,9 +11,11 @@ connection.on("ReceiveMessage", function (action, message) {
 
     }
     else if (action == "startSubGame") {
-       
+
     }
     else if (action == "newGame") {
+        $(".lotto-special-num div").empty();
+        $(".lotto-special-num span").removeClass("result-active");
         document.getElementById("secondResult").innerHTML = "";
     }
     else if (action == "countDown") {
@@ -33,7 +35,7 @@ var totalminute = 0;
 var timespent = 0;
 function countdown(timeremaining) {
 
-   // console.log("start count:" + timeremaining);
+    // console.log("start count:" + timeremaining);
 
     totalminute = parseInt((timeremaining) / 60);
 
@@ -58,5 +60,19 @@ function countdown(timeremaining) {
 
 
 function DisplayResult() {
-    console.log(iCurPrize);
+    if (iCurPrize == 0 || iCurPrize == 3) {
+        console.log('ក្រាស់');
+        $("#jakepot3").addClass("jakepot").append((iCurPrize == 0 ? 'X5' : 'X3'));
+        $(".lotto-special-num #span_result3").addClass("result-active");
+    }
+    else if (iCurPrize == 1 || iCurPrize == 4) {
+        console.log('ស្តើង');
+        $("#jakepot1").addClass("jakepot").append((iCurPrize == 1 ? 'X3' : 'X5'));
+        $(".lotto-special-num #span_result1").addClass("result-active");
+    }
+    else if (iCurPrize == 2 || iCurPrize == 5) {
+        console.log('ស្មើ');
+        $("#jakepot2").addClass("jakepot").append((iCurPrize == 2 ? 'X2' : 'X10'));
+        $(".lotto-special-num #span_result2").addClass("result-active");
+    }
 }
