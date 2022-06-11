@@ -10,7 +10,7 @@ var EDGEBOARD_Y = 200;
 var GAME_NAME = "plinko";
 
 /*var PRIMARY_FONT = "impact";*/
-var PRIMARY_FONT = "Khmer Os System";
+var PRIMARY_FONT = "Khmer Os Muol light";
 
 var FPS           = 30;
 var FPS_TIME      = 1000/FPS;
