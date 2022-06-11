@@ -86,7 +86,7 @@ function CGame(oData){
 
         $(s_oMain).trigger("start_level",1);
 
-        this.checkEndGame();
+        //this.checkEndGame();
 
     };
     
@@ -133,7 +133,7 @@ function CGame(oData){
     this.launch = function(iStartCol){
         _iColToLaunchBall = iStartCol;
         
-        this._placeBet();
+        //this._placeBet();
         
         this.setBall();
         
@@ -146,13 +146,13 @@ function CGame(oData){
     };
     
     this._placeBet = function(){
-        _iCurCredit -= _iCurBet;
-        _iBankCash += _iCurBet;
+        //_iCurCredit -= _iCurBet;
+        //_iBankCash += _iCurBet;
 
         //_oInterface.hideControls();
         //_oInterface.refreshCredit(_iCurCredit.toFixed(2)/1);
         
-        $(s_oMain).trigger("bet_placed",[_iCurBet]);
+        //$(s_oMain).trigger("bet_placed",[_iCurBet]);
     };
     
     this.setBall = function(){
@@ -188,11 +188,12 @@ function CGame(oData){
             playSound('ball_in_basket_negative', 1, false);
         }
 
-        var iProfit = PRIZE[iDestCol] * _iMultiply/_iCurBet;
-        _oScoreBasketController.litBasket(iDestCol, iProfit);
+        //var iProfit = PRIZE[iDestCol] * _iMultiply/_iCurBet;
+        //_oScoreBasketController.litBasket(iDestCol, iProfit);
+        _oScoreBasketController.litBasket(iDestCol, 2);
        
-        _iCurCredit += PRIZE[iDestCol] * _iMultiply;
-        _iBankCash -= PRIZE[iDestCol] * _iMultiply;
+        //_iCurCredit += PRIZE[iDestCol] * _iMultiply;
+        //_iBankCash -= PRIZE[iDestCol] * _iMultiply;
 
         $(s_oMain).trigger("save_score",[_iCurCredit]);
 
@@ -201,63 +202,64 @@ function CGame(oData){
         //_oInterface.showControls();
         //_oInterface.refreshCredit(_iCurCredit.toFixed(2)/1);
         
-        this.checkEndGame();
+        //this.checkEndGame();
         
     };
     
     this.checkEndGame = function(){
-        if(_iCurCredit < START_BET){
-            this.gameOver();
-            return;
-        }        
+        //if(_iCurCredit < START_BET){
+        //    this.gameOver();
+        //    return;
+        //}        
         
-        if(_iMultiply > _iCurCredit/START_BET ){
-            _iMultiply = Math.floor(_iCurCredit/START_BET);
-            _iCurBet = (_iMultiply * START_BET).toFixed(2)/1;
-            //_oInterface.refreshBet(_iCurBet);  
+        //if(_iMultiply > _iCurCredit/START_BET ){
+        //    _iMultiply = Math.floor(_iCurCredit/START_BET);
+        //    _iCurBet = (_iMultiply * START_BET).toFixed(2)/1;
+        //    //_oInterface.refreshBet(_iCurBet);  
             
-            _oScoreBasketController.refreshText(_iMultiply);
-        }
+        //    _oScoreBasketController.refreshText(_iMultiply);
+        //}
     };
     
     this.modifyBonus = function(szType){
-        if(szType === "plus"){
-            _iMultiply++;
-        } else {
-            _iMultiply--;
-        }
+        //if(szType === "plus"){
+        //    _iMultiply++;
+        //} else {
+        //    _iMultiply--;
+        //}
         
-        if(_iMultiply > MAX_MULTIPLIER){
-            _iMultiply = MAX_MULTIPLIER;
-        } else if(_iMultiply < 1) {
-            _iMultiply = 1;
-        } else if(_iMultiply > _iCurCredit/START_BET){
-            _iMultiply = Math.floor(_iCurCredit/START_BET);
-        }
+        //if(_iMultiply > MAX_MULTIPLIER){
+        //    _iMultiply = MAX_MULTIPLIER;
+        //} else if(_iMultiply < 1) {
+        //    _iMultiply = 1;
+        //} else if(_iMultiply > _iCurCredit/START_BET){
+        //    _iMultiply = Math.floor(_iCurCredit/START_BET);
+        //}
         
         
-        _iCurBet = (START_BET*_iMultiply).toFixed(2)/1;
+        //_iCurBet = (START_BET*_iMultiply).toFixed(2)/1;
 	
         //_oInterface.refreshBet(_iCurBet);
-        _oScoreBasketController.refreshText(_iMultiply);
+        //_oScoreBasketController.refreshText(_iMultiply);
 
     };
-   
+
+    
     this._setEndCol = function(){
-        //DETECT ALL POSSIBLE PRIZE LOWER THEN BANK
-        var iCurPrize;
-        var aAllPossiblePrize = new Array();
-        for(var i=0; i<_aProbability.length; i++){
-            iCurPrize = PRIZE[_aProbability[i]]*_iMultiply;
+        ////DETECT ALL POSSIBLE PRIZE LOWER THEN BANK
+        //var iCurPrize;
+        //var aAllPossiblePrize = new Array();
+        //for(var i=0; i<_aProbability.length; i++){
+        //    iCurPrize = PRIZE[_aProbability[i]]*_iMultiply;
 
-            if(iCurPrize <= _iBankCash){
-                aAllPossiblePrize.push({prize:iCurPrize,index:i});
-            } 
-        }
+        //    if(iCurPrize <= _iBankCash){
+        //        aAllPossiblePrize.push({prize:iCurPrize,index:i});
+        //    } 
+        //}
         
-        var iPrizeToChoose = aAllPossiblePrize[Math.floor(Math.random()*aAllPossiblePrize.length)].index;      
-
-        return 4;//_aProbability[iPrizeToChoose];
+        //var iPrizeToChoose = aAllPossiblePrize[Math.floor(Math.random()*aAllPossiblePrize.length)].index;      
+        //console.log(iCurPrize);
+        return iCurPrize;//_aProbability[iPrizeToChoose];
     };
     
     this.getBall = function(){
@@ -330,7 +332,7 @@ function CGame(oData){
     
     this.gameOver = function(){
         //_oInterface.hideControls();
-        _oEndPanel = new CEndPanel(_iCurCredit);
+        //_oEndPanel = new CEndPanel(_iCurCredit);
     };
 
     this.getSlotPosition = function (iIndex) {
@@ -366,3 +368,4 @@ function CGame(oData){
 }
 
 var s_oGame;
+var iCurPrize = 0;

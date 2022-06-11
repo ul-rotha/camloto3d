@@ -61,7 +61,7 @@
 <script type="text/javascript" src="~/js/CBasket.js"></script>
 <script type="text/javascript" src="~/js/CGUIExpandible.js"></script>
 <script type="text/javascript" src="~/js/CCTLText.js"></script>
-<script type="text/javascript" src="~/js/chat.js"></script>
+<script type="text/javascript" src="~/js/myplinko.js"></script>
 
 @*<script src="~/js/client_timer.js?v=6"></script>
     <script src="~/js/display.js?v=8"></script>
@@ -76,19 +76,22 @@
 
 
 <script>
+
+        
+
         $(document).ready(function () {
             var oMain = new CMain({
-                start_credit: 100,      //Starting credits value
-                start_bet: 10,          //Base starting bet. Will increment with multiplier in game
+                start_credit: 0,      //Starting credits value
+                start_bet: 0,          //Base starting bet. Will increment with multiplier in game
                 max_multiplier: 5,      //Max multiplier value
 
-                bank_cash: 100,       //Starting credits owned by the bank. When a player win, founds will be subtract from here. When a player lose or bet, founds will be added here. If bank is 0, players always lose, in order to fill the bank.
+                bank_cash: 0,       //Starting credits owned by the bank. When a player win, founds will be subtract from here. When a player lose or bet, founds will be added here. If bank is 0, players always lose, in order to fill the bank.
 
-                prize: [11, 2, 3, 4, 5, 6],  //THE AMOUNT WON BY THE PLAYER;
+                prize: [1, 2, 3, 4, 5, 6],  //THE AMOUNT WON BY THE PLAYER;
                 prize_probability: [10, 8, 1, 4, 10, 10], //THE OCCURENCY WIN OF THAT PRIZE. THE RATIO IS CALCULATED BY THE FORMULA: (single win occurrence/sum of all occurrence). For instance, in this case, prize 100 have 1/43 chance. Prize 50 have 4/43 chance.
 
-                audio_enable_on_startup: false, //ENABLE/DISABLE AUDIO WHEN GAME STARTS
-                show_credits: true,          //SET THIS VALUE TO FALSE IF YOU DON'T WANT TO SHOW CREDITS BUTTON
+                audio_enable_on_startup: true, //ENABLE/DISABLE AUDIO WHEN GAME STARTS
+                show_credits: false,          //SET THIS VALUE TO FALSE IF YOU DON'T WANT TO SHOW CREDITS BUTTON
                 fullscreen: true,            //SET THIS TO FALSE IF YOU DON'T WANT TO SHOW FULLSCREEN BUTTON
                 check_orientation: true,     //SET TO FALSE IF YOU DON'T WANT TO SHOW ORIENTATION ALERT ON MOBILE DEVICES
 
@@ -105,7 +108,7 @@
                 //INSERT HERE YOUR RECHARGE SCRIPT THAT RETURNS MONEY TO RECHARGE
                 var iMoney = 100;
                 if (s_oGame !== null) {
-                    s_oGame.addNewCredits(iMoney);
+                    //s_oGame.addNewCredits(iMoney);
                 }
             });
 
@@ -134,6 +137,8 @@
                 if (getParamValue('ctl-arcade') === "true") {
                     parent.__ctlArcadeSaveScore({ score: iScore, mode: szMode });
                 }
+
+                DisplayResult();
                 //...ADD YOUR CODE HERE EVENTUALLY
             });
 
@@ -178,25 +183,8 @@
             if (isIOS()) {
                 setTimeout(function () { sizeHandler(); }, 200);
             } else { sizeHandler(); }
-
-
-            //setInterval(function () { s_oGame.launch(2); }, 15000);
-
-             getRecent();
+             
         });
-
-
-        function getRecent() {
-        for (let i = 0; i < 10; i++) {
-            var r = `<div class="row">
-                        <div class="col-10">#18594 14:55:57</div>
-                    </div>
-                    <div class="row latest">
-                        <span>10</span>
-                    </div>`;
-            document.getElementById("recent").innerHTML += r;
-        }
-    }
 </script>
 
 }
@@ -229,40 +217,40 @@
             </div>
 
             <div class="lotto-special-list">
-							<div class="lotto-special-num">
-								<span id="span_result1">ស្តើង</span>
-							</div>
-							<div class="lotto-special-num">
-								<span id="span_result2">ស្មើ</span>
-							</div>
-							<div class="lotto-special-num">
-								<span id="span_result3" class="result-active">ក្រាស់</span>
-                                <div class="jakepot">X10</div>
-							</div>
-							
-						</div>
+                <div class="lotto-special-num">
+                    <span id="span_result1">ស្តើង</span>
+                </div>
+                <div class="lotto-special-num">
+                    <span id="span_result2">ស្មើ</span>
+                </div>
+                <div class="lotto-special-num">
+                    <span id="span_result3" class="result-active">ក្រាស់</span>
+                    <div class="jakepot">X10</div>
+                </div>
+
+            </div>
             <div>
                 <div style="" class="title-result">លទ្ធផល</div>
                 <div id="recent" style="border-left: 1px solid #ddd; padding-left:5px;display:none;"></div>
                 <div id="lastresult">
                     <div class="result-small">
-								<span id="span_result3" class="result-active">ក្រាស់ X3</span>
-							</div>
-                            <div class="result-small">
-								<span id="span_result3" class="result-active">ស្តើង X5</span>
-							</div>
-                            <div class="result-small">
-								<span id="span_result3" class="result-active">ស្មើ X2</span>
-							</div>
-                            <div class="result-small">
-								<span id="span_result3" class="result-active">ក្រាស់ X3</span>
-							</div>
-                            <div class="result-small">
-								<span id="span_result3" class="result-active">ស្តើង X10</span>
-							</div>
-                            <div class="result-small">
-								<span id="span_result3" class="result-active">ស្មើ X5</span>
-							</div>
+                        <span id="span_result3" class="result-active">ក្រាស់ X3</span>
+                    </div>
+                    <div class="result-small">
+                        <span id="span_result3" class="result-active">ស្តើង X5</span>
+                    </div>
+                    <div class="result-small">
+                        <span id="span_result3" class="result-active">ស្មើ X2</span>
+                    </div>
+                    <div class="result-small">
+                        <span id="span_result3" class="result-active">ក្រាស់ X3</span>
+                    </div>
+                    <div class="result-small">
+                        <span id="span_result3" class="result-active">ស្តើង X10</span>
+                    </div>
+                    <div class="result-small">
+                        <span id="span_result3" class="result-active">ស្មើ X5</span>
+                    </div>
                 </div>
 
             </div>

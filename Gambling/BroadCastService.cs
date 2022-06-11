@@ -10,6 +10,12 @@ namespace Gambling
         Waiting
     }
 
+    public class MyResult
+    {
+        public int Tube { get; set; }
+        public int Result { get; set; }
+    }
+
     public class BroadCastService : BackgroundService
     {
         //private PlayGame playGame = PlayGame.Waiting;
@@ -21,7 +27,7 @@ namespace Gambling
         }
 
 
-        private const int second = 300;
+        private const int second = 15;
         int i = second;
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
@@ -32,15 +38,19 @@ namespace Gambling
 
                 if (i == 0)
                 {
-                    int rnd = new Random().Next(0,3);
-                    
-                    await hub.Clients.All.SendAsync("ReceiveMessage", "startGame", rnd);
+                    int rndTube = new Random().Next(0, 5);
 
-                    await Task.Delay(TimeSpan.FromSeconds(20));
+                    int rndResult = new Random().Next(0, 5);
 
-                    await hub.Clients.All.SendAsync("ReceiveMessage", "startSubGame", "2");
+                    MyResult myResult = new MyResult() { Tube = rndTube, Result = rndResult };
 
-                    await Task.Delay(TimeSpan.FromSeconds(15));
+                    await hub.Clients.All.SendAsync("ReceiveMessage", "startGame", myResult);
+
+                    await Task.Delay(TimeSpan.FromSeconds(12));
+
+                    //await hub.Clients.All.SendAsync("ReceiveMessage", "startSubGame", "2");
+
+                    //await Task.Delay(TimeSpan.FromSeconds(15));
 
                     await hub.Clients.All.SendAsync("ReceiveMessage", "newGame", "1");
 

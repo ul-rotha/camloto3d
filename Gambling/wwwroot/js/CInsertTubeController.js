@@ -78,7 +78,6 @@ function CInsertTubeController(oParentContainer){
     };
     
     this._onSlot = function (iIndex) {
-        //console.log(iIndex);
         s_oGame.launch(iIndex)
     };
     

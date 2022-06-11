@@ -61,7 +61,7 @@
     }
 .bg-right {
     background-color: black;
-    background-image: linear-gradient(266deg,#0c4d75,rgba(14,90,136,.8901960784313725),#000000),url(images/bg01.gif);
+    background-image: linear-gradient(266deg,#0c4d75,rgba(14,90,136,.8901960784313725),#000000),url(../images/bg01.gif);
     background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover !important;
