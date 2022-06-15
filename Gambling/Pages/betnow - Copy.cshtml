@@ -1,5 +1,5 @@
 ﻿@page
-@model SignalR.Pages.betnowModel
+@model SignalR.Pages.betnowCopyModel
 @{
 }
 
@@ -100,13 +100,19 @@
     </table>
         
 </div>
-<div class="d-flex justify-content-around">
-    <span class="bet-type" onclick="bettype('row')">ស្តើង</span>
-    <span class="bet-type" onclick="bettype('row')">ស្មើ</span>
-    <span class="bet-type" onclick="bettype('row')">ក្រាស់</span>
-</div>
+<div id="div_bettype" style="height:40px;">
+    <div id="btype_number"​ class="bet-type active" onclick="bettype('number')">លេខ</div><span id="btype_row"​ class="bet-type" onclick="bettype('row')">អូសខ្ទង់</span><span id="btype_colum"​ class="bet-type" onclick="bettype('colum')">អូសខ្សែ</span>
+</div>​
  <div class="div-slot">
-    <input type="hidden" id="hdSlot" value='{"slotA":"inactive","slotB":"inactive","slotC":"inactive","slotD":"inactive","slotE":"inactive"}' />
+                <input type="hidden" id="hdSlot" value='{"slotA":"inactive","slotB":"inactive","slotC":"inactive","slotD":"inactive","slotE":"inactive"}' />
+                <div id='spanslot1' class="round-small-slot" onclick="select_slot(1)">A</div>
+                <div id='spanslot2' class="round-small-slot" onclick="select_slot(2)">B</div>
+                <div id='spanslot3' class="round-small-slot" onclick="select_slot(3)">C</div>
+                <div id='spanslot4' class="round-small-slot" onclick="select_slot(4)">D</div>
+                <div id='spanslot5' class="round-small-slot" onclick="select_slot(5)">E</div>
+</div>
+<div id="div_betnumber">
+    
 </div>
 
 <div class="footer">

@@ -184,85 +184,131 @@
             setTimeout(function () { sizeHandler(); }, 200);
         } else { sizeHandler(); }
 
+        GetRecently();
+
+        window.location.href = '/betnow';
     });
 </script>
 
 }
 
 
-<div class="row center-page">
-    <div class="col-6 p-0 m-0"><canvas id="canvas" class='ani_hack' width="1280" height="1920"></canvas></div>
-    <div class="col-6 bg-right">
+<div class="row">
+    <div class="p-0 m-0" style="width:650px;"><canvas id="canvas" class='ani_hack' width="1280" height="1920"></canvas></div>
+    <div class="col bg-right">
         <div class="row pt-4">
-            <div class="col-12">
-                <div class="row">
+            <div class="row">
+                <div class="col">
                     <div class="row">
-                        <div class="col-3">
-                            <img src="~/images/logo.png" class="logo-height" />
-                        </div>
-                        <div class="col-9" style="text-align:right;">
-                            <div class="row">
-                                <div style="text-align:right;">
-                                    <span class="font-style-2">05/06/2022</span>
-                                    <span class="font-style-2">13:21:52</span>
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="~/images/logo.png" style="height:120px;" />
+                            </div>
+                            <div class="col-9" style="text-align:right;">
+                                <div class="row">
+                                    <div>
+                                        <span class="font-style-2">05/06/2022</span>
+                                        <span class="font-style-2">13:21:52</span>
+                                    </div>
+                                    <div class="gameid">ឆ្នោតទី 21297</div>
                                 </div>
-                                <div class="gameid">ឆ្នោតទី 21297</div>
-                            </div>
-                            <div class="row">
-                                <div id="div_timer"></div>
+                                <div class="row">
+                                    <div id="div_timer">00:00</div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="row pt-3">
+                        <div class="lotto-special-list">
+                            <div id="result-date" class="pb-2"></div>
+                            <div class="lotto-special-num" id="div_result1">
+                                <div class="jak"></div>
+                                <div class="lotto-special-num-result" id="span1">ស្តើង</div>
+                                <div class="pt-2">
+                                    <span class="lotto-special-num-span">X3</span>
+                                    <span class="lotto-special-num-span">X5</span>
+                                </div>
+                            </div>
+                            <div class="lotto-special-num" id="div_result2">
+                                <div class="jak"></div>
+                                <div class="lotto-special-num-result" id="span2">ស្មើ</div>
+                                <div class="pt-2">
+                                    <span class="lotto-special-num-span">X2</span>
+                                    <span class="lotto-special-num-span">X10</span>
+                                </div>
+                            </div>
+                            <div class="lotto-special-num" id="div_result3">
+                                <div class="jak"></div>
+                                <div class="lotto-special-num-result" id="span3">ក្រាស់</div>
+                                <div class="pt-2">
+                                    <span class="lotto-special-num-span">X3</span>
+                                    <span class="lotto-special-num-span">X5</span>
+                                </div>
+                            </div>
+
+                            <!--<div class="lotto-special-num">
+                                <span id="span_result3" class="result-active">ក្រាស់</span>
+                                <div class="jakepot">X10</div>
+                                </div>-->
+                            <div class="lotto-special-list">
+                                @*<div class="lotto-special-num">
+                                    <span id="span_result1">ស្តើង</span>
+                                    <div id="jakepot1"></div>
+                                    </div>
+                                    <div class="lotto-special-num">
+                                    <span id="span_result2">ស្មើ</span>
+                                    <div id="jakepot2"></div>
+                                    </div>
+                                    <div class="lotto-special-num">
+                                    <span id="span_result3">ក្រាស់</span>
+                                    <div id="jakepot3"></div>
+                                    <div class="jakepot"></div>
+                                    </div>*@
+
+                                @*<div class="lotto-special-num">
+                                    <span id="span_result3" class="result-active">ក្រាស់</span>
+                                    <div class="jakepot">X10</div>
+                                    </div>
+                                *@
+                            </div>
+
+
+                            @*<div>
+                                <div style="" class="title-result">លទ្ធផល</div>
+                                <div id="recent" style="border-left: 1px solid #ddd; padding-left:5px;display:none;"></div>
+                                <div id="lastresult">
+                                <div class="result-small">
+                                <span id="span_result3" class="result-active">ក្រាស់ X3</span>
+                                </div>
+                                <div class="result-small">
+                                <span id="span_result3" class="result-active">ស្តើង X5</span>
+                                </div>
+                                <div class="result-small">
+                                <span id="span_result3" class="result-active">ស្មើ X2</span>
+                                </div>
+                                <div class="result-small">
+                                <span id="span_result3" class="result-active">ក្រាស់ X3</span>
+                                </div>
+                                <div class="result-small">
+                                <span id="span_result3" class="result-active">ស្តើង X10</span>
+                                </div>
+                                <div class="result-small">
+                                <span id="span_result3" class="result-active">ស្មើ X5</span>
+                                </div>
+                                </div>
+
+                                </div>*@
+                        </div>
+                    </div>
+                </div>
+                <div style="width:170px; border-left:1px solid #c67819">
+                    <div id="seperatr"></div>
+                    <div style="" class="title-result">លទ្ធផល</div>
+                    <div id="lastresult"></div>
                 </div>
             </div>
-
-            <div class="lotto-special-list">
-                <div class="lotto-special-num">
-                    <span id="span_result1">ស្តើង</span>
-                    <div id="jakepot1"></div>
-                </div>
-                <div class="lotto-special-num">
-                    <span id="span_result2">ស្មើ</span>
-                    <div id="jakepot2"></div>
-                </div>
-                <div class="lotto-special-num">
-                    <span id="span_result3">ក្រាស់</span>
-                    <div id="jakepot3"></div>
-                    @*<div class="jakepot">X10</div>*@
-                </div>
-
-                @*<div class="lotto-special-num">
-                    <span id="span_result3" class="result-active">ក្រាស់</span>
-                    <div class="jakepot">X10</div>
-                    </div>*@
-
-            </div>
-            <div>
-                <div style="" class="title-result">លទ្ធផល</div>
-                <div id="recent" style="border-left: 1px solid #ddd; padding-left:5px;display:none;"></div>
-                <div id="lastresult">
-                    <div class="result-small">
-                        <span id="span_result3" class="result-active-small">ក្រាស់ X3</span>
-                    </div>
-                    <div class="result-small">
-                        <span id="span_result3" class="result-active-small">ស្តើង X5</span>
-                    </div>
-                    <div class="result-small">
-                        <span id="span_result3" class="result-active-small">ស្មើ X2</span>
-                    </div>
-                    <div class="result-small">
-                        <span id="span_result3" class="result-active-small">ក្រាស់ X3</span>
-                    </div>
-                    <div class="result-small">
-                        <span id="span_result3" class="result-active-small">ស្តើង X10</span>
-                    </div>
-                    <div class="result-small">
-                        <span id="span_result3" class="result-active-small">ស្មើ X5</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>  
+        </div>
     </div>
 </div>
+
 

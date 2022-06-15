@@ -43,8 +43,8 @@ function CBasket(iX, iY, oParentContainer, oSpriteSheet, iWidth, iHeight, szText
         this._setText(_iStartSize);
     };
     
-    this._setText = function(iSize){      
-
+    this._setText = function (iSize) {
+        
         var iNewSize = iSize;
         
         while(_oText.getBounds().height>iHeight-iSize){

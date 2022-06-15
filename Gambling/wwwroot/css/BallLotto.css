@@ -1,16 +1,19 @@
 .result-active {
     background-color: #f73 !important;
     color: white !important;
-    padding: 3.5vh 0.5vh 0.5vh 0.5vh !important;
+    padding: 5.7vh 0.5vh 0.5vh 0.5vh !important;
 }
+
 .result-active-small {
     background-color: #f73 !important;
     color: white !important;
 }
 
-.logo-height{
-    height:22vh;
+.logo-height {
+    height: 22vh;
 }
+
+/*
 .jakepot {
     font-size: 5vh;
     color: #f73;
@@ -20,11 +23,15 @@
     position: absolute;
     font-weight: bold;
 }
+*/
+
+
 .title-result {
     font-family: Koh Santepheap;
-    padding: 15px 10px;
+    /*padding: 15px 10px;*/
     font-size: 5vh;
 }
+
 .lotto-special-list {
     margin-left: 10px;
     width: 100%;
@@ -32,31 +39,38 @@
 
 .result-small {
     margin: 3px;
-    display: inline-flex;
+    /*display: inline-flex;*/
     flex-direction: column;
     text-align: center;
-    width: 21%;
+    /*width: 21%;*/
 }
 
-.result-small > span {
-    display: inline-block;
-    width: 100%;
-    color: #ff7733;
-    font-size: 3vh;
-    font-weight: bold;
-    border-radius: 25px;
-    font-family: Koh Santepheap;
-    padding: 5px;
-    border: solid 2px white;
+.result-small-active {
+    background-color: #f73 !important;
+    color: white !important;
+    /*padding: 3.5vh 0.5vh 0.5vh 0.5vh !important;*/
 }
 
+    .result-small > span {
+        display: inline-block;
+        width: 100%;
+        color: #ff7733;
+        font-size: 2vh;
+        font-weight: bold;
+        border-radius: 25px;
+        font-family: Koh Santepheap;
+        padding: 5px;
+        border: solid 2px white;
+    }
+/*
 .lotto-special-num {
     margin-left: 0;
     display: inline-flex;
     flex-direction: column;
     text-align: center;
-    width:31%;
+    width: 31%;
 }
+
     .lotto-special-num > span {
         display: inline-block;
         width: 100%;
@@ -68,6 +82,74 @@
         padding: 2vh 0.5vh 2vh 0.5vh;
         border: solid 5px white;
     }
+*/
+
+.lotto-special-num {
+    margin-left: 0;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    width: 31%;
+    border: solid 5px white;
+    border-radius: 25px;
+    padding: 2vh 0.5vh 2vh 0.5vh;
+    position: relative;
+}
+
+.lotto-special-num-result {
+    width: 100%;
+    color: #ff7733;
+    font-size: 7vh;
+    /*font-weight: 800;*/
+    font-family: Khmer OS Muol Light;
+}
+
+.lotto-special-num-span {
+    display: inline;
+    width: 10%;
+    color: white;
+    font-size: 3vh;
+    font-weight: bold;
+    border-radius: 25px;
+    font-family: Koh Santepheap;
+    margin-top: 15px;
+    padding: 5px;
+    border: solid 2px white;
+    background: #ff7733;
+}
+
+.white {
+    color: white !important;
+}
+
+.lotto-special-num-div-span2-active {
+    display: inline;
+    width: 10%;
+    color: white !important;
+    font-size: 3vh;
+    font-weight: bold;
+    border-radius: 25px;
+    font-family: Koh Santepheap;
+    margin-top: 15px;
+    padding: 5px;
+    border: solid 2px white;
+}
+
+.jakepot {
+    font-size: 5vh;
+    color: #f73;
+    background-color: white;
+    width: 80px;
+    border-radius: 60px;
+    position: absolute;
+    font-weight: bold;
+    top: -5px;
+    left: -5px;
+    text-align: center;
+}
+
+
+
 .bg-right {
     background-color: black;
     background-image: linear-gradient(266deg,#0c4d75,rgba(14,90,136,.8901960784313725),#000000),url(../images/bg01.gif);
@@ -75,12 +157,14 @@
     background-repeat: no-repeat;
     background-size: cover !important;
     border-left: solid 10px #000509;
-    height:100vh;
+    height: 100vh;
 }
+
 .center-page {
     max-width: 165vh;
     margin: auto;
 }
+
 .lotto-text-inner-ball {
     font-size: 50px;
     line-height: 150px;
@@ -152,11 +236,10 @@
         color: #fff;
         border-radius: 50%;
         background-color: #f73;
-        
         font-size: 17px;
         font-family: 'Khmer OS Bokor';
         /*margin-bottom: 3px;*/
-        margin-right:5px;
+        margin-right: 5px;
     }
 
 
@@ -174,7 +257,8 @@
     font-size: 15vh;
     font-weight: 800;
     line-height: 20vh;
-    margin-bottom:20px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
 }
 
 
@@ -208,13 +292,12 @@ body {
 
 .font-style-2 {
     color: white;
-    font-size: 4.3vh;
+    font-size: 3.7vh;
     font-weight: 400;
-    margin-right: 20px
+    margin-right: 20px;
 }
 
 .gameid {
-    font-size: 7vh;
+    font-size: 4vh;
     font-weight: 800;
 }
-
