@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "96GRYG+wXVcc7clrh1KprhxJwHxPf/OE1q3EWPI7vaQ=",
+  "Hash": "WKCVtqfvhWhUQs6wbyBRzBxSBau5gnbtkT6d1vMkgF0=",
   "Source": "Gambling",
   "BasePath": "_content/Gambling",
   "Mode": "Default",
@@ -1596,6 +1596,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\betnow.js"
+    },
+    {
+      "Identity": "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\betnow1.js",
+      "SourceId": "Gambling",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "BasePath": "_content/Gambling",
+      "RelativePath": "js/betnow1.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\betnow1.js"
     },
     {
       "Identity": "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CAreYouSurePanel.js",

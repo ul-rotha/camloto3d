@@ -11,121 +11,91 @@
 <script type="text/javascript" src="~/js/public.js?v9"></script>
 
 <div class="div-popup-betamount" id="div_alert" style="display:none;">
-         <div class="div-popup-detail">
-        <div class="alert-popup-title" id="div_alert_title">តើអ្នកដកប្រាក់ឈ្នះនេះមែនទេ?</div>
+    <div class="div-popup-detail">
+        <div class="alert-popup-title font-Khmer" id="div_alert_title">តើអ្នកដកប្រាក់ឈ្នះនេះមែនទេ?</div>
         <div class="div-confirm-action" id="div_confirm_action">
-            
-            <span class="span-confirm-action"><input type="button" value="យល់ព្រម" class="button-ok" onclick="alertok()" /></span>
+
+            <span class="span-confirm-action"><input type="button" value="យល់ព្រម" class="button-ok font-Khmer" onclick="alertok()" /></span>
         </div>
-        </div>
+    </div>
 </div>
 
 <div class="div-popup-betamount" id="div_alert_submit" style="display:none;">
-         <div class="div-popup-detail">
-        <div class="alert-popup-title">កំពុងដំណើរការ</div>
-        <div class="div-confirm-action" id="div_confirm_action">
+    <div class="div-popup-detail">
+        <div class="alert-popup-title font-Khmer">កំពុងដំណើរការ</div>
+        <div class="div-confirm-action font-Khmer" id="div_confirm_action">
             សូមរង់ចាំ កំពុងដំណើរការ...
-            
-        </div>
-        </div>
-</div>
-
-<div class="div-popup-betamount" id="div_popup_betamount" style="display:none;">
-         <div class="div-popup-detail">
-        <div class="confirm-popup-title" id="div_popup_title">
-            <table style="width:100%">
-                <tr>
-                    <td>ចំនួនទឹកប្រាក់ភ្នាល់</td>
-                    <td style="text-align:right;"><span class="botton-close" onclick="closepopup_betamount()">X</span></td>
-                </tr>
-            </table>
 
         </div>
-        <div class="bet-amount-option" id="div_betamount_option">
-            
-            
-        </div>
-        </div>
+    </div>
 </div>
 
 <div class="div-container">
-     <input id="hdGameID" type="hidden" value="0" />
-      <input id="hd_placeid" type="hidden" value="0" />
-     <input id="hdBetType" type="hidden" value="number" />
-     <input type="hidden" id="hdinput_number" value="" />
-     <input type="hidden" id="hd_betamount" value="0" />
-     <input type="hidden" value="" id="hdUsername" />
+    <input id="hdGameID" type="hidden" value="0" />
+    <input id="hd_placeid" type="hidden" value="0" />
+    <input id="hdBetType" type="hidden" value="number" />
+    <input type="hidden" id="hdinput_number" value="" />
+    <input type="hidden" id="hd_betamount" value="0" />
+    <input type="hidden" value="" id="hdUsername" />
 
-<div>
-    <table style="width:100%">
-        <tr>
-            <td style="text-align:left"><div style="text-align:left;margin: 10px 0px;">
-                <span onclick="backhome()" style="background-color: #f73;padding: 10px;border-radius: 10px;color: white;"><i class="fas fa-home" aria-hidden="true"></i></span>
-                <span onclick="refreshpage()" style="background-color: #f73;padding: 10px;border-radius: 10px;color: white;"><i class="fas fa-refresh"></i></span>
+    <div>
+        <table style="width:100%">
+            <tr>
+                <td style="text-align:left">
+                    <div style="text-align:left;margin: 10px 0px;">
+                        <span onclick="backhome()" style="background-color: #f73;padding: 10px;border-radius: 10px;color: white;"><i class="fas fa-home" aria-hidden="true"></i></span>
+                        <span onclick="refreshpage()" style="background-color: #f73;padding: 10px;border-radius: 10px;color: white;"><i class="fas fa-refresh"></i></span>
 
-                <span onclick="history()" style="background-color: #f73;padding: 10px;border-radius: 10px;color: white;margin-left:20px;"><i class="fa fa-bars" aria-hidden="true"></i></span>
-                <span onclick="viewformscan()" style="background-color: #f73;padding: 10px;border-radius: 10px;color: white;margin-left:20px;"><i class="fa fa-qrcode" aria-hidden="true"></i></span>
-                
-                </div></td>
-            
-            <td style="width:33%;text-align:center">
-                <div id="div_credit" class="div-credit"></div>
-                <div id="div_GameID" class="div-gameid"></div>
-            </td>
-        </tr>
-    </table>
-</div>
-<div id="div_betamount" class="bet-amount">
-    <table style="width:100%">
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <td><span>ទឹកប្រាក់ភ្នាល់:</span>
-                           
-                        </td>
-                        <td>
-                             <div id="betAmount" class="span-betamount" onclick="show_betamount()">
-                                0R
-                            </div> 
-                            <span class="span-clear-betamount" onclick="betnow(0)" >C</span>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <div id="div_time" class="div-time"></div>  
-            </td>
-        </tr>
-    </table>
-        
-</div>
-<div class="d-flex justify-content-around">
-    <span class="bet-type" onclick="bettype('row')">ស្តើង</span>
-    <span class="bet-type" onclick="bettype('row')">ស្មើ</span>
-    <span class="bet-type" onclick="bettype('row')">ក្រាស់</span>
-</div>
- <div class="div-slot">
-    <input type="hidden" id="hdSlot" value='{"slotA":"inactive","slotB":"inactive","slotC":"inactive","slotD":"inactive","slotE":"inactive"}' />
-</div>
+                        <span onclick="history()" style="background-color: #f73;padding: 10px;border-radius: 10px;color: white;margin-left:20px;"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                        <span onclick="viewformscan()" style="background-color: #f73;padding: 10px;border-radius: 10px;color: white;margin-left:20px;"><i class="fa fa-qrcode" aria-hidden="true"></i></span>
 
-<div class="footer">
-    <table style="width:100%">
-        <tr>
-            <td>
-                <div class="div-total">សរុប: <span class="span-total" id="span_totalbetamount"></span></div>
-            </td>
-            <td>
-            </td>
-            <td>
-                <div style="text-align:right;">
-                <span id="btnSubmit"​ style="width: 130px;text-align:center;float: right;" class="action-button active" onclick="submit()">បញ្ជូន</span>
-                <span id="btnDelete"​ style="width: 100px;text-align:center;float: right;" class="action-button" onclick="clear_betting()">លុប</span>
-                </div>
-            </td>
-        </tr>
-    </table>
-</div>
+                    </div>
+                </td>
+                <td style="width:33%;text-align:center">
+                    <div id="div_credit" class="div-credit"></div>
+                    <div id="div_GameID" class="div-gameid"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_time" class="bet-amount div-time"></div>
+
+    <div class="d-flex justify-content-around">
+        <span class="bet-type">ស្តើង</span>
+        <span class="bet-type">ស្មើ</span>
+        <span class="bet-type">ក្រាស់</span>
+    </div>
+
+    <div class="d-flex flex-row pt-4 pb-3">
+        <div class="p-2 font-Khmer">ទឹកប្រាក់ភ្នាល់:</div>
+        <div class="p-2 span-betamount" id="betAmount">0R</div>
+        <div class="p-2 span-clear-betamount" onclick="betnow(0)">C</div>
+    </div>
+
+    <div id="div_betamount_option"></div>
+
+    <div class="div-slot">
+        <input type="hidden" id="hdSlot" value='{"slotA":"inactive","slotB":"inactive","slotC":"inactive","slotD":"inactive","slotE":"inactive"}' />
+    </div>
+
+    <div class="footer">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <div class="div-total font-Khmer">សរុប: <span class="span-total" id="span_totalbetamount"></span></div>
+                </td>
+                <td>
+                </td>
+                <td>
+                    <div style="text-align:right;">
+                        <span id="btnSubmit" ​ style="width: 130px;text-align:center;float: right;" class="action-button active font-Khmer" onclick="submit()">បញ្ជូន</span>
+                        <span id="btnDelete" ​ style="width: 100px;text-align:center;float: right;" class="action-button font-Khmer" onclick="clear_betting()">លុប</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
 
 </div>
 

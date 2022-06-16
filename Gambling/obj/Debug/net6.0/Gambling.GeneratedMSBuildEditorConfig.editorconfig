@@ -15,12 +15,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ulrotha\Documents\GitHub\camloto3d\Gambling
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/betnow - Copy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYmV0bm93IC0gQ29weS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/betnow.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYmV0bm93LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/betnow1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYmV0bm93MS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/Error.cshtml]

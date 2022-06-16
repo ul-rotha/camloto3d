@@ -1,67 +1,14 @@
-﻿var money = [500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 20000];
-
-//Rotha
-function show_betamount() {
-    //$("#div_popup_betamount").show();
-
-    var html = "";
-    for (var i = 0; i < money.length; i++) {
-        html += `<div class='button-betamount' onClick='betnow(${money[i]})'>R${money[i]}</div>`;
-    }
-    $("#div_betamount_option").html(html);
-}
-
-
-function betnow(amount) {
-    if (amount == 0) {
-        $("#hd_betamount").val(0);
-        $("#betAmount").html('R' + 0);
-        $("#span_totalbetamount").html(0 + "R");
-    }
-    else {
-        var betamount = parseInt($("#hd_betamount").val());
-        betamount = betamount + amount;
-        var bigAmt = money[money.length - 1];
-        if (betamount > bigAmt) {
-            alertme("មិនអាចភ្នាល់លើសពី​</br>" + bigAmt + "Riel");
-            $("#hd_betamount").val(bigAmt);
-            $("#betAmount").html('R' + bigAmt);
-            $("#span_totalbetamount").html(bigAmt + "R");
-        }
-        else {
-            $("#hd_betamount").val(betamount);
-            $("#betAmount").html('R' + betamount);
-            $("#span_totalbetamount").html(betamount + "R");
-        }
-    }
-
-    closepopup_betamount();
-
-    //loadtotalbet();
-}
-
-function clear_betting() {
-    $("#span_totalbetamount").html("");
-    $("#hd_betamount").val("0");
-    $("#betAmount").html('R0');
-
-    $(".bet-type").removeClass("active");
-    $(".bet-type").find("i").remove();
-}
-
-//End Rotha
-
-function loadnumbers() {
+﻿function loadnumbers() {
     var html = "";
 
     html += "<div class='div-container-number'>";
 
     for (var i = 1; i < 100; i++) {
 
-        if ((i - 1) % 10 == 0) {
+        if ((i-1) % 10 == 0) {
             html += "<div class='div-rownumber'>";
         }
-
+       
         if (i < 10) {
             html += "<div class='round-small-number' id='span_n0" + i + "' onclick='selectnumber(" + i + ")'><div class='div-number'>0" + i + "</div></div>";
 
@@ -153,17 +100,9 @@ function viewformscan() {
 
 $(document).ready(function () {
     console.log("page load");
-    //checktokendetail();
+    checktokendetail();
     loadtimer();
-    //loadnumbers();
-
-    show_betamount();
-
-    $(".bet-type").click(function () {
-        $(".bet-type").removeClass("active");
-        $(".bet-type").find("i").remove();
-        $(this).addClass("active").append("<i class='fa fa-check' style='position:absolute;right:5px;top:5px;'></i>");
-    });
+    loadnumbers();
 });
 
 
@@ -188,19 +127,18 @@ function select_slot(number) {
 }
 
 function checknumber(number) {
-    if (jQuery.inArray(number, listnumber) != -1) {
-        console.log("is in array");
+    if (jQuery.inArray(number,listnumber) != -1) {
+        console.log("is in array");     
 
         listnumber = jQuery.grep(listnumber, function (value) {
             return value != number;
         });
 
-
+    
     } else {
         listnumber.push(number);
     }
 }
-
 function selectnumber(number) {
 
     var bettype = $("#hdBetType").val();
@@ -253,7 +191,7 @@ function selectnumber(number) {
             } else {
                 alertme("លេខនៅជួរខុសគ្នា!")
             }
-
+            
         }
     }
 
@@ -284,7 +222,7 @@ function addnumbers_colum(startnumber, endnumber) {
     } else {
         leftdigitend = parseInt(('' + endnumber).substr(0, 1));
     }
-
+    
     for (var i = leftdigitstart; i <= leftdigitend; i++) {
         var newnumber = i + rightdigit;
         listnumber.push(newnumber);
@@ -303,7 +241,7 @@ function display_selectednumber() {
         } else {
             $("#span_n" + number + " .div-number").addClass("active");
         }
-
+       
     }
 }
 
@@ -320,13 +258,11 @@ function display_selectedslot() {
 
 function unselectedall() {
     $(".div-number").removeClass("active");
-
+    
 }
-
 function refreshpage() {
     window.location = window.location.href;
 }
-
 function alertme(title) {
     $("#div_alert_title").html(title);
     $("#div_alert").show();
@@ -361,6 +297,7 @@ function getUrlVars() {
     }
     return vars;
 }
+
 
 function addbetting_unkownuser(gameid, placeid, slotNumber, betNumbers, betamount) {
     var token = getUrlVars()["token"];
@@ -516,7 +453,6 @@ function getusercredit(username) {
         }
     });
 }
-
 function confirmprint() {
     var jsonslot = $("#hdSlot").val();
     console.log(jsonslot);
@@ -600,6 +536,18 @@ function confirmprint() {
 
 
 }
+
+function clear_betting() {
+    listnumber = [];
+    //listslot = [];
+    $("#span_totalbetamount").html("");
+    $("#hd_betamount").val("0");
+    $("#betAmount").html('R0');
+    display_selectedslot();
+    display_selectednumber();
+   
+}
+
 
 function PrintElem(html, imgdata, qrcode) {
 
@@ -746,11 +694,9 @@ function create_receipt(objBetting) {
     html += "<div>Printed by:" + username + "</div>";
     return html;
 }
-
 function cancelprint() {
     $("#div_printpopup").hide();
 }
-
 function print() {
 
     var jsonslot = $("#hdSlot").val();
@@ -823,6 +769,29 @@ function print() {
 }
 
 
+
+function betnow(amount) {
+    var betamount = parseInt($("#hd_betamount").val());
+    betamount = betamount + amount;
+    if (betamount > 5000) {
+        //alert("Can not bet more then 2000Riel");
+        alertme("Can not bet more then 5000Riel");
+    } else {
+       
+        if (amount == 0) {
+            betamount = 0;
+            $("#hd_betamount").val("0");
+            //$("#div_betamount").html("0R");
+        } else {
+            $("#hd_betamount").val(betamount);
+            //$("#div_betamount").html(currentamount + "R");
+        }
+
+    }
+    $("#betAmount").html('R' + betamount);
+    closepopup_betamount();
+    loadtotalbet();
+}
 function select_range() {
     var hdrange = $("#hdselectrange").val();
     if (hdrange == "") {
@@ -836,7 +805,6 @@ function select_range() {
         $("#div_range").hide();
     }
 }
-
 function select_slot_old(slotname) {
     var newjsonstring = "";
     var jsonslot = $("#hdSlot").val();
@@ -936,7 +904,6 @@ function select_slot_old(slotname) {
     load_numberlist(listnumber);
 
 }
-
 var listnumber = new Array();
 var listslot = new Array();
 function html_slot() {
@@ -1032,7 +999,6 @@ function input_range(inputnumber) {
 
     }
 }
-
 function set_list(string_number) {
 
     $("#hdinput_number").val(string_number);
@@ -1070,7 +1036,6 @@ function unique(list) {
     });
     return result;
 }
-
 function load_numberlist(list) {
     var html = "";
     var betamount = $("#hd_betamount").val();
@@ -1091,7 +1056,7 @@ function load_numberlist_html(list) {
         } else {
             html += "<div class='round-number' style='line-height: 20px;float:none;display:inline-block;padding: 2px;height: 25px;width: 25px;font-size: 16px;font-weight: bold;'>" + number + "</div>";
         }
-
+        
     }
 
     return html;
@@ -1130,7 +1095,6 @@ function multiply() {
         load_numberlist(listnumber);
     }
 }
-
 function addrange(stringrange) {
     console.log("str-range:" + stringrange);
     var num1 = parseInt(stringrange.substr(0, 2));
@@ -1155,8 +1119,8 @@ function addrange(stringrange) {
 }
 
 function bettype(typename) {
-    betendnumber = false;
-    betstartnumber = 0;
+     betendnumber = false;
+     betstartnumber = 0;
     $("#hdBetType").val(typename);
 
     $("#btype_number").removeClass("active");
@@ -1176,6 +1140,30 @@ function closepopup_betamount() {
     $("#div_popup_betamount").hide();
 }
 
+function show_betamount() {
+    $("#div_popup_betamount").show();
+
+    var html = "";
+    html += "<div class='button-betamount' onClick='betnow(100)'>R100</div>"
+    html += "<div class='button-betamount' onClick='betnow(200)'>R200</div>"
+    html += "<div class='button-betamount' onClick='betnow(500)'>R500</div>"
+    html += "<div class='button-betamount' onClick='betnow(1000)'>R1000</div>"
+    html += "<div class='button-betamount' onClick='betnow(1500)'>R1500</div>"
+    html += "<div class='button-betamount' onClick='betnow(2000)'>R2000</div>"
+    html += "<div class='button-betamount' onClick='betnow(2500)'>R2500</div>"
+    html += "<div class='button-betamount' onClick='betnow(3000)'>R3000</div>"
+    html += "<div class='button-betamount' onClick='betnow(3500)'>R3500</div>"
+    html += "<div class='button-betamount' onClick='betnow(4000)'>R4000</div>"
+    html += "<div class='button-betamount' onClick='betnow(4500)'>R4500</div>"
+    html += "<div class='button-betamount' onClick='betnow(5000)'>R5000</div>"
+
+
+
+
+
+    $("#div_betamount_option").html(html);
+}
+
 function loadtotalbet() {
     var betamount = parseInt($("#hd_betamount").val());
     var numberofslot = listslot.length;
@@ -1187,34 +1175,33 @@ function loadtotalbet() {
 
 function submit() {
     var invalids = 0;
-    if (!$(".bet-type").hasClass('active')) {
-        alertme("សូមជ្រើសរើសឆ្នោតចាក់");
+    if (listslot.length == 0) {
+        alertme("សូមជ្រើសរើសប៉ុស្តិ៍");
         invalids += 1;
-        return;
-        //var text = $('.bet-type.active').text();
+    }
+
+    if (listnumber.length == 0) {
+        alertme("សូមជ្រើសរើសលេខ");
+        invalids += 1;
     }
 
     var betamount = $("#hd_betamount").val();
     if (betamount == "0") {
         alertme("សូមជ្រើសរើសទឹកប្រាក់ភ្នាល់");
         invalids += 1;
-        return;
     }
-
     var gameid = $("#hdGameID").val();
-    gameid = 0;
     if (gameid == 0) {
         alertme("ឆ្នោតកំពុងចេញលទ្ធផល")
         invalids += 1;
         window.location = window.location.href;
     }
-
     if (invalids == 0) {
         $("#div_alert_submit").show();
         setTimeout(function () {
-           // addbetting(gameid);
+            addbetting(gameid);
         }, 500);
-
+       
     }
 
 }
@@ -1243,10 +1230,11 @@ function addbetting(gameid) {
     } else {
         addbettingrecord(gameid, placeid, slotNumber, betNumbers, betamount, username);
     }
+    
 
-
-
+   
 }
+
 
 function addbettingrecord(gameid, placeid, slotNumber, betNumbers, betamount, username) {
     $.ajax({

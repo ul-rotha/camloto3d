@@ -206,7 +206,9 @@ function sizeHandler() {
         s_iScaleFactor = iScale * 2;
         s_oStage.scaleX = s_oStage.scaleY = s_iScaleFactor;
     } else if (s_bMobile || isChrome()) {
-        $("#canvas").css("width", destW + "px");
+        //$("#canvas").css("width", destW + "px");
+        //$("#canvas").css("height", destH + "px");
+        $("#canvas").css("width", "650px");
         $("#canvas").css("height", destH + "px");
     } else {
         s_oStage.canvas.width = destW;
