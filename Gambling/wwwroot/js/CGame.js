@@ -244,7 +244,7 @@ function CGame(oData){
 
     };
 
-    
+    var iCurPrize = 0;
     this._setEndCol = function(){
         ////DETECT ALL POSSIBLE PRIZE LOWER THEN BANK
         //var iCurPrize;
