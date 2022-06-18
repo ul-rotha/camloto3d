@@ -8,8 +8,8 @@ var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-//builder.Services.AddHostedService<messageworker>();
-builder.Services.AddHostedService<BroadCastService>();
+builder.Services.AddHostedService<messageworker>();
+//builder.Services.AddHostedService<BroadCastService>();
 builder.Services.AddRazorPages();
 
 builder.Services.AddSignalR(hubOption =>

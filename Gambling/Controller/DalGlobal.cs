@@ -1307,10 +1307,11 @@ namespace GameAPI.App_Code
                             da.Fill(ds);
                         }
                         connection.Close();
+                        int rndTube = new Random().Next(0, 5);
                         clResult.GameID = gameid;
                         clResult.ResultDate= (String)ds.Tables[0].Rows[0]["CreatedDate"];
-                        clResult.Result1 = (int)ds.Tables[0].Rows[0]["R1"];
-                        
+                        clResult.Result1 = (int)ds.Tables[0].Rows[0]["Result"];
+                        clResult.ResultID = rndTube;
 
                     }
                 }
@@ -1399,11 +1400,7 @@ namespace GameAPI.App_Code
                             clResult.LastGameID = (int)ds.Tables[0].Rows[i]["LastGameID"];
                             clResult.GameDate = (String)ds.Tables[0].Rows[i]["GameDate"];
                             clResult.ResultDate = (String)ds.Tables[0].Rows[i]["CreatedDate"];
-                            clResult.Result1 = (int)ds.Tables[0].Rows[i]["R1"];
-                            clResult.Result2 = (int)ds.Tables[0].Rows[i]["R2"];
-                            clResult.Result3 = (int)ds.Tables[0].Rows[i]["R3"];
-                            clResult.Result4 = (int)ds.Tables[0].Rows[i]["R4"];
-                            clResult.Result5 = (int)ds.Tables[0].Rows[i]["R5"];
+                            clResult.Result1 = (int)ds.Tables[0].Rows[i]["Result"];
                             string jsonString = JsonSerializer.Serialize(clResult);
                             list.Add(jsonString);
 
@@ -1517,13 +1514,17 @@ namespace GameAPI.App_Code
             }
         }
 
+
         public async Task<string>  getQRCode(object? qrcode)
         {
             //QRCodeGenerator qrGenerator = new QRCodeGenerator();
             //QRCodeGenerator.QRCode qrCode = qrGenerator.CreateQrCode(clQrcode.qrCode, QRCodeGenerator.ECCLevel.Q);
             //System.Web.UI.WebControls.Image imgBarCode = new System.Web.UI.WebControls.Image();
-           
+            //bool result = IronBarCode.License.IsValidLicense("IRONBARCODE.CHANPHEAKDEYVONG.466-69CE93AB0E-J3GUNX3UFKNBG-YFDSJZWG6LCE-UXJABK7I5HXD-JFGBAGYMDYJG-OUUHPCDNLT2U-DMCBRG-TCJQ3CEPZESGEA-DEPLOYMENT.TRIAL-7XCVFT.TRIAL.EXPIRES.19.JUN.20221");
+            //bool result = IronBarCode.License.IsValidLicense("IRONBARCODE.CHANPHEAKDEYVONG.466-DDD12A9D62-BBSKXSDFDTCU43A-DVMEQDKTDFW4-2MOU2XP5DTHE-MJ5SUN2RFIXD-EZEAJ2YOH6LC-7ZNSEL-T322DAC4SRSGEA-DEPLOYMENT.TRIAL-OALLEQ.TRIAL.EXPIRES.02.JUL.2022");
             GeneratedBarcode generatedQRCode = IronBarCode.BarcodeWriter.CreateBarcode(qrcode.ToString(), BarcodeEncoding.QRCode);
+
+          
 
 
             Image imgBarCode;
