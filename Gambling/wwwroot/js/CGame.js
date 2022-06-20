@@ -1,4 +1,5 @@
-function CGame(oData){
+var iCurPrize = 5;
+function CGame(oData) {
     var _bStartGame;
 
     var _iColToLaunchBall;
@@ -87,7 +88,7 @@ function CGame(oData){
         $(s_oMain).trigger("start_level",1);
 
         //this.checkEndGame();
-
+        
     };
     
     this._setBoard = function(){
@@ -244,8 +245,9 @@ function CGame(oData){
 
     };
 
-    var iCurPrize = 0;
-    this._setEndCol = function(){
+    //var iCurPrize = 0;
+    this._setEndCol = function () {
+        //console.log(iCurPrize);
         ////DETECT ALL POSSIBLE PRIZE LOWER THEN BANK
         //var iCurPrize;
         //var aAllPossiblePrize = new Array();
@@ -368,4 +370,3 @@ function CGame(oData){
 }
 
 var s_oGame;
-var iCurPrize = 0;

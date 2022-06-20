@@ -23,6 +23,7 @@ connection.on("ReceiveMessage", function (Eventmessage) {
             if (objgame.timeremaining >= 9) {
                 $("#div_resultinfo").html("");
                 clear_result();
+                s_oMain.gotoGame(); // reset new game prevent error stuck ball
             }
             if (objgame.timeremaining == 2 || objgame.timeremaining == 4 || objgame.timeremaining == 6 || objgame.timeremaining == 8 || objgame.timeremaining == 10) {
                 //playeraudio("clear-announce");
@@ -34,9 +35,9 @@ connection.on("ReceiveMessage", function (Eventmessage) {
     }
     else if (Eventmessage.subject == "start result") {
         console.log("start result");
-        s_oMain.gotoGame(); // reset new game prevent error stuck ball
 
-         var objresult = JSON.parse(Eventmessage.message);
+
+        var objresult = JSON.parse(Eventmessage.message);
         $("#result-date").html(
             `<span class="font-style-2">` + objresult.substr(8, 2) + '/' + objresult.substr(5, 2) + '/' + objresult.substr(0, 4) + `</span>
         <span class="font-style-2"> ឆ្នោតទី ` + objresult.GameID + `</span>
@@ -56,7 +57,8 @@ connection.on("ReceiveMessage", function (Eventmessage) {
 
     } else if (Eventmessage.subject == "result1") {
         var resultstring = Eventmessage.message;
-        console.log("resultstring1:" + resultstring);
+        //console.log("resultstring1:" + resultstring);
+        console.log("test" + resultstring);
         load_result(1, resultstring);
         playaudiofromcontrol("audioplayer_result");
     } else if (Eventmessage.subject == "result1stop") {
@@ -103,7 +105,7 @@ function loadgameinfo(gameid, gamedate) {
 
 function DisplayResult() {
 
-    
+
     if (iCurPrize == 0 || iCurPrize == 3) {
         console.log('ក្រាស់');
         $("#div_result3").addClass("result-active");
@@ -229,7 +231,7 @@ function get_latestresult() {
         url: "api/LatestResult",
         data: '',
         success: function (data) {
-            console.log("LatesResult" );
+            console.log("LatesResult");
             console.log(data);
             show_latest_result(data)
 
@@ -279,8 +281,8 @@ function show_result_html(datajson) {
     console.log("iCurPrize:" + iCurPrize);
     if (iCurPrize == 0 || iCurPrize == 3) {
         console.log('ក្រាស់');
-        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្មើ ' + (iCurPrize == 0 ? 'X5' : 'X3')  + '</span>'
-        
+        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្មើ ' + (iCurPrize == 0 ? 'X5' : 'X3') + '</span>'
+
     }
     else if (iCurPrize == 1 || iCurPrize == 4) {
         console.log('ស្តើង');
@@ -316,7 +318,7 @@ function show_result_html(datajson) {
     var result1str;
     result1str = data.Result1;
 
- 
+
     console.log(html);
 
 
@@ -371,14 +373,18 @@ function clearResult() {
 
 var result_index = 0;
 function load_result(result_index, result) {
+
     console.log("load result:" + result);
-        clearResult();
+    clearResult();
     console.log("result clear");
     var number = 1 + Math.floor(Math.random() * 6);
+
+
     s_oGame.launch(number);
+    iCurPrize = parseInt(result);
     console.log("result launched");
 
-    iCurPrize = result; 
+
 
 
 
