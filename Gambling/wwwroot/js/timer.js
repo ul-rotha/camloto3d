@@ -384,11 +384,6 @@ function load_result(result_index, result) {
     iCurPrize = parseInt(result);
     console.log("result launched");
 
-
-
-
-
-
 }
 
 function show_result(datajson) {

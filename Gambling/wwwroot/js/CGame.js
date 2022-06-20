@@ -1,4 +1,4 @@
-var iCurPrize = 5;
+var iCurPrize = 0;
 function CGame(oData) {
     var _bStartGame;
 
