@@ -295,7 +295,7 @@ function show_result_html(datajson) {
     var resultdate = data.ResultDate;
     html = `<div class="result-small">
                     <div style='width:60px;height:45px;float:left;text-align:left;'><div>#${(data.GameID)}</div>
-                    <div style='font-size:10px;'>${(resultdate.substr(8, 2) + '/' + resultdate.substr(5, 2) + '/' + resultdate.substr(0, 4))}
+                    <div style='font-size:10px;'>${(resultdate.substr(11, 8))}
                     </div>
                     </div>
                     <div style='width:75px;height:45px;float:left;'>` + html_result + `</div>
