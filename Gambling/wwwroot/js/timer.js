@@ -295,11 +295,11 @@ function show_result_html(datajson) {
     var html = '';
     var resultdate = data.ResultDate;
     html = `<div class="result-small">
-                    <div style='width:60px;height:45px;float:left;text-align:left;'><div>#${(data.GameID)}</div>
+                    <div style='width:40px;height:45px;float:left;text-align:left;'><div>#${(data.GameID)}</div>
                     <div style='font-size:10px;'>${(resultdate.substr(11, 8))}
                     </div>
                     </div>
-                    <div style='width:75px;height:45px;float:left;'>` + html_result + `</div>
+                    <div style='width:90px;height:45px;float:left;'>` + html_result + `</div>
             </div>`;
 
     //html += "<div>";
@@ -376,7 +376,7 @@ function load_result(result_index, result) {
     console.log("load result:" + result);
     clearResult();
     console.log("result clear");
-    var number = 1 + Math.floor(Math.random() * 6);
+    var number = Math.floor(Math.random() * 5);
 
 
     s_oGame.launch(number);
