@@ -9,6 +9,7 @@ connection.on("ReceiveMessage", function (Eventmessage) {
         //$("#div_printpopup").hide();
         var objgame = JSON.parse(Eventmessage.message);
         loadgameinfo(objgame.gameid, objgame.createddate);
+        s_oMain.gotoGame();
         //$("#div_resultinfo").html("");
 
         //loadnumbers();
@@ -16,14 +17,11 @@ connection.on("ReceiveMessage", function (Eventmessage) {
         var objgame = JSON.parse(Eventmessage.message);
         console.log(objgame)
         countdown(objgame.timeremaining, objgame.gameid);
-
-
-
+        
         if (objgame.timeremaining <= 10) {
             if (objgame.timeremaining >= 9) {
                 $("#div_resultinfo").html("");
                 clear_result();
-                s_oMain.gotoGame(); // reset new game prevent error stuck ball
             }
             if (objgame.timeremaining == 2 || objgame.timeremaining == 4 || objgame.timeremaining == 6 || objgame.timeremaining == 8 || objgame.timeremaining == 10) {
                 //playeraudio("clear-announce");
@@ -32,10 +30,11 @@ connection.on("ReceiveMessage", function (Eventmessage) {
 
 
         }
+
+        
     }
     else if (Eventmessage.subject == "start result") {
         console.log("start result");
-
 
         var objresult = JSON.parse(Eventmessage.message);
         $("#result-date").html(
