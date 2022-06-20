@@ -87,7 +87,7 @@ namespace SignalR.MessageWorker
                             eventMessage = new EventMessage("", jsonString, "end result");
                             resultcount = -1;
                             game_stage = "end game";
-                            await Task.Delay(TimeSpan.FromSeconds(12));
+                            await Task.Delay(TimeSpan.FromSeconds(5));
                         }
 
                         await _messageContext.Clients.All.SendAsync("ReceiveMessage", eventMessage, stoppingToken);

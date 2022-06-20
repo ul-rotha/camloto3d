@@ -36,6 +36,15 @@ connection.on("ReceiveMessage", function (Eventmessage) {
         console.log("start result");
         s_oMain.gotoGame(); // reset new game prevent error stuck ball
 
+         var objresult = JSON.parse(Eventmessage.message);
+        $("#result-date").html(
+            `<span class="font-style-2">` + objresult.substr(8, 2) + '/' + objresult.substr(5, 2) + '/' + objresult.substr(0, 4) + `</span>
+        <span class="font-style-2"> ឆ្នោតទី ` + objresult.GameID + `</span>
+        <span class="font-style-2">` + objresult.ResultDate.substr(11, 8) + `</span>
+        `
+        );
+        console.log("Loaded result date");
+
         //var objresult = JSON.parse(Eventmessage.message);
         //var resultinfo = ""
         //resultinfo += '<span class="font-style-2">' + objresult.ResultDate.substr(8, 2) + '/' + objresult.ResultDate.substr(5, 2) + '/' + objresult.ResultDate.substr(0, 4) + '</span>';
@@ -80,9 +89,63 @@ function loadgameinfo(gameid, gamedate) {
 					</table>`
 
         ;
-    $("#div_gameinfo").html(gameinfo);
+    var html = '';
+    html = `<div>
+                                        <span class="font-style-2">` + gamedate.substr(8, 2) + '/' + gamedate.substr(5, 2) + '/' + gamedate.substr(0, 4) + `</span>
+                                        <span class="font-style-2">` + gamedate.substr(11, 8) + `</span>
+                                    </div>
+                                    <div class="gameid">ឆ្នោតទី ` + gameid + `</div>`
+
+    $("#div_gameinfo").html(html);
 }
 
+
+
+function DisplayResult() {
+
+    
+    if (iCurPrize == 0 || iCurPrize == 3) {
+        console.log('ក្រាស់');
+        $("#div_result3").addClass("result-active");
+
+        $("#div_result3 .jak").addClass("jakepot").append((iCurPrize == 0 ? 'X5' : 'X3'));
+
+        $("#span3").addClass("white");
+    }
+    else if (iCurPrize == 1 || iCurPrize == 4) {
+        console.log('ស្តើង');
+        $("#div_result1").addClass("result-active");
+
+        $("#div_result1 .jak").addClass("jakepot").append((iCurPrize == 1 ? 'X3' : 'X5'));
+
+        $("#span1").addClass("white");
+    }
+    else if (iCurPrize == 2 || iCurPrize == 5) {
+        console.log('ស្មើ');
+        $("#div_result2").addClass("result-active");
+
+        $("#div_result2 .jak").addClass("jakepot").append((iCurPrize == 2 ? 'X2' : 'X10'));
+
+        $("#span2").addClass("white");
+    }
+
+
+    //if (iCurPrize == 0 || iCurPrize == 3) {
+    //    console.log('ក្រាស់');
+    //    $("#jakepot3").addClass("jakepot").append((iCurPrize == 0 ? 'X5' : 'X3'));
+    //    $(".lotto-special-num #span_result3").addClass("result-active");
+    //}
+    //else if (iCurPrize == 1 || iCurPrize == 4) {
+    //    console.log('ស្តើង');
+    //    $("#jakepot1").addClass("jakepot").append((iCurPrize == 1 ? 'X3' : 'X5'));
+    //    $(".lotto-special-num #span_result1").addClass("result-active");
+    //}
+    //else if (iCurPrize == 2 || iCurPrize == 5) {
+    //    console.log('ស្មើ');
+    //    $("#jakepot2").addClass("jakepot").append((iCurPrize == 2 ? 'X2' : 'X10'));
+    //    $(".lotto-special-num #span_result2").addClass("result-active");
+    //}
+}
 
 connection.start().then(function () {
 
@@ -166,6 +229,7 @@ function get_latestresult() {
         url: "api/LatestResult",
         data: '',
         success: function (data) {
+            console.log("LatesResult" );
             console.log(data);
             show_latest_result(data)
 
@@ -211,7 +275,32 @@ function show_result_html(datajson) {
     console.log("display result on result list");
     console.log(data);
 
+    var html_result = '';
+    console.log("iCurPrize:" + iCurPrize);
+    if (iCurPrize == 0 || iCurPrize == 3) {
+        console.log('ក្រាស់');
+        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្មើ ' + (iCurPrize == 0 ? 'X5' : 'X3')  + '</span>'
+        
+    }
+    else if (iCurPrize == 1 || iCurPrize == 4) {
+        console.log('ស្តើង');
+        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្តើង ' + (iCurPrize == 0 ? 'X5' : 'X3') + '</span>'
+    }
+    else if (iCurPrize == 2 || iCurPrize == 5) {
+        console.log('ស្មើ');
+        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្តើង ' + (iCurPrize == 0 ? 'X1' : 'X10') + '</span>'
+    }
+
     var html = '';
+    var resultdate = data.ResultDate;
+    html = `<div class="result-small">
+                    <div style='width:60px;height:45px;float:left;text-align:left;'><div>#${(data.GameID)}</div>
+                    <div style='font-size:10px;'>${(resultdate.substr(8, 2) + '/' + resultdate.substr(5, 2) + '/' + resultdate.substr(0, 4))}
+                    </div>
+                    </div>
+                    <div style='width:75px;height:45px;float:left;'>` + html_result + `</div>
+            </div>`;
+
     //html += "<div>";
     //html += "Game #" + data.GameID;
     //html += "</div>";
@@ -222,22 +311,21 @@ function show_result_html(datajson) {
     //html += "<span class='round-number-green'>" + data.Result4 + "</span>";;
     //html += "<span class='round-number-green'>" + data.Result5 + "</span>";;
     //html += "</div>"
-
     var result1;
     result1 = parseInt(data.Result1);
     var result1str;
     result1str = data.Result1;
 
  
-    //console.log(html);
+    console.log(html);
 
 
 
 
 
-    //var prehtml = $("#div_result_list").html();
-    //html = html + prehtml;
-    //$("#div_result_list").html(html);
+    var prehtml = $("#lastresult").html();
+    html = html + prehtml;
+    $("#lastresult").html(html);
 }
 function clientTimer(secondsout) {
 
@@ -286,8 +374,8 @@ function load_result(result_index, result) {
     console.log("load result:" + result);
         clearResult();
     console.log("result clear");
-
-    s_oGame.launch(result_index);
+    var number = 1 + Math.floor(Math.random() * 6);
+    s_oGame.launch(number);
     console.log("result launched");
 
     iCurPrize = result; 
@@ -302,7 +390,7 @@ function show_result(datajson) {
     var data = JSON.parse(datajson);
     show_result_html(datajson);
 
-    var divs = document.getElementById("div_result_list").getElementsByClassName("recent-item");
+    var divs = document.getElementById("lastresult").getElementsByClassName("result-small");
 
 
     //$("#div_result_list .recent-item div:last").each(function () {
