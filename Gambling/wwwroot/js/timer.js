@@ -17,7 +17,7 @@ connection.on("ReceiveMessage", function (Eventmessage) {
         var objgame = JSON.parse(Eventmessage.message);
         console.log(objgame)
         countdown(objgame.timeremaining, objgame.gameid);
-        
+
         if (objgame.timeremaining <= 10) {
             if (objgame.timeremaining >= 9) {
                 $("#div_resultinfo").html("");
@@ -31,7 +31,7 @@ connection.on("ReceiveMessage", function (Eventmessage) {
 
         }
 
-        
+
     }
     else if (Eventmessage.subject == "start result") {
         console.log("start result");
@@ -280,7 +280,7 @@ function show_result_html(datajson) {
     console.log("iCurPrize:" + iCurPrize);
     if (iCurPrize == 0 || iCurPrize == 3) {
         console.log('ក្រាស់');
-        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្មើ ' + (iCurPrize == 0 ? 'X5' : 'X3') + '</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ក្រាស់ ' + (iCurPrize == 0 ? 'X5' : 'X3') + '</span>'
 
     }
     else if (iCurPrize == 1 || iCurPrize == 4) {
@@ -289,7 +289,7 @@ function show_result_html(datajson) {
     }
     else if (iCurPrize == 2 || iCurPrize == 5) {
         console.log('ស្មើ');
-        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្តើង ' + (iCurPrize == 0 ? 'X1' : 'X10') + '</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្មើ ' + (iCurPrize == 0 ? 'X1' : 'X10') + '</span>'
     }
 
     var html = '';
@@ -364,9 +364,12 @@ function countdown(timeremaining, gameid) {
 }
 
 function clearResult() {
-    $(".lotto-special-num").removeClass("result-active");
-    $(".lotto-special-num-result").removeClass("white");
-    $(".jak").empty();
+    if ($(".lotto-special-num").hasClass("result-active")) {
+        console.log("result-ative-clear");
+        $(".lotto-special-num").removeClass("result-active");
+        $(".lotto-special-num-result").removeClass("white");
+        $(".jak").empty();
+    }
 }
 
 
@@ -374,14 +377,20 @@ var result_index = 0;
 function load_result(result_index, result) {
 
     console.log("load result:" + result);
+
     clearResult();
     console.log("result clear");
-    var number = 1 + Math.floor(Math.random() * 6);
+
+    //Math.floor(Math.random() * 5);
+
+    var number = Math.floor(Math.random() * 5);
 
 
     s_oGame.launch(number);
     iCurPrize = parseInt(result);
     console.log("result launched");
+
+    
 
 }
 
