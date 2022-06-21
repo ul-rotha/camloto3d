@@ -277,17 +277,18 @@ function show_result_html(datajson) {
     console.log(data);
 
     var html_result = '';
-    console.log("iCurPrize:" + iCurPrize);
-    if (iCurPrize == 0 || iCurPrize == 3) {
+    console.log("result:" + data.Result1);
+    var resultint = parseInt(data.Result1)-1;
+    if (resultint == 0 || resultint == 3) {
         console.log('ក្រាស់');
         html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្មើ ' + (iCurPrize == 0 ? 'X5' : 'X3') + '</span>'
 
     }
-    else if (iCurPrize == 1 || iCurPrize == 4) {
+    else if (resultint == 1 || resultint == 4) {
         console.log('ស្តើង');
         html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្តើង ' + (iCurPrize == 0 ? 'X5' : 'X3') + '</span>'
     }
-    else if (iCurPrize == 2 || iCurPrize == 5) {
+    else if (resultint == 2 || resultint == 5) {
         console.log('ស្មើ');
         html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្តើង ' + (iCurPrize == 0 ? 'X1' : 'X10') + '</span>'
     }
@@ -380,7 +381,7 @@ function load_result(result_index, result) {
 
 
     s_oGame.launch(number);
-    iCurPrize = parseInt(result);
+    iCurPrize = parseInt(result)-1;
     console.log("result launched");
 
 }
