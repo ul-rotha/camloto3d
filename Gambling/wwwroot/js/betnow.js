@@ -1212,7 +1212,7 @@ function submit() {
     if (invalids == 0) {
         $("#div_alert_submit").show();
         setTimeout(function () {
-           // addbetting(gameid);
+           addbetting(gameid);
         }, 500);
 
     }
