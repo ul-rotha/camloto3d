@@ -1309,7 +1309,7 @@ namespace GameAPI.App_Code
                         int rndTube = new Random().Next(0, 5);
                         clResult.GameID = gameid;
                         clResult.ResultDate= (String)ds.Tables[0].Rows[0]["CreatedDate"];
-                        clResult.Result1 = 0;// (int)ds.Tables[0].Rows[0]["Result"];
+                        clResult.Result1 = (int)ds.Tables[0].Rows[0]["Result"];
                         clResult.ResultID = rndTube;
 
                     }
