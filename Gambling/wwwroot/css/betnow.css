@@ -43,9 +43,9 @@ body {
     text-align:right;
 }
 
-.bet-amount{
-    padding:10px 0px;
-    height:65px;
+.bet-amount {
+    padding: 10px 0px;
+    height:45px;
 }
 .span-betamount {
     padding: 5px;
@@ -108,6 +108,14 @@ body {
     background-color: #f73 !important;
     color: white !important;
     border-color:#f73 !important;
+}
+
+.addButton {
+    background-color: #f73 !important;
+    color: white !important;
+    border-color: #f73 !important;
+    height:90%;
+    margin-left:10px !important;
 }
 
 .footer {

@@ -33,61 +33,6 @@ function closepopup() {
     window.location = window.location.href + "&back=1";
 }
 
-function html_slot(objresult) {
-    var slotstring = objresult.slotNumber;
-    console.log("slot:" + slotstring);
-    var array = slotstring.split(',');
-    console.log(array);
-    var slotA = '';
-    var slotB = '';
-    var slotC = '';
-    var slotD = '';
-    var slotE = '';
-
-    for (var i = 0; i < array.length; i++) {
-        var slot = array[i];
-        console.log(slot);
-        if (slot == "1") {
-            slotA = 'active';
-        } else if (slot == "2") {
-            slotB = 'active';
-        } else if (slot == "3") {
-            slotC = 'active';
-        } else if (slot == "4") {
-            slotD = 'active';
-        } else if (slot == "5") {
-            slotE = 'active';
-        }
-    }
-
-    console.log("slotA:" + slotA);
-    var html = "";
-    html += "<div class='span-slot'>ប្រភេទ:</div> ";
-
-    if (slotA == 'active') {
-        html += "<div class='round-number' style='line-height:30px;'>A</div>";
-
-    }
-    if (slotB == 'active') {
-        html += "<div class='round-number' style='line-height:30px;'>B</div>";
-
-    }
-    if (slotC == 'active') {
-        html += "<div class='round-number' style='line-height:30px;'>C</div>";
-
-    }
-    if (slotD == 'active') {
-        html += "<div class='round-number' style='line-height:30px;'>D</div>";
-
-    }
-    if (slotE == 'active') {
-        html += "<div class='round-number' style='line-height:30px;'>E</div>";
-
-    }
-
-    return html = "<div style='width: 100%;display: inline-block;'>" + html + "</div>";
-}
-
 function loadreceipt() {
     var qrcode = getUrlVars()["qrcode"];
     console.log("qrcode:" + qrcode);
@@ -96,6 +41,7 @@ function loadreceipt() {
     receipt(qrcode);
     qrcode_img_base64(qrcode);
 }
+
 function qrcode_img_base64(qrcode) {
     console.log("qrcode:" + qrcode);
     $.ajax({
@@ -161,41 +107,55 @@ function create_receipt(objBetting) {
 
 
     html += printdetail(objBetting);
-    html += "<div style='padding:5px;border-bottom: solid 1px gray;'></div>";
 
+    html += "<div style='padding:5px;border-bottom: solid 1px gray;'></div>";
     html += "<div>អ្នកលក់:" + objBetting.createdBy + "</div>";
     return html;
 }
 
 function printdetail(objresult) {
 
+    var bettingNumber = objresult.betNumber.split(',');
+    var bettingMoney = objresult.slotNumber.split(',');
+
+
     var html = "";
 
-    html += "<div>";
-    //html += "<div>ប្រភេទ:</div>";
-    html += html_slot(objresult);
-    html += "</div>";
 
-    html += "<div>";
-    //html += "<div>លេខដែលបានចាក់:</div>";
-    var betnumber = objresult.betNumber;
-    var array = betnumber.split(',');
-
-    html += load_numberlist_html(array);
-    html += "</div>";
+    for (var i = 0; i < bettingNumber.length; i++) {
+        html += `<div>ចាក់ ${NumberToText(bettingNumber[i])} = R${bettingMoney[i]}</div>`;
+    }
 
     html += "<div style='width: 100%;display: inline-block;margin-top: 20px;' >";
 
 
     html += "<div>ចំនួនទឹកប្រាក់:<span class='bet-amount'>" + objresult.betAmount + " KHR</span></div>";
     html += "<div>សរុប:<span class='bet-amount'>" + objresult.totalBet + " KHR</span></div>";
-    html += "</div>";
-
-    html += "</div>";
 
     //console.log(html);
     return html;
 
+
+}
+
+
+function NumberToText(number) {
+    var result = '';
+    switch (number) {
+        case '1':
+            result = 'ស្តើង';
+            break;
+        case '2':
+            result = 'ស្មើ';
+            break;
+        case '3':
+            result = 'ក្រាស់';
+            break;
+        default:
+            result = '';
+            break;
+    }
+    return result;
 
 }
 
