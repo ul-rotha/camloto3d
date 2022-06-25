@@ -68,18 +68,21 @@ namespace SignalR.MessageWorker
                         EventMessage eventMessage;
                         if (resultcount == 0)
                         {
-                            clResult = dalGlobal.GenerateResult(clGame.gameid);
-                            string jsonString = JsonSerializer.Serialize(clResult);
-                            eventMessage = new EventMessage("", jsonString, "start result");
+                            //clResult = dalGlobal.GenerateResult(clGame.gameid);
+                            //string jsonString = JsonSerializer.Serialize(clResult);
+                            //eventMessage = new EventMessage("", jsonString, "start result");
+                            eventMessage = new EventMessage("", "", "start result");
 
                         }
                         else if (resultcount == 1)
                         {
-                            eventMessage = new EventMessage("", clResult.Result1.ToString(), "result1");
+                            //eventMessage = new EventMessage("", clResult.Result1.ToString(), "result1");
+                            eventMessage = new EventMessage("", "", "result1");
                         }
                         else if (resultcount == 2)
                         {
-                            eventMessage = new EventMessage("", clResult.Result2.ToString(), "result1stop");
+                            //eventMessage = new EventMessage("", clResult.Result2.ToString(), "result1stop");
+                            eventMessage = new EventMessage("", "", "result1");
                         }
                         else
                         {

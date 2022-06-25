@@ -580,7 +580,6 @@ namespace GameAPI.App_Code
             }
         }
 
-
         public ClUser UserLogin(ClUser cluser)
         {
 
@@ -1025,12 +1024,12 @@ namespace GameAPI.App_Code
                         SqlParameter sqlParameter51 = command.Parameters.Add("@BetAmount", SqlDbType.Int);
                         sqlParameter51.Value = clBetting.BetAmount;
                         SqlParameter sqlParameter6 = command.Parameters.Add("@UnitWinAmount", SqlDbType.Int);
-                        sqlParameter6.Value = clBetting.UnitWinAmount;
+                        sqlParameter6.Value = 0;// clBetting.UnitWinAmount;
 
                         SqlParameter sqlParameter7 = command.Parameters.Add("@WinAmount", SqlDbType.Int);
-                        sqlParameter7.Value = clBetting.UnitWinAmount * clBetting.BetAmount;
+                        sqlParameter7.Value = 0;// clBetting.UnitWinAmount * clBetting.BetAmount;
                         SqlParameter sqlParameter8 = command.Parameters.Add("@TotalBet", SqlDbType.Int);
-                        sqlParameter8.Value = clBetting.BetAmount * clBetting.SlotNumber.Split(",").Length * clBetting.BetNumber.Split(",").Length;
+                        sqlParameter8.Value = 0;// clBetting.BetAmount * clBetting.SlotNumber.Split(",").Length * clBetting.BetNumber.Split(",").Length;
                         SqlParameter sqlParameter9 = command.Parameters.Add("@CreatedBy", SqlDbType.VarChar);
                         sqlParameter9.Value = clBetting.CreatedBy;
   
@@ -1310,7 +1309,7 @@ namespace GameAPI.App_Code
                         int rndTube = new Random().Next(0, 5);
                         clResult.GameID = gameid;
                         clResult.ResultDate= (String)ds.Tables[0].Rows[0]["CreatedDate"];
-                        clResult.Result1 = (int)ds.Tables[0].Rows[0]["Result"];
+                        clResult.Result1 = 0;// (int)ds.Tables[0].Rows[0]["Result"];
                         clResult.ResultID = rndTube;
 
                     }
