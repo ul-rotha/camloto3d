@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< Updated upstream
   "Hash": "FLape81cto25AJP7i/NAq9k+5J7NL00j/xQB/KWWlF0=",
+=======
+  "Hash": "Zcl4aY3XqAwSaeLhYacQjpAv185AKL1mGLN6XzmG2O0=",
+>>>>>>> Stashed changes
   "Source": "Gambling",
   "BasePath": "_content/Gambling",
   "Mode": "Default",
@@ -1275,7 +1279,28 @@
       "OriginalItemSpec": "wwwroot\\css\\comfortaa-bold-webfont.woff2"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\impact.eot",
+=======
+      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\history.css",
+      "SourceId": "Gambling",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "BasePath": "_content/Gambling",
+      "RelativePath": "css/history.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\history.css"
+    },
+    {
+      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\impact.eot",
+>>>>>>> Stashed changes
       "SourceId": "Gambling",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
@@ -2091,7 +2116,28 @@
       "OriginalItemSpec": "wwwroot\\js\\CToggle.js"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\howler.min.js",
+=======
+      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\history.js",
+      "SourceId": "Gambling",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "BasePath": "_content/Gambling",
+      "RelativePath": "js/history.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\history.js"
+    },
+    {
+      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\howler.min.js",
+>>>>>>> Stashed changes
       "SourceId": "Gambling",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
@@ -2125,7 +2171,28 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-3.2.1.min.js"
     },
     {
+<<<<<<< Updated upstream
       "Identity": "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\login.js",
+=======
+      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\jquery-latest.min.js",
+      "SourceId": "Gambling",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "BasePath": "_content/Gambling",
+      "RelativePath": "js/jquery-latest.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery-latest.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\login.js",
+>>>>>>> Stashed changes
       "SourceId": "Gambling",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ulrotha\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
