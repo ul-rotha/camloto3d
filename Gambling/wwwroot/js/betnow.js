@@ -1,6 +1,81 @@
-﻿var money = [500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 20000];
+﻿var money = [500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 20000, 50000, 100000, 200000];
 
 //Rotha
+var betData = [];
+function addTemp() {
+    var invalids = 0;
+
+    var text = $(".bet-type.active").text();
+    if (betData.some(d => d[0] === TextToNumber(text))) {
+        alertme(`${text} ចាក់រួចហើយ`);
+        invalids += 1;
+        return;
+    }
+
+    if (!$(".bet-type").hasClass('active')) {
+        alertme("សូមជ្រើសរើសឆ្នោតចាក់");
+        invalids += 1;
+        return;
+        //var text = $('.bet-type.active').text();
+    }
+
+    var betamount = $("#hd_betamount").val();
+    if (betamount == "0") {
+        alertme("សូមជ្រើសរើសទឹកប្រាក់ភ្នាល់");
+        invalids += 1;
+        return;
+    }
+
+    if (invalids == 0) {
+        $("#data-temp").append(`<div style="padding-top:5px;">${text} = R${parseInt($("#hd_betamount").val())} <span onClick='RemoveRow(this, ${TextToNumber(text)});'​>លុបចេញ</span></div>`);
+
+        $(".bet-type").removeClass("active");
+        $(".bet-type").find("i").remove();
+
+        betData.push([TextToNumber(text), parseInt($("#hd_betamount").val())]);
+        var total = 0;
+        for (var i = 0; i < betData.length; i++) {
+            total += betData[i][1];
+        }
+        $("#span_totalbetamount").html(total + "R");
+
+        $("#hd_betamount").val(0);
+        $("#betAmount").html('R' + 0);
+    }
+}
+
+function RemoveRow(element, id) {
+    $(element).parent().remove();
+
+    betData = betData.filter(item => item[0] !== id);
+
+    var total = 0;
+    for (var i = 0; i < betData.length; i++) {
+        total += betData[i][1];
+    }
+    $("#span_totalbetamount").html(total + "R");
+}
+
+function TextToNumber(text) {
+    var result = 0;
+    switch (text) {
+        case 'ស្តើង':
+            result = 1;
+            break;
+        case 'ស្មើ':
+            result = 2;
+            break;
+        case 'ក្រាស់':
+            result = 3;
+            break;
+        default:
+            result = 0;
+            break;
+    }
+    return result;
+
+}
+
 function show_betamount() {
     //$("#div_popup_betamount").show();
 
@@ -11,12 +86,11 @@ function show_betamount() {
     $("#div_betamount_option").html(html);
 }
 
-
 function betnow(amount) {
     if (amount == 0) {
         $("#hd_betamount").val(0);
         $("#betAmount").html('R' + 0);
-        $("#span_totalbetamount").html(0 + "R");
+        //$("#span_totalbetamount").html(0 + "R");
     }
     else {
         var betamount = parseInt($("#hd_betamount").val());
@@ -26,28 +100,180 @@ function betnow(amount) {
             alertme("មិនអាចភ្នាល់លើសពី​</br>" + bigAmt + "Riel");
             $("#hd_betamount").val(bigAmt);
             $("#betAmount").html('R' + bigAmt);
-            $("#span_totalbetamount").html(bigAmt + "R");
+            //$("#span_totalbetamount").html(bigAmt + "R");
         }
         else {
             $("#hd_betamount").val(betamount);
             $("#betAmount").html('R' + betamount);
-            $("#span_totalbetamount").html(betamount + "R");
+            //$("#span_totalbetamount").html(betamount + "R");
         }
     }
 
     closepopup_betamount();
-
-    //loadtotalbet();
 }
 
 function clear_betting() {
-    $("#span_totalbetamount").html("");
-    $("#hd_betamount").val("0");
-    $("#betAmount").html('R0');
+    betData = [];
 
     $(".bet-type").removeClass("active");
     $(".bet-type").find("i").remove();
+
+    $("#data-temp").html("");
+    $("#hd_betamount").val("0");
+    $("#betAmount").html('R0');
+    $("#span_totalbetamount").html("R");
+
+   
 }
+
+function submit() {
+
+    var invalids = 0;
+   
+    if (betData.length <= 0) {
+        alertme("សូមជ្រើសរើសឆ្នោតចាក់");
+        invalids += 1;
+        return;
+    }
+
+    var gameid = $("#hdGameID").val();
+    if (gameid == 0) {
+        alertme("ឆ្នោតកំពុងចេញលទ្ធផល")
+        invalids += 1;
+        window.location = window.location.href;
+    }
+
+    if (invalids == 0) {
+        $("#div_alert_submit").show();
+        setTimeout(function () {
+            addbetting(gameid);
+        }, 500);
+
+    }
+
+}
+
+function addbetting(gameid) {
+    //var slotNumber = 0;
+    //betNumbers = 1;
+    //var betamount = $("#hd_betamount").val();
+    var betamount = 0;
+    var placeid = $("#hd_placeid").val();
+    var username = $("#hdUsername").val();
+
+    var arrBetNum = [];
+    var arrMoney = [];
+
+    console.log(username);
+
+    for (var i = 0; i < betData.length; i++) {
+        arrBetNum.push(betData[i][0]);
+        arrMoney.push(betData[i][1]);
+        betamount += betData[i][1];
+    }
+
+    var number = arrBetNum.toString();
+    var money = arrMoney.toString();
+
+    if (username == "") {
+        addbetting_unkownuser(gameid, placeid, money, number, betamount);
+    } else {
+
+        addbettingrecord(gameid, placeid, money, number, betamount, username);
+    }
+}
+
+function addbetting_unkownuser(gameid, placeid, slotNumber, betNumbers, betamount) {
+    var token = getUrlVars()["token"];
+    console.log("token:" + token);
+    if (token != "" && token != undefined) {
+        $.ajax({
+            //cache: false,
+            async: false,
+            type: "POST",
+            //dataType: "Json",
+            contentType: "application/json; charset=utf-8",
+            url: "api/CheckTokenDetail",
+            data: '{"TokenID":"' + token + '"}',
+            success: function (data) {
+                console.log(data);
+                if (data.expired == true) {
+
+                    window.location = "login?token=";
+                } else {
+                    $("#div_alert_submit").hide();
+
+                    $("#hdUsername").val(data.username.toLowerCase());
+                    $("#hd_placeid").val(data.placeID);
+                    console.log("placeid:" + data.placeID);
+                    var username = $("#hdUsername").val();
+
+                    console.log(username);
+                    getusercredit(username);
+
+                    addbettingrecord(gameid, placeid, slotNumber, betNumbers, betamount, username);
+                    //getuserlist(username);
+                }
+            },
+            error: function (result) {
+                console.log(result);
+                //$('#loading').hide();
+            }
+        });
+    } else {
+        window.location = "login?toke=";
+    }
+
+
+}
+
+function addbettingrecord(gameid, placeid, slotNumber, betNumbers, betamount, username) {
+    $.ajax({
+        //cache: false,
+        async: false,
+        type: "POST",
+        //dataType: "Json",
+        contentType: "application/json; charset=utf-8",
+        url: "api/betting",
+        data: '{"gameId": ' + gameid + ',"placeid":' + placeid + ',"slotNumber":"' + slotNumber + '","BetType":"N","BetNumber":"' + betNumbers + '","BetAmount":' + betamount + ',"UnitWinAmount":90,"CreatedBy":"' + username + '"}',
+        success: function (dataobj) {
+            console.log(dataobj);
+            var bettingid = dataobj.bettingID;
+            console.log("BettingID:" + bettingid);
+            if (bettingid == -1) {
+                //alert("error!")
+                alertme("error!");
+            } else {
+                if (bettingid == 0) {
+                    //alert("ឆ្នោតចាប់លេងហើយ។")
+                    alertme("ឆ្នោតចាប់លេងហើយ។")
+                    window.location = window.location.href;
+                } else {
+                    //var html = create_receipt(dataobj);
+                    //qrcode_img_base64(bettingid,html);
+                    $("#div_alert_submit").hide();
+
+                    if (bettingid == -2) {
+                        alertme("ទឹកប្រាក់ភ្នាក់ងារមិនគ្រប់");
+                    } else {
+                        clear_betting();
+                        getusercredit(username);
+                        window.location = "print?qrcode=" + bettingid;
+
+                    }
+                }
+
+
+            }
+
+        },
+        error: function (result) {
+            console.log(result);
+            //$('#loading').hide();
+        }
+    });
+}
+
 
 //End Rotha
 
@@ -360,50 +586,6 @@ function getUrlVars() {
         vars[hash[0]] = hash[1];
     }
     return vars;
-}
-
-function addbetting_unkownuser(gameid, placeid, slotNumber, betNumbers, betamount) {
-    var token = getUrlVars()["token"];
-    console.log("token:" + token);
-    if (token != "" && token != undefined) {
-        $.ajax({
-            //cache: false,
-            async: false,
-            type: "POST",
-            //dataType: "Json",
-            contentType: "application/json; charset=utf-8",
-            url: "api/CheckTokenDetail",
-            data: '{"TokenID":"' + token + '"}',
-            success: function (data) {
-                console.log(data);
-                if (data.expired == true) {
-
-                    window.location = "login?token=";
-                } else {
-                    $("#div_alert_submit").hide();
-
-                    $("#hdUsername").val(data.username.toLowerCase());
-                    $("#hd_placeid").val(data.placeID);
-                    console.log("placeid:" + data.placeID);
-                    var username = $("#hdUsername").val();
-
-                    console.log(username);
-                    getusercredit(username);
-
-                    addbettingrecord(gameid, placeid, slotNumber, betNumbers, betamount, username);
-                    //getuserlist(username);
-                }
-            },
-            error: function (result) {
-                console.log(result);
-                //$('#loading').hide();
-            }
-        });
-    } else {
-        window.location = "login?toke=";
-    }
-
-
 }
 
 function checktokendetail() {
@@ -1183,116 +1365,6 @@ function loadtotalbet() {
     var total = (betamount * numberofslot * listnumber.length);
     $("#span_totalbetamount").html('R' + total);
 
-}
-
-function submit() {
-    var invalids = 0;
-    if (!$(".bet-type").hasClass('active')) {
-        alertme("សូមជ្រើសរើសឆ្នោតចាក់");
-        invalids += 1;
-        return;
-        //var text = $('.bet-type.active').text();
-    }
-
-    var betamount = $("#hd_betamount").val();
-    if (betamount == "0") {
-        alertme("សូមជ្រើសរើសទឹកប្រាក់ភ្នាល់");
-        invalids += 1;
-        return;
-    }
-
-    var gameid = $("#hdGameID").val();
-    gameid = 0;
-    if (gameid == 0) {
-        alertme("ឆ្នោតកំពុងចេញលទ្ធផល")
-        invalids += 1;
-        window.location = window.location.href;
-    }
-
-    if (invalids == 0) {
-        $("#div_alert_submit").show();
-        setTimeout(function () {
-           addbetting(gameid);
-        }, 500);
-
-    }
-
-}
-
-function addbetting(gameid) {
-    var slotNumber = "";
-    for (var i = 0; i < listslot.length; i++) {
-        var number = listslot[i];
-        slotNumber += number + ","
-    }
-    slotNumber = slotNumber.substr(0, slotNumber.length - 1);
-    var betNumbers = "";
-    for (var i = 0; i < listnumber.length; i++) {
-        var number = listnumber[i];
-        betNumbers += number + ","
-    }
-    betNumbers = betNumbers.substr(0, betNumbers.length - 1);
-    var betamount = $("#hd_betamount").val();
-    //var gameid = $("#hdGameID").val();
-    var placeid = $("#hd_placeid").val();
-    var username = $("#hdUsername").val();
-    console.log(username);
-
-    if (username == "") {
-        addbetting_unkownuser(gameid, placeid, slotNumber, betNumbers, betamount);
-    } else {
-        addbettingrecord(gameid, placeid, slotNumber, betNumbers, betamount, username);
-    }
-
-
-
-}
-
-function addbettingrecord(gameid, placeid, slotNumber, betNumbers, betamount, username) {
-    $.ajax({
-        //cache: false,
-        async: false,
-        type: "POST",
-        //dataType: "Json",
-        contentType: "application/json; charset=utf-8",
-        url: "api/betting",
-        data: '{"gameId": ' + gameid + ',"placeid":' + placeid + ',"slotNumber":"' + slotNumber + '","BetType":"N","BetNumber":"' + betNumbers + '","BetAmount":' + betamount + ',"UnitWinAmount":90,"CreatedBy":"' + username + '"}',
-        success: function (dataobj) {
-            console.log(dataobj);
-            var bettingid = dataobj.bettingID;
-            console.log("BettingID:" + bettingid);
-            if (bettingid == -1) {
-                //alert("error!")
-                alertme("error!");
-            } else {
-                if (bettingid == 0) {
-                    //alert("ឆ្នោតចាប់លេងហើយ។")
-                    alertme("ឆ្នោតចាប់លេងហើយ។")
-                    window.location = window.location.href;
-                } else {
-                    //var html = create_receipt(dataobj);
-                    //qrcode_img_base64(bettingid,html);
-                    $("#div_alert_submit").hide();
-
-                    if (bettingid == -2) {
-                        alertme("ទឹកប្រាក់ភ្នាក់ងារមិនគ្រប់");
-                    } else {
-                        clear_betting();
-                        getusercredit(username);
-                        window.location = "print?qrcode=" + bettingid;
-
-                    }
-                }
-
-
-            }
-
-        },
-        error: function (result) {
-            console.log(result);
-            //$('#loading').hide();
-        }
-    });
 }
 
 function history() {
