@@ -1,0 +1,203 @@
+﻿@page
+@model SignalR.Pages.userModel
+@{
+}
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/user.js?v=8"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<link href="~/css/user.css?v=5" rel="stylesheet" />
+
+<input type="hidden" value="" id="hdOwner" />
+<input type="hidden" value="" id="hdSelectedUser" />
+<div class="div-popup" id="div_popup_credithistory" style="display:none;z-index:99999">
+         
+
+        <div class="div-popup-close"><span class="alert-popup-title" id="span_popup_title">ទឹកប្រាក់បានដាក់ ឬដក</span><span class="span-close" onclick="closepopupcredithistory()">X</span></div>
+        <div class="" id="div_credithistory">
+
+        </div>
+</div>
+
+<div class="div-popup" id="div_update_credit" style="display:none;z-index:999999">
+    <div class="div-update-credit">
+        <div id="div_usercredit"></div>
+            <div style="margin-top:10px;">
+                <span id="span_credit_title" class="span-credit-title"></span>
+                <span class="currencyinput"><input type="text" id="txtcredit" value="" onkeyup="onlyNumberAmount(this)"/></span>
+                <span id="spanaddcredit" onclick="addcredit()" class="button-action-credit">+</span>
+                <span id="spandeductcredit" onclick="deductcredit()" class="button-action-credit button-minus">-</span>
+                <span onclick="cancelcredit()" class="button-action-credit">x</span>
+            </div>    
+            </div>
+            <div style="color: #f73;text-align: center;padding: 10px;" id="divinfo">
+
+            </div>
+</div>
+<div class="div-popup" id="div_alert" style="display:none;z-index:99999">
+         <div class="div-popup-detail">
+
+        <div class="div-popup-close"><span class="alert-popup-title" id="div_popup_title">តើអ្នកដកប្រាក់ឈ្នះនេះមែនទេ?</span><span class="span-close" onclick="closepopup()">X</span></div>
+        
+        <div class="" id="div_popup_detail">
+            <div class="" id="div_popup_detail">
+            <div class="div-option-button">
+                <div>
+                <span class="titile-password">Nickname</span>
+                <span>
+                    <input type="text" value="" style="float:left;" class="textbox" id="txtnickname" />
+                </span>
+                
+                <span class="button-option" onclick="updatenickname()">Update</span>
+                
+                </div>
+            </div>
+              <div class="div-option-button">
+                <div>
+                <span class="titile-password">Username</span>
+                <span class="titile-password" id="spanusername">
+                    
+                </span>
+                
+                
+                
+                </div>
+            </div>
+            <div class="div-option-button">
+                
+                <div>
+                <span class="titile-password"  style="display:none;">Password</span>
+                <span  style="display:none;">
+                    <input type="text" value="" style="float:left;" class="textbox" id="txtchangepassword" />
+                </span>
+                
+                <span class="button-option" onclick="resetpassword()">Reset Password</span>
+                <div id="div_passwordreset"></div>
+                </div>
+           
+            </div>
+            <div>
+
+            <div id="div_credit">
+            
+            <div class="div-current-credit">
+                <div class="div-agent-credit">ទឹកប្រាក់ភ្នាក់ងារ
+                <span id="spancredit" class="span-credit"></span>
+                                <span class="button-action-credit" onclick="credithistory()"><i class="fa fa-history"></i></span>
+
+               
+                </div>
+            </div>
+            </div>
+            
+            <div style="display:block;">
+                <div>លិខិតបញ្ជាក់អត្តសញ្ញាណ<span id="actionimg" class="icon-fullscreen"  onclick="uploadid(this)"><i class="fa fa-upload"></i></span></div>
+                <div style="text-align:center;">
+                    
+                    
+                    <div class="div-list-doc" id="div_doc">
+
+                    </div>
+                </div>
+            </div>
+            <div class="div-action-button" id="div_action">
+
+             <span class="lock-icon" onclick='unlockuser(this)' ><i style="font-size: x-large;" class="fa fa-toggle-on"></i></span>
+
+            </div>    
+            </div>
+            
+        </div>
+            
+        </div>
+        </div>
+</div>
+
+<div class="div-popup" id="div_popup_master" style="display:none;">
+         <div class="div-popup-detail">
+
+        <div class="div-popup-close"><span class="alert-popup-title" id="div_popup_title_master">តើអ្នកដកប្រាក់ឈ្នះនេះមែនទេ?</span><span class="span-close" onclick="closepopup_master()">X</span></div>
+        <div id="div_popup_master_detail">
+
+        </div>
+        </div>
+</div>
+
+
+<div class="div-popup" id="div_popup_agent" style="display:none;">
+         <div class="div-popup-detail">
+
+        <div class="div-popup-close"><span class="alert-popup-title" id="div_popup_title_agent">តើអ្នកដកប្រាក់ឈ្នះនេះមែនទេ?</span><span class="span-close" onclick="closepopup_agent()">X</span></div>
+        <div id="div_popup_agent_detail">
+
+        </div>
+        </div>
+</div>
+
+<div class="div-popup" id="div_popup_member" style="display:none;">
+         <div class="div-popup-detail">
+
+        <div class="div-popup-close"><span class="alert-popup-title" id="div_popup_title_member">តើអ្នកដកប្រាក់ឈ្នះនេះមែនទេ?</span><span class="span-close" onclick="closepopup_member()">X</span></div>
+        <div id="div_popup_member_detail">
+
+        </div>
+        </div>
+</div>
+
+<div>
+    <div style="text-align:left;margin: 10px 0px;">
+        <a href="#" onclick="backhome()" style="background-color: #f73;padding: 10px;border-radius: 10px;color: white;"><i class="fas fa-home" aria-hidden="true"></i></a>
+        <a href="#" onclick="refreshpage()" style="background-color: #f73;padding: 10px;border-radius: 10px;color: white;"><i class="fas fa-refresh" aria-hidden="true"></i></a>    
+    </div>
+    <input type="hidden" value="" id="hdUsername" />
+    <div id = "divuser" class="div-popup" style="display:none;z-index:99999">
+          <div class="div-popup-detail-user">
+
+        <div class="div-popup-close"><span class="alert-popup-title" id="div_popup_title">User Account</span><span class="span-close" onclick="hidedivuser()">X</span></div>
+       
+        <div class="div-field-caption"><div class="field-caption">Username:</div><span><input class="textbox" type="text" id="txt_username"></span></div>
+        <div class="div-field-caption"><div class="field-caption">Level:</div><span id="spanlevel"></span></div>
+        <div class="div-field-caption"><div class="field-caption">Password:</div><span><input class="textbox" type="text" id="txt_password" placeholder="6 charactors"></span></div>
+        <div class="div-field-caption"><div class="field-caption">Retype Password:</div><span><input class="textbox" type="text" id="txt_retypepassword" placeholder="6 charactors"></span></div>
+        <div class="div-submit-user">
+            <input type="button" value="submit" onclick="addnewuser()" class="span-close" />
+        </div>
+        <div>
+        <table class="tbldate">
+            
+            <tr>
+               
+                <td>
+                    <input type="checkbox" id="chkBetting" />
+                    <label for="chkBetting">ភ្នាល់</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="chkWithdrawal" />
+                    <label for="chkWithdrawal">ដកប្រាក់</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="chkReport" />
+                     <label for="chkReport">របាយការណ៌</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="chkDisplay"​ style="display:none" />
+
+                </td>
+            </tr>
+        </table>
+        </div>
+        </div>
+    </div>
+  
+    <div class="userlist-title">បញ្ជីគណនី:
+        <select id="selectusertype" onchange="filteruser()">
+            <option value="All">All Users</option>
+            <option value="Active">Active Users</option>
+            <option value="InActive">Inactive Users</option>
+        </select>
+      
+    </div>
+    <div id="userlist">
+
+    </div>
+</div>

@@ -1,0 +1,178 @@
+﻿table {
+    border: 1px solid black;
+}
+
+th,td {
+    border: 1px solid white;
+    width: 100px;
+    overflow: hidden;
+    padding:5px;
+}
+
+.tbldate{
+    border:none;
+}
+.tbldate tr td {
+    border: none;
+}
+
+.f-money{
+    text-align:right;
+}
+
+.report-title{
+    font-weight:800;
+    font-size:xx-large;
+}
+
+.date-textbox {
+    padding: 5px;
+    border-radius: 10px;
+    width: 130px;
+}
+.report-title-date {
+    font-weight: bold;
+    font-size: x-large;
+}
+.report-row{
+    padding:5px;
+}
+.row-caption{
+   color:white;
+}
+.row-value{
+    float:right;
+    font-weight:bold;
+}
+.report-panel{
+    max-width:600px;
+}
+
+.div-date-caption {
+    padding: 5px;
+    width: 150px;
+    float: left;
+}
+.date-caption {
+    width: 80px;
+    float: left;
+    padding: 5px;
+}
+.button-preview{
+    padding:5px;
+    border-radius:10px;
+    margin-left:5px;
+}
+
+
+body {
+    margin: 0;
+    background-color: #052d40;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    color: #fff;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.report-usergroup {
+    padding: 5px;
+    margin-bottom: 30px;
+}
+.report-username {
+    padding: 5px;
+    background-color: #f73;
+    font-size: large;
+}
+.Report-Header {
+    padding: 5px;
+    width: 150px;
+    float: left;
+    background-color: #f73;
+    margin-left: 5px;
+}
+
+.username-header {
+    width: 20%;
+    float: left;
+}
+
+.level-header {
+    width: 10%;
+    float: left;
+}
+
+.transaction-header {
+    width: 25%;
+    float: left;
+    text-align: right;
+}
+.balance-header {
+    width: 20%;
+    float: left;
+    text-align: right;
+}
+.Report-Header-inactive {
+    padding: 5px;
+    width: 150px;
+    float: left;
+    background-color: gray;
+    margin-left: 5px;
+}
+
+.div-popup {
+    position: fixed;
+    z-index: 9999;
+    background-color: rgb(0 0 0 / 90%);
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    padding: 10px;
+}
+
+.alert-popup-title {
+    padding: 5px;
+    font-size: x-large;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.div-popup-detail {
+    padding: 10px;
+    border-radius: 15px;
+}
+.button-option {
+    padding: 7px;
+    background-color: #f73;
+    margin-right: 10px;
+    border-radius: 15px;
+    float: left;
+}
+
+.div-popup-close {
+    text-align: right;
+    padding: 5px 5px 20px 5px;
+}
+
+.span-close {
+    padding: 5px 10px;
+    color: white;
+    background-color: #f73;
+    border-radius: 5px;
+}
+
+.fas{
+	color:#f73;
+}

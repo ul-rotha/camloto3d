@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aXXjpVn5KtAUsBIrDoQp2LajwCcmQccB6u5bANW5e3o=",
+  "Hash": "8Y3n3ngdi8vnahZ5kgB3j7ZcmFHIT14uGQjSYyNzhTI=",
   "Source": "Gambling",
   "BasePath": "_content/Gambling",
   "Mode": "Default",
@@ -1411,6 +1411,23 @@
       "OriginalItemSpec": "wwwroot\\css\\orientation_utils.css"
     },
     {
+      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\report.css",
+      "SourceId": "Gambling",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "BasePath": "_content/Gambling",
+      "RelativePath": "css/report.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\report.css"
+    },
+    {
       "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\reset.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
@@ -1443,6 +1460,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\user.css",
+      "SourceId": "Gambling",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "BasePath": "_content/Gambling",
+      "RelativePath": "css/user.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\user.css"
     },
     {
       "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\favicon.ico",
@@ -2074,6 +2108,23 @@
       "OriginalItemSpec": "wwwroot\\js\\howler.min.js"
     },
     {
+      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\jquery-1.11.0.min.js",
+      "SourceId": "Gambling",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "BasePath": "_content/Gambling",
+      "RelativePath": "js/jquery-1.11.0.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery-1.11.0.min.js"
+    },
+    {
       "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\jquery-3.2.1.min.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
@@ -2157,6 +2208,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\print.js"
+    },
+    {
+      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\public.js",
+      "SourceId": "Gambling",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "BasePath": "_content/Gambling",
+      "RelativePath": "js/public.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\public.js"
+    },
+    {
+      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\report.js",
+      "SourceId": "Gambling",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "BasePath": "_content/Gambling",
+      "RelativePath": "js/report.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\report.js"
     },
     {
       "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\screenfull.js",
@@ -2259,6 +2344,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\timer.js"
+    },
+    {
+      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\user.js",
+      "SourceId": "Gambling",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "BasePath": "_content/Gambling",
+      "RelativePath": "js/user.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\user.js"
     },
     {
       "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
