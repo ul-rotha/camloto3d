@@ -17,7 +17,7 @@ connection.on("ReceiveMessage", function (Eventmessage) {
         var objgame = JSON.parse(Eventmessage.message);
         console.log(objgame)
         countdown(objgame.timeremaining, objgame.gameid);
-        
+
         if (objgame.timeremaining <= 10) {
             if (objgame.timeremaining >= 9) {
                 $("#div_resultinfo").html("");
@@ -26,12 +26,13 @@ connection.on("ReceiveMessage", function (Eventmessage) {
             if (objgame.timeremaining == 2 || objgame.timeremaining == 4 || objgame.timeremaining == 6 || objgame.timeremaining == 8 || objgame.timeremaining == 10) {
                 //playeraudio("clear-announce");
                 //playaudiofromcontrol("audioplayer_notice");
+                
             }
 
 
         }
 
-        
+
     }
     else if (Eventmessage.subject == "start result") {
         console.log("start result");
@@ -391,7 +392,7 @@ function load_result(result_index, result) {
 
 
     s_oGame.launch(number);
-    iCurPrize = parseInt(result)-1;
+    iCurPrize = parseInt(result) - 1;
     console.log("result launched");
 
 }
