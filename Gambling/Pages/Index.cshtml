@@ -91,7 +91,7 @@
             prize: [1, 2, 3, 4, 5, 6],  //THE AMOUNT WON BY THE PLAYER;
             prize_probability: [10, 8, 1, 4, 10, 10], //THE OCCURENCY WIN OF THAT PRIZE. THE RATIO IS CALCULATED BY THE FORMULA: (single win occurrence/sum of all occurrence). For instance, in this case, prize 100 have 1/43 chance. Prize 50 have 4/43 chance.
 
-            audio_enable_on_startup: false, //ENABLE/DISABLE AUDIO WHEN GAME STARTS
+            audio_enable_on_startup: true, //ENABLE/DISABLE AUDIO WHEN GAME STARTS
             show_credits: false,          //SET THIS VALUE TO FALSE IF YOU DON'T WANT TO SHOW CREDITS BUTTON
             fullscreen: false,            //SET THIS TO FALSE IF YOU DON'T WANT TO SHOW FULLSCREEN BUTTON
             check_orientation: false,     //SET TO FALSE IF YOU DON'T WANT TO SHOW ORIENTATION ALERT ON MOBILE DEVICES
@@ -203,7 +203,8 @@
 
 
 <div class="row">
-    <div class="p-0 m-0" style="width:650px;"><canvas id="canvas" class='ani_hack' width="1280" height="1920"></canvas></div>
+    <div class="p-0 m-0" style="width:89vh;">
+        <canvas id="canvas" class='ani_hack' width="1280" height="1920"></canvas></div>
     <div class="col bg-right">
         <div class="row pt-4">
             <div class="row">
@@ -230,31 +231,39 @@
                     <div class="row pt-3">
                         <div class="lotto-special-list">
                             <div id="result-date" class="pb-2"></div>
+
+                            <div class="div_option">
                             <div class="lotto-special-num" id="div_result1">
                                 <div class="jak"></div>
                                 <div class="lotto-special-num-result" id="span1">ស្តើង</div>
-                                <div class="pt-2">
+                            </div>
+                                 <div class="jackpot-small">
                                     <span class="lotto-special-num-span">X3</span>
                                     <span class="lotto-special-num-span">X5</span>
                                 </div>
                             </div>
+                            <div class="div_option">
                             <div class="lotto-special-num" id="div_result2">
                                 <div class="jak"></div>
                                 <div class="lotto-special-num-result" id="span2">ស្មើ</div>
-                                <div class="pt-2">
+                               
+                            </div>
+                             <div class="jackpot-small">
                                     <span class="lotto-special-num-span">X2</span>
                                     <span class="lotto-special-num-span">X10</span>
                                 </div>
                             </div>
+                            <div class="div_option">
                             <div class="lotto-special-num" id="div_result3">
                                 <div class="jak"></div>
                                 <div class="lotto-special-num-result" id="span3">ក្រាស់</div>
-                                <div class="pt-2">
+                               
+                            </div>
+                             <div class="jackpot-small">
                                     <span class="lotto-special-num-span">X3</span>
                                     <span class="lotto-special-num-span">X5</span>
                                 </div>
                             </div>
-
                             <!--<div class="lotto-special-num">
                                 <span id="span_result3" class="result-active">ក្រាស់</span>
                                 <div class="jakepot">X10</div>
@@ -310,7 +319,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="width:170px; border-left:1px solid #c67819">
+                <div style="width:25vh; border-left:0.5vh solid #c67819">
                     <div id="seperatr"></div>
                     <div style="" class="title-result">លទ្ធផល</div>
                     <div id="lastresult"></div>

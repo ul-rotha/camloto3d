@@ -17,7 +17,7 @@ connection.on("ReceiveMessage", function (Eventmessage) {
         var objgame = JSON.parse(Eventmessage.message);
         console.log(objgame)
         countdown(objgame.timeremaining, objgame.gameid);
-
+        
         if (objgame.timeremaining <= 10) {
             if (objgame.timeremaining >= 9) {
                 $("#div_resultinfo").html("");
@@ -25,13 +25,13 @@ connection.on("ReceiveMessage", function (Eventmessage) {
             }
             if (objgame.timeremaining == 2 || objgame.timeremaining == 4 || objgame.timeremaining == 6 || objgame.timeremaining == 8 || objgame.timeremaining == 10) {
                 //playeraudio("clear-announce");
-                playaudiofromcontrol("audioplayer_notice");
+                //playaudiofromcontrol("audioplayer_notice");
             }
 
 
         }
 
-
+        
     }
     else if (Eventmessage.subject == "start result") {
         console.log("start result");
@@ -59,7 +59,7 @@ connection.on("ReceiveMessage", function (Eventmessage) {
         //console.log("resultstring1:" + resultstring);
         console.log("test" + resultstring);
         load_result(1, resultstring);
-        playaudiofromcontrol("audioplayer_result");
+        //playaudiofromcontrol("audioplayer_result");
     } else if (Eventmessage.subject == "result1stop") {
         load_drawing();
     } else if (Eventmessage.subject == "end result") {
@@ -277,29 +277,40 @@ function show_result_html(datajson) {
     console.log(data);
 
     var html_result = '';
-    console.log("iCurPrize:" + iCurPrize);
-    if (iCurPrize == 0 || iCurPrize == 3) {
+    console.log("result:" + data.Result1);
+    var resultint = parseInt(data.Result1);
+    if (resultint == 1) {
         console.log('ក្រាស់');
-        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ក្រាស់ ' + (iCurPrize == 0 ? 'X5' : 'X3') + '</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ក្រាស់ X5</span>'
 
     }
-    else if (iCurPrize == 1 || iCurPrize == 4) {
+    else if (resultint == 2) {
         console.log('ស្តើង');
-        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្តើង ' + (iCurPrize == 0 ? 'X5' : 'X3') + '</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ស្តើង X3</span>'
     }
-    else if (iCurPrize == 2 || iCurPrize == 5) {
+    else if (resultint == 3) {
         console.log('ស្មើ');
-        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្មើ ' + (iCurPrize == 0 ? 'X1' : 'X10') + '</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ស្មើ X2</span>'
+    }
+    else if (resultint == 4) {
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ក្រាស់ X3</span>'
+    }
+    else if (resultint == 5) {
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ស្តើង X5</span>'
+    }
+    else if (resultint == 6) {
+        console.log('ស្មើ');
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ស្មើ X10</span>'
     }
 
     var html = '';
     var resultdate = data.ResultDate;
     html = `<div class="result-small">
-                    <div style='width:60px;height:45px;float:left;text-align:left;'><div>#${(data.GameID)}</div>
-                    <div style='font-size:10px;'>${(resultdate.substr(11, 8))}
+                    <div style='width:8.5vh;height:9vh;float:left;text-align:left;'><div style='font-size:3vh;'>#${(data.GameID)}</div>
+                    <div style='font-size:2vh;'>${(resultdate.substr(11, 8))}
                     </div>
                     </div>
-                    <div style='width:75px;height:45px;float:left;'>` + html_result + `</div>
+                    <div style='width:14vh;height:9vh;float:left;font-size:3vh;padding:2vh 0vh;'>` + html_result + `</div>
             </div>`;
 
     //html += "<div>";
@@ -364,12 +375,9 @@ function countdown(timeremaining, gameid) {
 }
 
 function clearResult() {
-    if ($(".lotto-special-num").hasClass("result-active")) {
-        console.log("result-ative-clear");
-        $(".lotto-special-num").removeClass("result-active");
-        $(".lotto-special-num-result").removeClass("white");
-        $(".jak").empty();
-    }
+    $(".lotto-special-num").removeClass("result-active");
+    $(".lotto-special-num-result").removeClass("white");
+    $(".jak").empty();
 }
 
 
@@ -377,20 +385,14 @@ var result_index = 0;
 function load_result(result_index, result) {
 
     console.log("load result:" + result);
-
     clearResult();
     console.log("result clear");
-
-    //Math.floor(Math.random() * 5);
-
     var number = Math.floor(Math.random() * 5);
 
 
     s_oGame.launch(number);
-    iCurPrize = parseInt(result);
+    iCurPrize = parseInt(result)-1;
     console.log("result launched");
-
-    
 
 }
 

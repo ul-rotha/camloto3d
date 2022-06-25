@@ -1,7 +1,19 @@
+.div_option {
+    float: left;
+    height: 25vh;
+    width: 19vh;
+}
+.ani_hack {
+    width: 89vh !important;
+}
+.jackpot-small{
+    text-align:center;
+    padding:2vh 0vh;
+}
 .result-active {
     background-color: #f73 !important;
     color: white !important;
-    padding: 5.7vh 0.5vh 0.5vh 0.5vh !important;
+    padding: 6.5vh 0.5vh 4.5vh 0.5vh !important;
 }
 
 .result-active-small {
@@ -89,17 +101,17 @@
     display: inline-flex;
     flex-direction: column;
     text-align: center;
-    width: 31%;
+    width: 95%;
     border: solid 5px white;
-    border-radius: 25px;
-    padding: 5.7vh 0.5vh 0.5vh 0.5vh;
+    border-radius: 5vh;
+    padding: 5.7vh 0.5vh 5.5vh 0.5vh;
         position: relative;
 }
 
 .lotto-special-num-result {
     width: 100%;
     color: #ff7733;
-    font-size: 7vh;
+    font-size: 6vh;
     /*font-weight: 800;*/
     font-family: Khmer OS Muol Light;
 }
@@ -108,12 +120,12 @@
     display: inline;
     width: 10%;
     color: white;
-    font-size: 3vh;
+    font-size: 4vh;
     font-weight: bold;
     border-radius: 25px;
-    font-family: Koh Santepheap;
+    font-family: arial;
     margin-top: 15px;
-    padding: 5px;
+    padding: 10px;
     border: solid 2px white;
     background: #ff7733;
 }
@@ -139,8 +151,8 @@
     font-size: 5vh;
     color: #f73;
     background-color: white;
-    width: 80px;
-    border-radius: 60px;
+    width: 10vh;
+    border-radius: 5vh;
     position: absolute;
     font-weight: bold;
     top: -5px;
