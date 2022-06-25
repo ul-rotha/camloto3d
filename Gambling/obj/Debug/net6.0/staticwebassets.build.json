@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "38WROHs2ei2B1YiUo1m2UBuWs+gNihVZ3vWpYG8p1EA=",
+  "Hash": "B67zjcBBGmzqN9x/mpLw3WCtNAFep94v6GQ0iGJUNSM=",
   "Source": "Gambling",
   "BasePath": "_content/Gambling",
   "Mode": "Default",
@@ -3500,6 +3500,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sounds\\soundtrack.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\soundtrack_old.mp3",
+      "SourceId": "Gambling",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "BasePath": "_content/Gambling",
+      "RelativePath": "sounds/soundtrack_old.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sounds\\soundtrack_old.mp3"
     },
     {
       "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\start_reel.mp3",

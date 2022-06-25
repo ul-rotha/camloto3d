@@ -25,7 +25,7 @@ connection.on("ReceiveMessage", function (Eventmessage) {
             }
             if (objgame.timeremaining == 2 || objgame.timeremaining == 4 || objgame.timeremaining == 6 || objgame.timeremaining == 8 || objgame.timeremaining == 10) {
                 //playeraudio("clear-announce");
-                playaudiofromcontrol("audioplayer_notice");
+                //playaudiofromcontrol("audioplayer_notice");
             }
 
 
@@ -59,7 +59,7 @@ connection.on("ReceiveMessage", function (Eventmessage) {
         //console.log("resultstring1:" + resultstring);
         console.log("test" + resultstring);
         load_result(1, resultstring);
-        playaudiofromcontrol("audioplayer_result");
+        //playaudiofromcontrol("audioplayer_result");
     } else if (Eventmessage.subject == "result1stop") {
         load_drawing();
     } else if (Eventmessage.subject == "end result") {
@@ -278,39 +278,39 @@ function show_result_html(datajson) {
 
     var html_result = '';
     console.log("result:" + data.Result1);
-    var resultint = parseInt(data.Result1)-1;
+    var resultint = parseInt(data.Result1);
     if (resultint == 1) {
         console.log('ក្រាស់');
-        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ក្រាស់ X5</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ក្រាស់ X5</span>'
 
     }
     else if (resultint == 2) {
         console.log('ស្តើង');
-        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្តើង X3</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ស្តើង X3</span>'
     }
     else if (resultint == 3) {
         console.log('ស្មើ');
-        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្មើ X2</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ស្មើ X2</span>'
     }
     else if (resultint == 4) {
-        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ក្រាស់ X3</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ក្រាស់ X3</span>'
     }
     else if (resultint == 5) {
-        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្តើង X5</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ស្តើង X5</span>'
     }
     else if (resultint == 6) {
         console.log('ស្មើ');
-        html_result = '<span class="result-small-active" style="border-radius: 10px;padding:5px;">ស្មើ X10</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ស្មើ X10</span>'
     }
 
     var html = '';
     var resultdate = data.ResultDate;
     html = `<div class="result-small">
-                    <div style='width:40px;height:45px;float:left;text-align:left;'><div>#${(data.GameID)}</div>
-                    <div style='font-size:10px;'>${(resultdate.substr(11, 8))}
+                    <div style='width:8.5vh;height:9vh;float:left;text-align:left;'><div style='font-size:3vh;'>#${(data.GameID)}</div>
+                    <div style='font-size:2vh;'>${(resultdate.substr(11, 8))}
                     </div>
                     </div>
-                    <div style='width:90px;height:45px;float:left;'>` + html_result + `</div>
+                    <div style='width:14vh;height:9vh;float:left;font-size:3vh;padding:2vh 0vh;'>` + html_result + `</div>
             </div>`;
 
     //html += "<div>";
