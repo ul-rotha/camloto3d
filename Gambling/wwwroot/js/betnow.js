@@ -27,7 +27,7 @@ function addTemp() {
     }
 
     if (invalids == 0) {
-        $("#data-temp").append(`<div style="padding-top:5px;">${text} = R${parseInt($("#hd_betamount").val())} <span onClick='RemoveRow(this, ${TextToNumber(text)});'​>លុបចេញ</span></div>`);
+        $("#data-temp").append(`<div style="padding-top:5px;">${text} = R${parseInt($("#hd_betamount").val())} <span class='remove-row' onClick='RemoveRow(this, ${TextToNumber(text)});'​>X</span></div>`);
 
         $(".bet-type").removeClass("active");
         $(".bet-type").find("i").remove();

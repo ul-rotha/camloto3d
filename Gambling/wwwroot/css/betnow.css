@@ -1,4 +1,10 @@
-﻿
+﻿.remove-row {
+    background-color: #f73;
+    padding: 3px 12px;
+    border-radius: 20px;
+    color: white;
+    margin-left: 20px;
+}
 
 body {
     margin: 0;
