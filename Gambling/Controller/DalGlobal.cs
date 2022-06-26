@@ -349,7 +349,7 @@ namespace GameAPI.App_Code
                             clHistory.BetAmount = (int)ds.Tables[0].Rows[i]["BetAmount"];
                             clHistory.TotalBet = (int)ds.Tables[0].Rows[i]["TotalBet"];
                             clHistory.BetNumber = ds.Tables[0].Rows[i]["BetNumber"].ToString().Replace(",", ", ");
-                            clHistory.SlotNumber = ds.Tables[0].Rows[i]["SlotNumber"].ToString().Replace("1", "A").Replace("2", "B").Replace("3", "C").Replace("4", "D").Replace("5", "E");
+                            clHistory.SlotNumber = ds.Tables[0].Rows[i]["SlotNumber"].ToString();
                             clHistory.Win = (bool)ds.Tables[0].Rows[i]["Win"];
                             clHistory.Nickname = ds.Tables[0].Rows[i]["Nickname"].ToString();
                             clHistory.Withdrawal = (bool)ds.Tables[0].Rows[i]["Withdrawal"];
