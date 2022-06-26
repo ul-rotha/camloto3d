@@ -1,12 +1,13 @@
 ﻿USE [CamLotto3]
 GO
 
-/****** Object: SqlProcedure [dbo].[Sp_Betting] Script Date: 6/24/2022 5:33:16 PM ******/
+/****** Object: SqlProcedure [dbo].[Sp_Betting] Script Date: 6/26/2022 12:56:41 PM ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
+
 
 
 

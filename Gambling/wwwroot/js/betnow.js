@@ -44,6 +44,24 @@ function addTemp() {
     }
 }
 
+function BetClick(element) {
+    if ($(element).hasClass("active")) {
+        $(element).removeClass("active");
+        $(element).find("i").remove();
+    }
+    else {
+        $(element).addClass("active");
+        $(element).addClass("active").append("<i class='fa fa-check' style='position:absolute;right:5px;top:5px;'></i>");
+    }
+    Calculate();
+}
+
+function Calculate() {
+    var count = $('.bet-type.active').length;
+    var betamount = parseInt($("#hd_betamount").val());
+    $("#span_totalbetamount").html(betamount * count + "R");
+}
+
 function RemoveRow(element, id) {
     $(element).parent().remove();
 
@@ -108,7 +126,7 @@ function betnow(amount) {
             //$("#span_totalbetamount").html(betamount + "R");
         }
     }
-
+    Calculate();
     closepopup_betamount();
 }
 
@@ -123,18 +141,25 @@ function clear_betting() {
     $("#betAmount").html('R0');
     $("#span_totalbetamount").html("R");
 
-   
+
 }
 
 function submit() {
 
     var invalids = 0;
-   
-    if (betData.length <= 0) {
-        alertme("សូមជ្រើសរើសឆ្នោតចាក់");
+
+    var betamount = parseInt($("#span_totalbetamount").text().replace('R', ''));
+    if (isNaN(betamount) || betamount<= 0) {
+        alertme("សូមបញ្ចូលទឹកប្រាក់ភ្នាល់");
         invalids += 1;
         return;
     }
+
+    //if ($(".bet-type.active").length <= 0) {
+    //    alertme("សូមជ្រើសរើសឆ្នោតចាក់");
+    //    invalids += 1;
+    //    return;
+    //}
 
     var gameid = $("#hdGameID").val();
     if (gameid == 0) {
@@ -148,38 +173,35 @@ function submit() {
         setTimeout(function () {
             addbetting(gameid);
         }, 500);
-
     }
-
 }
 
 function addbetting(gameid) {
-    //var slotNumber = 0;
-    //betNumbers = 1;
-    //var betamount = $("#hd_betamount").val();
-    var betamount = 0;
+
+    var betamount = parseInt($("#span_totalbetamount").text().replace('R', ''));
+
+
+
+    betamount = betamount / parseInt($(".bet-type.active").length);
+
     var placeid = $("#hd_placeid").val();
     var username = $("#hdUsername").val();
 
     var arrBetNum = [];
-    var arrMoney = [];
+    $(".bet-type.active").each(function (index) {
+        arrBetNum.push(TextToNumber($(this).text()));
+    });
 
     console.log(username);
 
-    for (var i = 0; i < betData.length; i++) {
-        arrBetNum.push(betData[i][0]);
-        arrMoney.push(betData[i][1]);
-        betamount += betData[i][1];
-    }
-
     var number = arrBetNum.toString();
-    var money = arrMoney.toString();
+    var slotNumber = '';
 
     if (username == "") {
-        addbetting_unkownuser(gameid, placeid, money, number, betamount);
+        addbetting_unkownuser(gameid, placeid, slotNumber, number, betamount);
     } else {
 
-        addbettingrecord(gameid, placeid, money, number, betamount, username);
+        addbettingrecord(gameid, placeid, slotNumber, number, betamount, username);
     }
 }
 
@@ -385,11 +407,11 @@ $(document).ready(function () {
 
     show_betamount();
 
-    $(".bet-type").click(function () {
-        $(".bet-type").removeClass("active");
-        $(".bet-type").find("i").remove();
-        $(this).addClass("active").append("<i class='fa fa-check' style='position:absolute;right:5px;top:5px;'></i>");
-    });
+    //$(".bet-type").click(function () {
+    //    $(".bet-type").removeClass("active");
+    //    $(".bet-type").find("i").remove();
+    //    $(this).addClass("active").append("<i class='fa fa-check' style='position:absolute;right:5px;top:5px;'></i>");
+    //});
 });
 
 

@@ -116,14 +116,12 @@ function create_receipt(objBetting) {
 function printdetail(objresult) {
 
     var bettingNumber = objresult.betNumber.split(',');
-    var bettingMoney = objresult.slotNumber.split(',');
-
 
     var html = "";
 
 
     for (var i = 0; i < bettingNumber.length; i++) {
-        html += `<div>ចាក់ ${NumberToText(bettingNumber[i])} = R${bettingMoney[i]}</div>`;
+        html += `<div>ចាក់ ${NumberToText(bettingNumber[i])}</div>`;
     }
 
     html += "<div style='width: 100%;display: inline-block;margin-top: 20px;' >";

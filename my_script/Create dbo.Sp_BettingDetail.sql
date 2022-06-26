@@ -1,14 +1,15 @@
 ﻿USE [CamLotto3]
 GO
 
-/****** Object: SqlProcedure [dbo].[Sp_BettingDetail] Script Date: 6/24/2022 5:32:50 PM ******/
+/****** Object: SqlProcedure [dbo].[Sp_BettingDetail] Script Date: 6/26/2022 12:57:06 PM ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE PROCEDURE [dbo].[Sp_BettingDetail] 
+
+ALTER PROCEDURE [dbo].[Sp_BettingDetail] 
 	-- Add the parameters for the stored procedure here
 	@BettingID int
 AS

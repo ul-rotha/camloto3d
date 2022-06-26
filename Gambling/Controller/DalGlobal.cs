@@ -1029,7 +1029,7 @@ namespace GameAPI.App_Code
                         SqlParameter sqlParameter7 = command.Parameters.Add("@WinAmount", SqlDbType.Int);
                         sqlParameter7.Value = 0;// clBetting.UnitWinAmount * clBetting.BetAmount;
                         SqlParameter sqlParameter8 = command.Parameters.Add("@TotalBet", SqlDbType.Int);
-                        sqlParameter8.Value = 0;// clBetting.BetAmount * clBetting.SlotNumber.Split(",").Length * clBetting.BetNumber.Split(",").Length;
+                        sqlParameter8.Value = clBetting.BetAmount * clBetting.BetNumber?.Split(",").Length;
                         SqlParameter sqlParameter9 = command.Parameters.Add("@CreatedBy", SqlDbType.VarChar);
                         sqlParameter9.Value = clBetting.CreatedBy;
   
