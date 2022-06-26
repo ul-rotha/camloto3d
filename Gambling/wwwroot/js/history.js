@@ -71,33 +71,26 @@ function loadhistory(bettingtype) {
                 var withdrawalby = data[i].withdrawalBy;
                 var withdrawaldate = data[i].withdrawalDate;
                 console.log(GameID)
-                //html += "<tr style='border-bottom:solid 1px white;'>"
-                //html += "<td style='width:80%;    vertical-align: top;'>";
-                html += "<div>"
-                html += "<div> លេខសំគាល់: " + bettingID + " ឆ្នោតទី:" + GameID +  " ";
+                html += "<div style='background-color: gray;height: 50px;padding: 5px;margin-bottom: 10px;'>";
+                html += "<div style='width:80%;float:left;height:50px;color:lightgray;'>"
+                html += "<div> លេខសំគាល់: <b style='color:white'>" + bettingID + "</b> ឆ្នោតទី:<b style='color:white'>" + GameID +  "</b>  ";
                 html += "" + CreatedDate + "</div>";
                 var arr_betnumber = betnumber.split(",");
                 var arr_slotnumber = slotnumber.split(",");
-                html += "<div> ";
-                html += "<tr><td>"
                 html += "ភ្នាល់ ";
                 var betdetail = "";
                 for (var r = 0; r < arr_betnumber.length; r++){
-                    betdetail += arr_betnumber[r].replace("1", "ស្តើង " + arr_slotnumber[r] + "R, ");
-                    betdetail = betdetail.replace("2", "ស្មើ " + arr_slotnumber[r] + "R, ");
-                    betdetail = betdetail.replace("3", "ក្រាស់ " + arr_slotnumber[r] + "R, ");
+                    betdetail += arr_betnumber[r].replace("1", "<b style='color:white'>ស្តើង " + arr_slotnumber[r] + "R</b>, ");
+                    betdetail = betdetail.replace("2", "<b style='color:white'>ស្មើ " + arr_slotnumber[r] + "R</b>, ");
+                    betdetail = betdetail.replace("3", "<b style='color:white'>ក្រាស់ " + arr_slotnumber[r] + "R</b>, ");
                 }
                 if (Win == false) {
-                    html += betdetail + " = <span style='color:red'>0R</span>";
+                    html += betdetail.substr(0, betdetail.length - 2) + " = <span style='color:lightsalmon;font-weight:bold;'>0R</span>";
                 } else {
-                    html += betdetail + " = <span style='color:lightgreen'>" + WinAmount + "R</span>";
+                    html += betdetail.substr(0, betdetail.length - 2) + " = <span style='color:lightgreen;font-weight:bold;'>" + WinAmount + "R</span>";
                 }
                 
-                //html += '</div>';
-         
-                //html += "<div style='font-weight:bold;'>" + nickname + "</div>";
                 html += "</div>";
-                html += "</td>";
                 //html += "<td style='width:40%'>";
                 //html += "<div>"
                 //html += "<div>ប្រភេទ:" + slotnumber + "</span></div>";
@@ -118,18 +111,16 @@ function loadhistory(bettingtype) {
                 //html += "</div>";
                 //html += "</td>";
 
-                html += "<td>";
 
-                html += "<div style='text-align:center;'>";
+                html += "<div  style='width:20%;float:left;height:50px;text-align:center;'>";
                 html += '<span class="span-print" onclick="reprint(' + bettingID + ')"><i class="fa fa-print" aria-hidden="true"></i></span>';
                 html += "</div>";
-                html += "</td>";
-                html += "</tr>";
+                html += "</div>";
+                html += "</div>";
 
 
             }
 
-            html += "</table>"
 
             html += "<div>ចំនួនភ្នាល់: <span>" + data.length + " វិក័យបត្រ</span></div>"
             html += "<div>ទឹកប្រាក់ភ្នាល់សរុប: <span>R" + G_totalBet + "</span></div>"
