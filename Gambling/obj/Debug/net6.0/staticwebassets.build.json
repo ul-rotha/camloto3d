@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VZ8oWwY4ZdpJNu5r/2nXxRmh0EEACLXPwaokMFDlyn4=",
+  "Hash": "mDK/IpoQ06i7riMIjLH7sjqxXEehHL2YFR/ZOuwn8Wk=",
   "Source": "Gambling",
   "BasePath": "_content/Gambling",
   "Mode": "Default",
@@ -1479,6 +1479,23 @@
       "OriginalItemSpec": "wwwroot\\css\\reset.css"
     },
     {
+      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\scan.css",
+      "SourceId": "Gambling",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "BasePath": "_content/Gambling",
+      "RelativePath": "css/scan.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\scan.css"
+    },
+    {
       "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\site.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
@@ -2344,6 +2361,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\report.js"
+    },
+    {
+      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\scanresult.js",
+      "SourceId": "Gambling",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "BasePath": "_content/Gambling",
+      "RelativePath": "js/scanresult.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\scanresult.js"
     },
     {
       "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\screenfull.js",
