@@ -148,6 +148,12 @@ function submit() {
 
     var invalids = 0;
 
+    if ($(".bet-type.active").length <= 0) {
+        alertme("សូមជ្រើសរើសឆ្នោតចាក់");
+        invalids += 1;
+        return;
+    }
+
     var betamount = parseInt($("#span_totalbetamount").text().replace('R', ''));
     if (isNaN(betamount) || betamount<= 0) {
         alertme("សូមបញ្ចូលទឹកប្រាក់ភ្នាល់");
