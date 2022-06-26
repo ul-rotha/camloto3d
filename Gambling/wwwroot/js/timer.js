@@ -19,9 +19,11 @@ connection.on("ReceiveMessage", function (Eventmessage) {
         countdown(objgame.timeremaining, objgame.gameid);
 
         if (objgame.timeremaining <= 10) {
+            
             if (objgame.timeremaining >= 9) {
-                $("#div_resultinfo").html("");
-                clear_result();
+                clearResult();
+                //$("#div_resultinfo").html("");
+                
             }
             if (objgame.timeremaining == 2 || objgame.timeremaining == 4 || objgame.timeremaining == 6 || objgame.timeremaining == 8 || objgame.timeremaining == 10) {
                 //playeraudio("clear-announce");
@@ -153,7 +155,7 @@ connection.start().then(function () {
 
     $("#div_printpopup").show();
     console.log("hub connected");
-    clear_result();
+
     loadnumbers();
 
 
@@ -162,7 +164,7 @@ connection.start().then(function () {
 
     var server = getUrlParameter("server");
     loadnumbers();
-    clear_result();
+ 
 
 
 
@@ -435,19 +437,6 @@ function show_latest_result(data) {
 //);
 
 
-
-function clear_result() {
-    $("#span_result1").html("");
-    $("#span_result2").html("");
-    $("#span_result3").html("");
-    $("#span_result4").html("");
-    $("#span_result5").html("");
-
-
-
-
-
-}
 
 function clear_result_list() {
     $("#div_result_list").html("");

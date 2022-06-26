@@ -52,12 +52,11 @@ function loadhistory(bettingtype) {
             var html = "";
             var G_totalBet = 0;
             var G_WinAmount = 0;
-            html += "<table style='width:100%'>"
+            //html += "<table style='width:100%'>"
             for (var i = 0; i < data.length; i++) {
-                var BettingID = data[i].bettingID;
+                console.log("i:" + i + " length:" + data.length);
                 var GameID = data[i].gameID;
                 var CreatedDate = data[i].createdDate;
-                var BetAmount = data[i].betAmount;
                 var totalBet = data[i].totalBet;
                 G_totalBet += totalBet;
                
@@ -72,35 +71,52 @@ function loadhistory(bettingtype) {
                 var withdrawalby = data[i].withdrawalBy;
                 var withdrawaldate = data[i].withdrawalDate;
                 console.log(GameID)
-                html += "<tr style='border-bottom:solid 1px white;'>"
-                html += "<td style='width:40%;    vertical-align: top;'>";
+                //html += "<tr style='border-bottom:solid 1px white;'>"
+                //html += "<td style='width:80%;    vertical-align: top;'>";
                 html += "<div>"
-                html += "<div>ឆ្នោតទី:" + GameID + " លេខសំគាល់: " + bettingID + "</div>";
-                html += "<div>" + CreatedDate + "</div>";
-                html += "<div>ភ្នាល់ R" + BetAmount; + '</div>';
-                html += "<div>  សរុប R" + totalBet + "</div>";
-                html += "<div style='font-weight:bold;'>" + nickname + "</div>";
-                html += "</div>";
-                html += "</td>";
-                html += "<td style='width:40%'>";
-                html += "<div>"
-                html += "<div>ប្រភេទ:" + slotnumber + "</span></div>";
-                html += "<div>លេខភ្នាល់:" + betnumber + "</div>";
-                if (Win == true) {
-                    html += "<div style='color:#f73'>រង្វាន់: R" + WinAmount + "</div>";
-                    G_WinAmount += WinAmount;
-                    if (withdrawal == true) {
-                        html += "<div>បានដកប្រាក់ហើយ</div>"
-                        html += "<div>អ្នកដក " + withdrawalby + " </div><div>" + withdrawaldate + "</div>"
-
-                    } else {
-                        html += "<div style='color:#f73'>មិនទាន់ដកប្រាក់</div>"
-
-                    }
+                html += "<div> លេខសំគាល់: " + bettingID + " ឆ្នោតទី:" + GameID +  " ";
+                html += "" + CreatedDate + "</div>";
+                var arr_betnumber = betnumber.split(",");
+                var arr_slotnumber = slotnumber.split(",");
+                html += "<div> ";
+                html += "<tr><td>"
+                html += "ភ្នាល់ ";
+                var betdetail = "";
+                for (var r = 0; r < arr_betnumber.length; r++){
+                    betdetail += arr_betnumber[r].replace("1", "ស្តើង " + arr_slotnumber[r] + "R, ");
+                    betdetail = betdetail.replace("2", "ស្មើ " + arr_slotnumber[r] + "R, ");
+                    betdetail = betdetail.replace("3", "ក្រាស់ " + arr_slotnumber[r] + "R, ");
                 }
-
+                if (Win == false) {
+                    html += betdetail + " = <span style='color:red'>0R</span>";
+                } else {
+                    html += betdetail + " = <span style='color:lightgreen'>" + WinAmount + "R</span>";
+                }
+                
+                //html += '</div>';
+         
+                //html += "<div style='font-weight:bold;'>" + nickname + "</div>";
                 html += "</div>";
                 html += "</td>";
+                //html += "<td style='width:40%'>";
+                //html += "<div>"
+                //html += "<div>ប្រភេទ:" + slotnumber + "</span></div>";
+                //html += "<div>លេខភ្នាល់:" + betnumber + "</div>";
+                //if (Win == true) {
+                //    html += "<div style='color:#f73'>រង្វាន់: R" + WinAmount + "</div>";
+                //    G_WinAmount += WinAmount;
+                //    if (withdrawal == true) {
+                //        html += "<div>បានដកប្រាក់ហើយ</div>"
+                //        html += "<div>អ្នកដក " + withdrawalby + " </div><div>" + withdrawaldate + "</div>"
+
+                //    } else {
+                //        html += "<div style='color:#f73'>មិនទាន់ដកប្រាក់</div>"
+
+                //    }
+                //}
+
+                //html += "</div>";
+                //html += "</td>";
 
                 html += "<td>";
 

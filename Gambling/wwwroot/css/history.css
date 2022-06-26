@@ -1,4 +1,5 @@
 ﻿body {
+    font-family: Koh Santepheap;
     margin: 0;
     background-color: #052d40;
     background-position-x: 0%;
@@ -14,6 +15,7 @@
     -moz-user-select: none;
     user-select: none;
 }
+
 .select-type {
     padding: 5px;
     border-radius: 10px;
