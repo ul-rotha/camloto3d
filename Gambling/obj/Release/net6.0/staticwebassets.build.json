@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ksioBNG4AuuVsgRA/rSF/vkSbNvYedN0F7L17GXMmTQ=",
+  "Hash": "DO8tA/dp7l16d8smpzRSuaI5Z72+u9N5U2NLBV/b2zA=",
   "Source": "Gambling",
   "BasePath": "_content/Gambling",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Gambling\\wwwroot",
       "Source": "Gambling",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\obj\\Release\\net6.0\\scopedcss\\bundle\\Gambling.styles.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\obj\\Release\\net6.0\\scopedcss\\bundle\\Gambling.styles.css",
       "SourceId": "Gambling",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\obj\\Release\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\obj\\Release\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "Gambling.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\obj\\Release\\net6.0\\scopedcss\\bundle\\Gambling.styles.css"
+      "OriginalItemSpec": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\obj\\Release\\net6.0\\scopedcss\\bundle\\Gambling.styles.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\Gambling.bundle.scp.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\Gambling.bundle.scp.css",
       "SourceId": "Gambling",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "Gambling.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\Gambling.bundle.scp.css"
+      "OriginalItemSpec": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\Gambling.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\BallLotto.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\BallLotto.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/BallLotto.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\BallLotto.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\betnow.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\betnow.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/betnow.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\betnow.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\betting.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\betting.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/betting.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\betting.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\comfortaa-bold-webfont.eot",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\comfortaa-bold-webfont.eot",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/comfortaa-bold-webfont.eot",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\comfortaa-bold-webfont.eot"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\comfortaa-bold-webfont.svg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\comfortaa-bold-webfont.svg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/comfortaa-bold-webfont.svg",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\comfortaa-bold-webfont.svg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\comfortaa-bold-webfont.ttf",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\comfortaa-bold-webfont.ttf",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/comfortaa-bold-webfont.ttf",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\comfortaa-bold-webfont.ttf"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\comfortaa-bold-webfont.woff",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\comfortaa-bold-webfont.woff",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/comfortaa-bold-webfont.woff",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\comfortaa-bold-webfont.woff"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\comfortaa-bold-webfont.woff2",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\comfortaa-bold-webfont.woff2",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/comfortaa-bold-webfont.woff2",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\comfortaa-bold-webfont.woff2"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\impact.eot",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\impact.eot",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/impact.eot",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\impact.eot"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\impact.svg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\impact.svg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/impact.svg",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\impact.svg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\impact.ttf",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\impact.ttf",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/impact.ttf",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\impact.ttf"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\impact.woff",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\impact.woff",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/impact.woff",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\impact.woff"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\login.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\login.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/login.css",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\login.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\main.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\main.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/main.css",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\main.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\main1.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\main1.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/main1.css",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\main1.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\orientation_utils.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\orientation_utils.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/orientation_utils.css",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\orientation_utils.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\reset.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\reset.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/reset.css",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\reset.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_css\\site.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_css\\site.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_css/site.css",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\_css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\200x200.jpg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\200x200.jpg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/200x200.jpg",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\200x200.jpg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\arrow.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\arrow.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/arrow.png",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\arrow.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\audio_icon.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\audio_icon.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/audio_icon.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\audio_icon.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\bet_panel.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\bet_panel.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/bet_panel.png",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\bet_panel.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\bg_game.jpg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\bg_game.jpg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/bg_game.jpg",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\bg_game.jpg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\bg_menu.jpg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\bg_menu.jpg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/bg_menu.jpg",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\bg_menu.jpg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\bg_tile.jpg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\bg_tile.jpg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/bg_tile.jpg",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\bg_tile.jpg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\borderframe.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\borderframe.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/borderframe.png",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\borderframe.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_credits.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_credits.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/but_credits.png",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\but_credits.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_exit.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_exit.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/but_exit.png",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\but_exit.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_fullscreen.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_fullscreen.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/but_fullscreen.png",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\but_fullscreen.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_long_text.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_long_text.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/but_long_text.png",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\but_long_text.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_no.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_no.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/but_no.png",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\but_no.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_play.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_play.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/but_play.png",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\but_play.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_plus.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_plus.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/but_plus.png",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\but_plus.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_spin.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_spin.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/but_spin.png",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\but_spin.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_start.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_start.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/but_start.png",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\but_start.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_text.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_text.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/but_text.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\but_text.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_yes.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\but_yes.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/but_yes.png",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\but_yes.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\credits_money_panel.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\credits_money_panel.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/credits_money_panel.png",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\credits_money_panel.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\credits_panel.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\credits_panel.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/credits_panel.png",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\credits_panel.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\ctl_logo.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\ctl_logo.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/ctl_logo.png",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\ctl_logo.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\gui_panel.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\gui_panel.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/gui_panel.png",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\gui_panel.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\leds.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\leds.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/leds.png",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\leds.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\logo_game.jpg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\logo_game.jpg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/logo_game.jpg",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\logo_game.jpg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\logo_game.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\logo_game.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/logo_game.png",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\logo_game.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\money_prize_images\\bg_0.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\money_prize_images\\bg_0.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/money_prize_images/bg_0.png",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\money_prize_images\\bg_0.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\money_prize_images\\bg_1.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\money_prize_images\\bg_1.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/money_prize_images/bg_1.png",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\money_prize_images\\bg_1.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\money_prize_images\\bg_2.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\money_prize_images\\bg_2.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/money_prize_images/bg_2.png",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\money_prize_images\\bg_2.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\money_prize_images\\bg_3.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\money_prize_images\\bg_3.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/money_prize_images/bg_3.png",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\money_prize_images\\bg_3.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\money_prize_images\\bg_4.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\money_prize_images\\bg_4.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/money_prize_images/bg_4.png",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\money_prize_images\\bg_4.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\money_prize_images\\bg_5.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\money_prize_images\\bg_5.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/money_prize_images/bg_5.png",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\money_prize_images\\bg_5.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\money_prize_images\\bg_6.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\money_prize_images\\bg_6.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/money_prize_images/bg_6.png",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\money_prize_images\\bg_6.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\money_prize_images\\Thumbs.db",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\money_prize_images\\Thumbs.db",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/money_prize_images/Thumbs.db",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\money_prize_images\\Thumbs.db"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\msg_box.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\msg_box.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/msg_box.png",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\msg_box.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\progress_bar.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\progress_bar.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/progress_bar.png",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\progress_bar.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\swipe_hand.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\swipe_hand.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/swipe_hand.png",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\swipe_hand.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\Thumbs.db",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\Thumbs.db",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/Thumbs.db",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\Thumbs.db"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\wheel_back.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\wheel_back.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/wheel_back.png",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\wheel_back.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\wheel_shadow.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\wheel_shadow.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/wheel_shadow.png",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\wheel_shadow.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\_sprites\\win_panel.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\_sprites\\win_panel.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "_sprites/win_panel.png",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\_sprites\\win_panel.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\audio\\bell-notification.wav",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\audio\\bell-notification.wav",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "audio/bell-notification.wav",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\audio\\bell-notification.wav"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\audio\\clear-announce.wav",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\audio\\clear-announce.wav",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "audio/clear-announce.wav",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\audio\\clear-announce.wav"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\audio\\clear-announce-old.wav",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\audio\\clear-announce-old.wav",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "audio/clear-announce-old.wav",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\audio\\clear-announce-old.wav"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\audio\\winning.wav",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\audio\\winning.wav",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "audio/winning.wav",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\audio\\winning.wav"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\audio\\winning-old.wav",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\audio\\winning-old.wav",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "audio/winning-old.wav",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\audio\\winning-old.wav"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\BallLotto.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\BallLotto.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/BallLotto.css",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\css\\BallLotto.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\betnow.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\betnow.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/betnow.css",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\css\\betnow.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\betting.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\betting.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/betting.css",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\css\\betting.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\comfortaa-bold-webfont.eot",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\comfortaa-bold-webfont.eot",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/comfortaa-bold-webfont.eot",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\comfortaa-bold-webfont.eot"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\comfortaa-bold-webfont.svg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\comfortaa-bold-webfont.svg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/comfortaa-bold-webfont.svg",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\css\\comfortaa-bold-webfont.svg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\comfortaa-bold-webfont.ttf",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\comfortaa-bold-webfont.ttf",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/comfortaa-bold-webfont.ttf",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\css\\comfortaa-bold-webfont.ttf"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\comfortaa-bold-webfont.woff",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\comfortaa-bold-webfont.woff",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/comfortaa-bold-webfont.woff",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\css\\comfortaa-bold-webfont.woff"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\comfortaa-bold-webfont.woff2",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\comfortaa-bold-webfont.woff2",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/comfortaa-bold-webfont.woff2",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\css\\comfortaa-bold-webfont.woff2"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\history.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\history.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/history.css",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\css\\history.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\impact.eot",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\impact.eot",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/impact.eot",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\css\\impact.eot"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\impact.svg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\impact.svg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/impact.svg",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\css\\impact.svg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\impact.ttf",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\impact.ttf",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/impact.ttf",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\css\\impact.ttf"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\impact.woff",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\impact.woff",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/impact.woff",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\css\\impact.woff"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\jquery-ui.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\jquery-ui.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/jquery-ui.css",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\css\\jquery-ui.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\login.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\login.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/login.css",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\main.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\main.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/main.css",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\css\\main.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\main1.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\main1.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/main1.css",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\css\\main1.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\orientation_utils.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\orientation_utils.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/orientation_utils.css",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\css\\orientation_utils.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\report.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\report.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/report.css",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\css\\report.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\reset.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\reset.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/reset.css",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\css\\reset.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\scan.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\scan.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/scan.css",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\css\\scan.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\site.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\site.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\css\\user.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\css\\user.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "css/user.css",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\css\\user.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\favicon.ico",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\favicon.ico",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\file\\main.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\file\\main.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "file/main.css",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\file\\main.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\file\\spin_off.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\file\\spin_off.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "file/spin_off.png",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\file\\spin_off.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\file\\spin_on.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\file\\spin_on.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "file/spin_on.png",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\file\\spin_on.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\file\\tick.mp3",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\file\\tick.mp3",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "file/tick.mp3",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\file\\tick.mp3"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\file\\wheel_back.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\file\\wheel_back.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "file/wheel_back.png",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\file\\wheel_back.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\images\\bg01.gif",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\images\\bg01.gif",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "images/bg01.gif",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bg01.gif"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\images\\CamLotto.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\images\\CamLotto.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "images/CamLotto.png",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\images\\CamLotto.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\images\\logo.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\images\\logo.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "images/logo.png",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\betnow.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\betnow.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/betnow.js",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\js\\betnow.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\betnow1.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\betnow1.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/betnow1.js",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\js\\betnow1.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CAreYouSurePanel.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CAreYouSurePanel.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CAreYouSurePanel.js",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CAreYouSurePanel.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CBall.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CBall.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CBall.js",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CBall.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CBallGenerator.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CBallGenerator.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CBallGenerator.js",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CBallGenerator.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CBasket.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CBasket.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CBasket.js",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CBasket.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CCell.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CCell.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CCell.js",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CCell.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CCreditsPanel.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CCreditsPanel.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CCreditsPanel.js",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CCreditsPanel.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CCTLText.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CCTLText.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CCTLText.js",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CCTLText.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CEndPanel.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CEndPanel.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CEndPanel.js",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CEndPanel.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CGame.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CGame.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CGame.js",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CGame.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CGfxButton.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CGfxButton.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CGfxButton.js",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CGfxButton.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CGridMapping.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CGridMapping.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CGridMapping.js",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CGridMapping.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CGUIExpandible.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CGUIExpandible.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CGUIExpandible.js",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CGUIExpandible.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\chat.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\chat.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/chat.js",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\js\\chat.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CInsertTubeController.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CInsertTubeController.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CInsertTubeController.js",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CInsertTubeController.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CInterface.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CInterface.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CInterface.js",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CInterface.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CLang.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CLang.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CLang.js",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CLang.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CMain.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CMain.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CMain.js",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CMain.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CMenu.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CMenu.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CMenu.js",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CMenu.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CPreloader.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CPreloader.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CPreloader.js",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CPreloader.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\createjs.min.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\createjs.min.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/createjs.min.js",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\js\\createjs.min.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CScoreBasketController.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CScoreBasketController.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CScoreBasketController.js",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CScoreBasketController.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CSlot.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CSlot.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CSlot.js",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CSlot.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CTextButton.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CTextButton.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CTextButton.js",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CTextButton.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\ctl_utils.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\ctl_utils.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/ctl_utils.js",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\js\\ctl_utils.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\CToggle.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\CToggle.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/CToggle.js",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\js\\CToggle.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\history.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\history.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/history.js",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\js\\history.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\howler.min.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\howler.min.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/howler.min.js",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\js\\howler.min.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\jquery.min-3.1.1.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\jquery.min-3.1.1.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/jquery.min-3.1.1.js",
       "AssetKind": "All",
@@ -2193,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.min-3.1.1.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\jquery-1.11.0.min.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\jquery-1.11.0.min.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/jquery-1.11.0.min.js",
       "AssetKind": "All",
@@ -2210,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-1.11.0.min.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\jquery-3.2.1.min.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\jquery-3.2.1.min.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/jquery-3.2.1.min.js",
       "AssetKind": "All",
@@ -2227,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-3.2.1.min.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\jquery-latest.min.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\jquery-latest.min.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/jquery-latest.min.js",
       "AssetKind": "All",
@@ -2244,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-latest.min.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\jquery-ui.min.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\jquery-ui.min.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/jquery-ui.min.js",
       "AssetKind": "All",
@@ -2261,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-ui.min.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\login.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\login.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/login.js",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\myplinko.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\myplinko.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/myplinko.js",
       "AssetKind": "All",
@@ -2295,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\js\\myplinko.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\platform.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\platform.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/platform.js",
       "AssetKind": "All",
@@ -2312,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\js\\platform.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\print.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\print.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/print.js",
       "AssetKind": "All",
@@ -2329,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\js\\print.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\public.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\public.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/public.js",
       "AssetKind": "All",
@@ -2346,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\js\\public.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\report.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\report.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/report.js",
       "AssetKind": "All",
@@ -2363,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\js\\report.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\scanresult.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\scanresult.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/scanresult.js",
       "AssetKind": "All",
@@ -2380,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\js\\scanresult.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\screenfull.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\screenfull.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/screenfull.js",
       "AssetKind": "All",
@@ -2397,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\js\\screenfull.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\settings.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\settings.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/settings.js",
       "AssetKind": "All",
@@ -2414,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\js\\settings.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\site.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\site.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -2431,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\sprintf.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\sprintf.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/sprintf.js",
       "AssetKind": "All",
@@ -2448,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\js\\sprintf.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\sprite_lib.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\sprite_lib.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/sprite_lib.js",
       "AssetKind": "All",
@@ -2465,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\js\\sprite_lib.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\timer.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\timer.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/timer.js",
       "AssetKind": "All",
@@ -2482,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\js\\timer.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\js\\user.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\js\\user.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "js/user.js",
       "AssetKind": "All",
@@ -2499,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\js\\user.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2516,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2533,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2550,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2567,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2584,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2618,10 +2618,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2635,10 +2635,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -2652,10 +2652,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2669,10 +2669,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2686,10 +2686,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -2703,10 +2703,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -2720,10 +2720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2737,10 +2737,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2754,10 +2754,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2771,10 +2771,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2788,10 +2788,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2805,10 +2805,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2822,10 +2822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2839,10 +2839,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2856,10 +2856,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2873,10 +2873,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2890,10 +2890,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2907,10 +2907,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2924,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2941,10 +2941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2958,10 +2958,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2975,10 +2975,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2992,10 +2992,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -3009,10 +3009,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -3026,10 +3026,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -3043,10 +3043,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -3060,10 +3060,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -3077,10 +3077,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -3094,10 +3094,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -3111,10 +3111,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -3128,10 +3128,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -3145,10 +3145,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -3162,10 +3162,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -3179,10 +3179,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -3196,10 +3196,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -3213,10 +3213,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -3230,10 +3230,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -3247,10 +3247,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -3264,10 +3264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -3281,10 +3281,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -3298,10 +3298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -3315,10 +3315,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -3332,10 +3332,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -3349,10 +3349,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -3366,10 +3366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -3383,10 +3383,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -3400,10 +3400,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -3417,10 +3417,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -3434,10 +3434,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -3451,10 +3451,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -3468,10 +3468,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/microsoft/signalr/dist/browser/signalr.js",
       "AssetKind": "All",
@@ -3485,10 +3485,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/microsoft/signalr/dist/browser/signalr.min.js",
       "AssetKind": "All",
@@ -3502,10 +3502,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\microsoft\\signalr\\dist\\browser\\signalr.min.js"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\microsoft\\signalr\\package.json",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\microsoft\\signalr\\package.json",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/microsoft/signalr/package.json",
       "AssetKind": "All",
@@ -3519,10 +3519,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\microsoft\\signalr\\package.json"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\lib\\microsoft\\signalr\\README.md",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\lib\\microsoft\\signalr\\README.md",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "lib/microsoft/signalr/README.md",
       "AssetKind": "All",
@@ -3536,10 +3536,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\microsoft\\signalr\\README.md"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\ball_collision.mp3",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\ball_collision.mp3",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/ball_collision.mp3",
       "AssetKind": "All",
@@ -3553,10 +3553,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\ball_collision.mp3"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\ball_in_basket.mp3",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\ball_in_basket.mp3",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/ball_in_basket.mp3",
       "AssetKind": "All",
@@ -3570,10 +3570,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\ball_in_basket.mp3"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\ball_in_basket_negative.mp3",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\ball_in_basket_negative.mp3",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/ball_in_basket_negative.mp3",
       "AssetKind": "All",
@@ -3587,10 +3587,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\ball_in_basket_negative.mp3"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\bell-notification.wav",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\bell-notification.wav",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/bell-notification.wav",
       "AssetKind": "All",
@@ -3604,10 +3604,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\bell-notification.wav"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\clear-announce.wav",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\clear-announce.wav",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/clear-announce.wav",
       "AssetKind": "All",
@@ -3621,10 +3621,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\clear-announce.wav"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\clear-announce-old.wav",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\clear-announce-old.wav",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/clear-announce-old.wav",
       "AssetKind": "All",
@@ -3638,10 +3638,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\clear-announce-old.wav"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\game_over.mp3",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\game_over.mp3",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/game_over.mp3",
       "AssetKind": "All",
@@ -3655,10 +3655,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\game_over.mp3"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\game_over.ogg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\game_over.ogg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/game_over.ogg",
       "AssetKind": "All",
@@ -3672,10 +3672,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\game_over.ogg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\press_button.mp3",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\press_button.mp3",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/press_button.mp3",
       "AssetKind": "All",
@@ -3689,10 +3689,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\press_button.mp3"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\press_button.ogg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\press_button.ogg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/press_button.ogg",
       "AssetKind": "All",
@@ -3706,10 +3706,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\press_button.ogg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\reel.mp3",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\reel.mp3",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/reel.mp3",
       "AssetKind": "All",
@@ -3723,10 +3723,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\reel.mp3"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\reel.ogg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\reel.ogg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/reel.ogg",
       "AssetKind": "All",
@@ -3740,10 +3740,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\reel.ogg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\soundtrack.mp3",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\soundtrack.mp3",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/soundtrack.mp3",
       "AssetKind": "All",
@@ -3757,10 +3757,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\soundtrack.mp3"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\soundtrack_old.mp3",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\soundtrack_old.mp3",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/soundtrack_old.mp3",
       "AssetKind": "All",
@@ -3774,10 +3774,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\soundtrack_old.mp3"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\start_reel.mp3",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\start_reel.mp3",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/start_reel.mp3",
       "AssetKind": "All",
@@ -3791,10 +3791,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\start_reel.mp3"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\start_reel.ogg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\start_reel.ogg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/start_reel.ogg",
       "AssetKind": "All",
@@ -3808,10 +3808,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\start_reel.ogg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\win.mp3",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\win.mp3",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/win.mp3",
       "AssetKind": "All",
@@ -3825,10 +3825,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\win.mp3"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\win.ogg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\win.ogg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/win.ogg",
       "AssetKind": "All",
@@ -3842,10 +3842,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\win.ogg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\winning.mp3",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\winning.mp3",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/winning.mp3",
       "AssetKind": "All",
@@ -3859,10 +3859,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\winning.mp3"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\winning.wav",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\winning.wav",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/winning.wav",
       "AssetKind": "All",
@@ -3876,10 +3876,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\winning.wav"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sounds\\winning-old.wav",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sounds\\winning-old.wav",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sounds/winning-old.wav",
       "AssetKind": "All",
@@ -3893,10 +3893,10 @@
       "OriginalItemSpec": "wwwroot\\sounds\\winning-old.wav"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\200x200.jpg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\200x200.jpg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/200x200.jpg",
       "AssetKind": "All",
@@ -3910,10 +3910,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\200x200.jpg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\audio_icon.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\audio_icon.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/audio_icon.png",
       "AssetKind": "All",
@@ -3927,10 +3927,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\audio_icon.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\ball.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\ball.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/ball.png",
       "AssetKind": "All",
@@ -3944,10 +3944,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\ball.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\ball_generator.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\ball_generator.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/ball_generator.png",
       "AssetKind": "All",
@@ -3961,10 +3961,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\ball_generator.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\basket_display.jpg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\basket_display.jpg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/basket_display.jpg",
       "AssetKind": "All",
@@ -3978,10 +3978,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\basket_display.jpg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\bet_panel.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\bet_panel.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/bet_panel.png",
       "AssetKind": "All",
@@ -3995,10 +3995,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\bet_panel.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\bg_game.jpg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\bg_game.jpg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/bg_game.jpg",
       "AssetKind": "All",
@@ -4012,10 +4012,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\bg_game.jpg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\bg_menu.jpg",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\bg_menu.jpg",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/bg_menu.jpg",
       "AssetKind": "All",
@@ -4029,10 +4029,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\bg_menu.jpg"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\but_credits.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\but_credits.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/but_credits.png",
       "AssetKind": "All",
@@ -4046,10 +4046,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\but_credits.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\but_exit.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\but_exit.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/but_exit.png",
       "AssetKind": "All",
@@ -4063,10 +4063,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\but_exit.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\but_fullscreen.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\but_fullscreen.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/but_fullscreen.png",
       "AssetKind": "All",
@@ -4080,10 +4080,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\but_fullscreen.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\but_home.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\but_home.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/but_home.png",
       "AssetKind": "All",
@@ -4097,10 +4097,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\but_home.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\but_no.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\but_no.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/but_no.png",
       "AssetKind": "All",
@@ -4114,10 +4114,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\but_no.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\but_play.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\but_play.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/but_play.png",
       "AssetKind": "All",
@@ -4131,10 +4131,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\but_play.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\but_plus.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\but_plus.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/but_plus.png",
       "AssetKind": "All",
@@ -4148,10 +4148,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\but_plus.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\but_restart.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\but_restart.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/but_restart.png",
       "AssetKind": "All",
@@ -4165,10 +4165,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\but_restart.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\but_settings.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\but_settings.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/but_settings.png",
       "AssetKind": "All",
@@ -4182,10 +4182,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\but_settings.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\but_start.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\but_start.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/but_start.png",
       "AssetKind": "All",
@@ -4199,10 +4199,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\but_start.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\but_yes.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\but_yes.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/but_yes.png",
       "AssetKind": "All",
@@ -4216,10 +4216,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\but_yes.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\credits_panel.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\credits_panel.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/credits_panel.png",
       "AssetKind": "All",
@@ -4233,10 +4233,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\credits_panel.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\ctl_logo.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\ctl_logo.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/ctl_logo.png",
       "AssetKind": "All",
@@ -4250,10 +4250,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\ctl_logo.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\hand_anim.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\hand_anim.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/hand_anim.png",
       "AssetKind": "All",
@@ -4267,10 +4267,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\hand_anim.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\hole_board_occluder.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\hole_board_occluder.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/hole_board_occluder.png",
       "AssetKind": "All",
@@ -4284,10 +4284,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\hole_board_occluder.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\holes_occluder.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\holes_occluder.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/holes_occluder.png",
       "AssetKind": "All",
@@ -4301,10 +4301,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\holes_occluder.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\logo_game.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\logo_game.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/logo_game.png",
       "AssetKind": "All",
@@ -4318,10 +4318,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\logo_game.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\logo_menu.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\logo_menu.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/logo_menu.png",
       "AssetKind": "All",
@@ -4335,10 +4335,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\logo_menu.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\msg_box.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\msg_box.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/msg_box.png",
       "AssetKind": "All",
@@ -4352,10 +4352,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\msg_box.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\progress_bar.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\progress_bar.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/progress_bar.png",
       "AssetKind": "All",
@@ -4369,10 +4369,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\progress_bar.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\side_left.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\side_left.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/side_left.png",
       "AssetKind": "All",
@@ -4386,10 +4386,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\side_left.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\side_right.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\side_right.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/side_right.png",
       "AssetKind": "All",
@@ -4403,10 +4403,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\side_right.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\stake.png",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\stake.png",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/stake.png",
       "AssetKind": "All",
@@ -4420,10 +4420,10 @@
       "OriginalItemSpec": "wwwroot\\sprites\\stake.png"
     },
     {
-      "Identity": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\sprites\\Thumbs.db",
+      "Identity": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\sprites\\Thumbs.db",
       "SourceId": "Gambling",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\wwwroot\\",
+      "ContentRoot": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\wwwroot\\",
       "BasePath": "_content/Gambling",
       "RelativePath": "sprites/Thumbs.db",
       "AssetKind": "All",

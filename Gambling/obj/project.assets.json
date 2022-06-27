@@ -598,19 +598,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\chanp\\.nuget\\packages\\": {}
+    "C:\\Users\\chanpheakdey.vong\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\Gambling.csproj",
+      "projectUniqueName": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\Gambling.csproj",
       "projectName": "Gambling",
-      "projectPath": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\Gambling.csproj",
-      "packagesPath": "C:\\Users\\chanp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chanp\\OneDrive\\Documents\\GitHub\\camloto3d\\Gambling\\obj\\",
+      "projectPath": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\Gambling.csproj",
+      "packagesPath": "C:\\Users\\chanpheakdey.vong\\.nuget\\packages\\",
+      "outputPath": "D:\\ACE\\Cambee Player\\CambeePlayer V3\\camloto3d\\Gambling\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\chanp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\chanpheakdey.vong\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -663,7 +663,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
