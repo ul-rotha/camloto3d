@@ -27,6 +27,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/history.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaGlzdG9yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/Index_win.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXhfd2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -43,8 +47,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/report.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/scanresult.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2NhbnJlc3VsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/user.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/_ViewImports.cshtml]

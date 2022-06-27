@@ -71,23 +71,28 @@ function loadhistory(bettingtype) {
                 var withdrawalby = data[i].withdrawalBy;
                 var withdrawaldate = data[i].withdrawalDate;
                 console.log(GameID)
-                html += "<div style='background-color: gray;height: 50px;padding: 5px;margin-bottom: 10px;'>";
+                html += "<div style='background-color: #024564;height: 50px;padding: 5px;margin-bottom: 10px;'>";
                 html += "<div style='width:80%;float:left;height:50px;color:lightgray;'>"
                 html += "<div> លេខសំគាល់: <b style='color:white'>" + bettingID + "</b> ឆ្នោតទី:<b style='color:white'>" + GameID +  "</b>  ";
                 html += "" + CreatedDate + "</div>";
                 var arr_betnumber = betnumber.split(",");
-                var arr_slotnumber = slotnumber.split(",");
-                html += "ភ្នាល់ ";
+                //var arr_slotnumber = slotnumber.split(",");
+                html += "ភ្នាល់ <b style='color:white'>" + totalBet + "R</b>";
                 var betdetail = "";
                 for (var r = 0; r < arr_betnumber.length; r++){
-                    betdetail += arr_betnumber[r].replace("1", "<b style='color:white'>ស្តើង " + arr_slotnumber[r] + "R</b>, ");
-                    betdetail = betdetail.replace("2", "<b style='color:white'>ស្មើ " + arr_slotnumber[r] + "R</b>, ");
-                    betdetail = betdetail.replace("3", "<b style='color:white'>ក្រាស់ " + arr_slotnumber[r] + "R</b>, ");
+                    betdetail += arr_betnumber[r].replace("1", "<b style='color:white'>ស្តើង " + "</b>, ");
+                    betdetail = betdetail.replace("2", "<b style='color:white'>ស្មើ " + "</b>, ");
+                    betdetail = betdetail.replace("3", "<b style='color:white'>ក្រាស់ " + "</b>, ");
                 }
                 if (Win == false) {
-                    html += betdetail.substr(0, betdetail.length - 2) + " = <span style='color:lightsalmon;font-weight:bold;'>0R</span>";
+                    html += " (" + betdetail.substr(0, betdetail.length - 2) + ") ";
                 } else {
-                    html += betdetail.substr(0, betdetail.length - 2) + " = <span style='color:lightgreen;font-weight:bold;'>" + WinAmount + "R</span>";
+                    if (withdrawal == true) {
+                        html += " (" + betdetail.substr(0, betdetail.length - 2) + ")  <span style='color:#f73;font-weight:bold;text-decoration: line-through;'>ឈ្នះ " + WinAmount + "R</span>";
+                    } else {
+                        html += " (" + betdetail.substr(0, betdetail.length - 2) + ")  <span style='color:#f73;font-weight:bold;'>ឈ្នះ " + WinAmount + "R</span>";
+                    }
+                    
                 }
                 
                 html += "</div>";

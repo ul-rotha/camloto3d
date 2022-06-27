@@ -284,26 +284,26 @@ function show_result_html(datajson) {
     var resultint = parseInt(data.Result1);
     if (resultint == 1) {
         console.log('ក្រាស់');
-        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ក្រាស់ X5</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;font-weight:bold;">ក្រាស់ X5</span>'
 
     }
     else if (resultint == 2) {
         console.log('ស្តើង');
-        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ស្តើង X3</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;font-weight:bold;">ស្តើង X3</span>'
     }
     else if (resultint == 3) {
         console.log('ស្មើ');
-        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ស្មើ X2</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;font-weight:bold;">ស្មើ X2</span>'
     }
     else if (resultint == 4) {
-        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ក្រាស់ X3</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;font-weight:bold;">ក្រាស់ X3</span>'
     }
     else if (resultint == 5) {
-        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ស្តើង X5</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;font-weight:bold;">ស្តើង X5</span>'
     }
     else if (resultint == 6) {
         console.log('ស្មើ');
-        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;">ស្មើ X10</span>'
+        html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;font-weight:bold;">ស្មើ X10</span>'
     }
 
     var html = '';

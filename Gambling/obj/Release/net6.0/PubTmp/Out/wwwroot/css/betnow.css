@@ -1,4 +1,10 @@
-﻿
+﻿.remove-row {
+    background-color: #f73;
+    padding: 3px 12px;
+    border-radius: 20px;
+    color: white;
+    margin-left: 20px;
+}
 
 body {
     margin: 0;
@@ -43,9 +49,9 @@ body {
     text-align:right;
 }
 
-.bet-amount{
-    padding:10px 0px;
-    height:65px;
+.bet-amount {
+    padding: 10px 0px;
+    height:45px;
 }
 .span-betamount {
     padding: 5px;
@@ -93,21 +99,32 @@ body {
     color: black;
     padding: 12px;
     margin: 5px;
-    /*margin-right: 10px;*/
-    /*font-size: large;*/
+    /* margin-right: 10px; */
+    /* font-size: large; */
     width: 100%;
-    /*float: left;*/
-    font-size:20px;
+    /* float: left; */
+    font-size: 20px;
     text-align: center;
-    font-weight: bold;
-    font-family: 'Khmer OS System';
-    position:relative;
+    /* font-weight: bold; */
+    font-family: 'Khmer OS Muol Light';
+    position: relative;
+    color: #d34600;
+    border-radius: 5px;
+
 }
 
  .active {
     background-color: #f73 !important;
     color: white !important;
     border-color:#f73 !important;
+}
+
+.addButton {
+    background-color: #f73 !important;
+    color: white !important;
+    border-color: #f73 !important;
+    height:90%;
+    margin-left:10px !important;
 }
 
 .footer {

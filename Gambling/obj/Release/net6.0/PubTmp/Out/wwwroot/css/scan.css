@@ -1,0 +1,147 @@
+﻿.date-textbox {
+    padding: 5px;
+    border-radius: 10px;
+    width: 130px;
+}
+.div-date-caption {
+    padding: 5px;
+    width: 150px;
+    float: left;
+}
+.date-caption {
+    width: 80px;
+    float: left;
+    padding: 5px;
+}
+.div-popup {
+    position: absolute;
+    z-index: 9999;
+    background-color: #052d40;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    padding: 10px;
+}
+.alert-popup-title {
+    padding: 5px;
+    font-size: x-large;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.span-close {
+    padding: 5px 10px;
+    color: white;
+    background-color: #f73;
+    border-radius: 5px;
+}
+.div-popup-close {
+    text-align: right;
+    padding: 5px 5px 20px 5px;
+}
+.div-popup-detail-user {
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+.receipt {
+    padding: 5px;
+}
+
+.tbl-result tr td {
+    width: 40px;
+    text-align: center;
+}
+
+.div-qrcode {
+    text-align: center;
+}
+.div-confirm{
+
+}
+.confirm-popup-title{
+    font-weight:bold;
+    text-align:center;
+    padding:20px;
+    color:black;
+}
+.div-confirm-action{
+    text-align:center;
+}
+.span-confirm-action{
+    margin:5px;
+}
+
+
+body {
+    margin: 0;
+    background-color: #052d40;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    color: #fff;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.div-scan-lost {
+    text-align: center;
+    color: #f73;
+    font-size: xxx-large;
+
+}
+.button-withdrawal {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #f73;
+    font-weight: bold;
+    color: white;
+    font-size: x-large;
+}
+
+
+.field-colum {
+    width: 50%;
+    float: left;
+    height: 50px;
+}
+
+.span-print {
+    font-size: x-large;
+}
+
+.field-left {
+    width: 85%;
+    float: left;
+}
+
+.field-right {
+    width: 15%;
+    float: left;
+}
+
+.div-row {
+    border-bottom: solid 1px white;
+    height: 90px;
+    margin-bottom: 15px;
+}
+
+#div_searchresult {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#div_searchresult_notyearwithdraw {
+    text-align: left;
+    margin-top: 20px;
+}

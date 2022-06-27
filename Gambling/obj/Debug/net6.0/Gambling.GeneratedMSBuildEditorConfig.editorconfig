@@ -8,81 +8,81 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Gambling
 build_property.RootNamespace = Gambling
-build_property.ProjectDir = C:\Users\ulrotha\Documents\GitHub\camloto3d\Gambling\
+build_property.ProjectDir = C:\Users\chanp\OneDrive\Documents\GitHub\camloto3d\Gambling\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ulrotha\Documents\GitHub\camloto3d\Gambling
+build_property.MSBuildProjectDirectory = C:\Users\chanp\OneDrive\Documents\GitHub\camloto3d\Gambling
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/betnow.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/betnow.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYmV0bm93LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/betnow1.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/betnow1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYmV0bm93MS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/Error.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/history.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/history.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaGlzdG9yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/Index_win.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/Index_win.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXhfd2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/login.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/print.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/print.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJpbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/Privacy.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/report.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/report.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNccmVwb3J0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/scanresult.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/scanresult.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc2NhbnJlc3VsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/user.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/user.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/_ViewImports.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/_ViewStart.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/Index.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-r35j2b5c43
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/Index_blink.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/Index_blink.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXhfYmxpbmsuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-juirgopydg
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/Index_spin_win.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/Index_spin_win.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXhfc3Bpbl93aW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xhn7il6dqe
 
-[C:/Users/ulrotha/Documents/GitHub/camloto3d/Gambling/Pages/Shared/_Layout.cshtml]
+[C:/Users/chanp/OneDrive/Documents/GitHub/camloto3d/Gambling/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5gy8q5reng
