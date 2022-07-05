@@ -1,7 +1,8 @@
 .div_option {
     float: left;
     height: 25vh;
-    width: 19vh;
+    width: 22vh;
+    margin-right: 3vh;
 }
 .ani_hack {
     width: 89vh !important;
