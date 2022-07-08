@@ -114,7 +114,7 @@
     color: #ff7733;
     font-size: 6vh;
     /*font-weight: 800;*/
-    font-family: Khmer OS Muol Light;
+    font-family: Moul;
 }
 
 .lotto-special-num-span {
@@ -181,7 +181,7 @@
 .lotto-text-inner-ball {
     font-size: 50px;
     line-height: 150px;
-    font-family: Khmer OS Muol light;
+    font-family: Muol;
 }
 
 .lotto-ball {
@@ -210,7 +210,7 @@
     font-size: 70px;
     font-weight: bold;
     line-height: 150px;
-    font-family: Khmer OS Muol light;
+    font-family: Muol;
 }
 
 .lotto-ball-sub {
@@ -250,7 +250,7 @@
         border-radius: 50%;
         background-color: #f73;
         font-size: 17px;
-        font-family: 'Khmer OS Bokor';
+        font-family: 'Muol';
         /*margin-bottom: 3px;*/
         margin-right: 5px;
     }

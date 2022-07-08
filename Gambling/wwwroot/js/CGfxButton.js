@@ -119,7 +119,7 @@ function CGfxButton(iXPos,iYPos,oSprite, oParentContainer){
     };
     
     this.addText = function(szText){
-        var oScoreText = new createjs.Text(szText," 50px "+PRIMARY_FONT, "#ffffff");
+        var oScoreText = new createjs.Text(szText," 60px "+PRIMARY_FONT, "#ffffff");
         oScoreText.textAlign = "center";
         oScoreText.textBaseline = "middle";
         oScoreText.lineWidth = 200;

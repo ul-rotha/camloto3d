@@ -1,4 +1,4 @@
-﻿var money = [ 1000, 2000, 5000, 10000, 20000, 50000, 100000, 200000];
+﻿var money = [ 500,1000, 2000, 5000, 10000, 20000, 50000, 100000, 200000];
 
 //Rotha
 var betData = [];
@@ -99,7 +99,23 @@ function show_betamount() {
 
     var html = "";
     for (var i = 0; i < money.length; i++) {
-        html += `<div class='button-betamount' onClick='betnow(${money[i]})'>R${money[i]}</div>`;
+        var betamount = money[i];
+        if (betamount == 10000) {
+            html += `<div class='button-betamount' onClick='betnow(${money[i]})'>R 1ម៉ឺន</div>`;
+        } else if (betamount == 20000) {
+            html += `<div class='button-betamount' onClick='betnow(${money[i]})'>R 2ម៉ឺន</div>`;
+        } else if (betamount == 50000) {
+            html += `<div class='button-betamount' onClick='betnow(${money[i]})'>R 5ម៉ឺន</div>`;
+        } else if (betamount == 100000) {
+            html += `<div class='button-betamount' onClick='betnow(${money[i]})'>R 10ម៉ឺន</div>`;
+        } else if (betamount == 200000) {
+            html += `<div class='button-betamount' onClick='betnow(${money[i]})'>R 20ម៉ឺន</div>`;
+        } else if (betamount == 400000) {
+            html += `<div class='button-betamount' onClick='betnow(${money[i]})'>R 40ម៉ឺន</div>`;
+        } else {
+            html += `<div class='button-betamount' onClick='betnow(${money[i]})'>R${money[i]}</div>`;
+        }
+        
     }
     $("#div_betamount_option").html(html);
 }
@@ -113,7 +129,7 @@ function betnow(amount) {
     else {
         var betamount = parseInt($("#hd_betamount").val());
         betamount = betamount + amount;
-        var bigAmt = money[money.length - 1];
+        var bigAmt = 400000;
         if (betamount > bigAmt) {
             alertme("មិនអាចភ្នាល់លើសពី​</br>" + bigAmt + "Riel");
             $("#hd_betamount").val(bigAmt);

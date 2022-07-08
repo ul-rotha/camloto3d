@@ -38,14 +38,14 @@ function CCreditsPanel(){
         _pStartPanelPos = {x: _oPanelContainer.x, y: _oPanelContainer.y};
         createjs.Tween.get(_oPanelContainer).to({y:CANVAS_HEIGHT/2 - 40},500, createjs.Ease.quartIn);
 
-        var oTitle = new createjs.Text("DEVELOPED BY"," 50px "+PRIMARY_FONT, "#ffffff");
+        var oTitle = new createjs.Text("DEVELOPED BY"," 60px "+PRIMARY_FONT, "#ffffff");
         oTitle.y = -100;
         oTitle.textAlign = "center";
         oTitle.textBaseline = "middle";
         oTitle.lineWidth = 300;
         _oPanelContainer.addChild(oTitle);
 
-        var oLink = new createjs.Text("www.codethislab.com"," 50px "+PRIMARY_FONT, "#ffffff");
+        var oLink = new createjs.Text("www.codethislab.com"," 60px "+PRIMARY_FONT, "#ffffff");
         oLink.y = 90;
         oLink.textAlign = "center";
         oLink.textBaseline = "middle";

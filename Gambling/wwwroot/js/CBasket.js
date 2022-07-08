@@ -21,8 +21,8 @@ function CBasket(iX, iY, oParentContainer, oSpriteSheet, iWidth, iHeight, szText
         
         var szNewText = this._verticalizeText(szText);
         
-        _iStartSize = 40;
-        _oText = new createjs.Text(szNewText, " " + _iStartSize + "px " + PRIMARY_FONT, "#fff");
+        _iStartSize = 25;
+        _oText = new createjs.Text(szNewText, " " + _iStartSize + "pt " + PRIMARY_FONT, "#fff");
         //_oText = new createjs.Text(szNewText, "bold 100em sans-serif", "white");
         _oText.textAlign = "center";
         _oText.textBaseline = "middle";

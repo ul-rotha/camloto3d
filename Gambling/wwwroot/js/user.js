@@ -5,6 +5,11 @@ $(document).ready(function () {
 
     checktokendetail();
 
+    jQuery('#txt_username').keyup(function () {
+        var raw_text = jQuery(this).val();
+        var return_text = raw_text.replace(/[^a-zA-Z0-9 _]/g, '');
+        jQuery(this).val(return_text);
+    });
 });
 
 
@@ -269,6 +274,10 @@ function unlockuser(username,oldstatus) {
                     filteruser();
                     userstatus(oldstatus,username);
                     //closepopup();
+                    var userlevel = $("#hdUserLevel").val();
+                    var owner = $("#hdOwner").val();
+                    console.log("userlevel:" + userlevel + ",owner:" + owner);
+                    showuserbylevel(owner, userlevel)
                 }
             },
             error: function (result) {
@@ -437,6 +446,11 @@ function addcredit() {
                 //getusercredit(username);
                 //getuserlist(createdby);
                 filteruser();
+                var userlevel = $("#hdUserLevel").val();
+                var owner = $("#hdOwner").val();
+                console.log("userlevel:" + userlevel + ",owner:" + owner);
+                showuserbylevel(owner,userlevel)
+
                
             } else {
                 if (data == 'Out of credit') {
@@ -474,6 +488,11 @@ function deductcredit() {
                //getusercredit(username);
                //getuserlist(createdby);
                filteruser();
+               var userlevel = $("#hdUserLevel").val();
+               var owner = $("#hdOwner").val();
+               console.log("userlevel:" + userlevel + ",owner:" + owner);
+               showuserbylevel(owner, userlevel)
+
            }
         },
         error: function (result) {
@@ -666,7 +685,8 @@ function getusercredit(username) {
 }
 
 function showuserbylevel(createdby,userlevel) {
-    
+    $("#hdUserLevel").val(userlevel);
+    $("#hdOwner").val(createdby);
     $.ajax({
         //cache: false,
         async: false,
