@@ -106,7 +106,7 @@ namespace SignalR.MessageWorker
                 else if (game_stage == "wait for new game")
                 {
                     waitingcount++;
-                    if (waitingcount > 3)
+                    if (waitingcount > 12)
                     {
                         game_stage = "start new game";
                         waitingcount = 0;

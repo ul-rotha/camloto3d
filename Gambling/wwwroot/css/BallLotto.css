@@ -1,8 +1,11 @@
+.row {
+    --bs-gutter-x: 10px !important;
+}
 .div_option {
     float: left;
-    height: 25vh;
-    width: 22vh;
-    margin-right: 3vh;
+    height: 22vh;
+    width: 32%;
+    margin-right: 1%;
 }
 .ani_hack {
     width: 89vh !important;
