@@ -72,7 +72,7 @@ function loadhistory(bettingtype) {
                 var withdrawaldate = data[i].withdrawalDate;
                 console.log(GameID)
                 html += "<div style='background-color: #024564;height: 50px;padding: 5px;margin-bottom: 10px;'>";
-                html += "<div style='width:80%;float:left;height:50px;color:lightgray;'>"
+                html += "<div style='width:85%;float:left;height:50px;color:lightgray;font-size:13px;'>"
                 html += "<div> លេខសំគាល់: <b style='color:white'>" + bettingID + "</b> ឆ្នោតទី:<b style='color:white'>" + GameID +  "</b>  ";
                 html += "" + CreatedDate + "</div>";
                 var arr_betnumber = betnumber.split(",");
@@ -117,7 +117,7 @@ function loadhistory(bettingtype) {
                 //html += "</td>";
 
 
-                html += "<div  style='width:20%;float:left;height:50px;text-align:center;'>";
+                html += "<div  style='width:15%;float:left;height:50px;text-align:center;'>";
                 html += '<span class="span-print" onclick="reprint(' + bettingID + ')"><i class="fa fa-print" aria-hidden="true"></i></span>';
                 html += "</div>";
                 html += "</div>";
