@@ -21,7 +21,7 @@ function CBasket(iX, iY, oParentContainer, oSpriteSheet, iWidth, iHeight, szText
         
         var szNewText = this._verticalizeText(szText);
         
-        _iStartSize = 25;
+        _iStartSize = 27;
         _oText = new createjs.Text(szNewText, " " + _iStartSize + "pt " + PRIMARY_FONT, "#fff");
         //_oText = new createjs.Text(szNewText, "bold 100em sans-serif", "white");
         _oText.textAlign = "center";
@@ -52,7 +52,7 @@ function CBasket(iX, iY, oParentContainer, oSpriteSheet, iWidth, iHeight, szText
             _oText.font = " "+iNewSize+"px "+PRIMARY_FONT;
 
         };
-        var iOffset = 10;
+        var iOffset = 0;
         
         _oText.y = -_oText.getBounds().height/2+iOffset;
     };

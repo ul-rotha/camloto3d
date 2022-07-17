@@ -26,12 +26,12 @@
         //    _aBasket.push(new CBasket(290 +i*140, 0, oScoreContainer, oSpriteSheet, iWidth, iHeight, PRIZE[i].toString()));
         //};
 
-        _aBasket.push(new CBasket(290 + 0 * 140, 0, oScoreContainer, oSpriteSheet, iWidth, iHeight, "1, ,ក្រាស់, ,x5"));
-        _aBasket.push(new CBasket(290 + 1 * 140, 0, oScoreContainer, oSpriteSheet, iWidth, iHeight, "2, ,ស្តើង, ,x3"));
-        _aBasket.push(new CBasket(290 + 2 * 140, 0, oScoreContainer, oSpriteSheet, iWidth, iHeight, "3, ,ស្មើ, ,x2"));
-        _aBasket.push(new CBasket(290 + 3 * 140, 0, oScoreContainer, oSpriteSheet, iWidth, iHeight, "4, ,ក្រាស់, ,x3"));
-        _aBasket.push(new CBasket(290 + 4 * 140, 0, oScoreContainer, oSpriteSheet, iWidth, iHeight, "5, ,ស្តើង, ,x5"));
-        _aBasket.push(new CBasket(290 + 5 * 140, 0, oScoreContainer, oSpriteSheet, iWidth, iHeight, "6, ,ស្មើ, ,x10"));
+        _aBasket.push(new CBasket(290 + 0 * 140, 0, oScoreContainer, oSpriteSheet, iWidth, iHeight, "1,ក្រាស់,x5"));
+        _aBasket.push(new CBasket(290 + 1 * 140, 0, oScoreContainer, oSpriteSheet, iWidth, iHeight, "2,ស្តើង,x3"));
+        _aBasket.push(new CBasket(290 + 2 * 140, 0, oScoreContainer, oSpriteSheet, iWidth, iHeight, "3,ស្មើ,x2"));
+        _aBasket.push(new CBasket(290 + 3 * 140, 0, oScoreContainer, oSpriteSheet, iWidth, iHeight, "4,ក្រាស់,x3"));
+        _aBasket.push(new CBasket(290 + 4 * 140, 0, oScoreContainer, oSpriteSheet, iWidth, iHeight, "5,ស្តើង,x5"));
+        _aBasket.push(new CBasket(290 + 5 * 140, 0, oScoreContainer, oSpriteSheet, iWidth, iHeight, "6,ស្មើ,x10"));
 
 
     };
