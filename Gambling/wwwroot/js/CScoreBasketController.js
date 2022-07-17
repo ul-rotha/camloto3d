@@ -32,7 +32,7 @@
         _aBasket.push(new CBasket(290 + 3 * 140, 0, oScoreContainer, oSpriteSheet, iWidth, iHeight, "4,ក្រាស់,x3"));
         _aBasket.push(new CBasket(290 + 4 * 140, 0, oScoreContainer, oSpriteSheet, iWidth, iHeight, "5,ស្តើង,x5"));
         _aBasket.push(new CBasket(290 + 5 * 140, 0, oScoreContainer, oSpriteSheet, iWidth, iHeight, "6,ស្មើ,x10"));
-
+        isFirst = true;
 
     };
 

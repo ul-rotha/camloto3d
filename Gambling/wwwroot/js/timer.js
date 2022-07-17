@@ -15,7 +15,7 @@ connection.on("ReceiveMessage", function (Eventmessage) {
         //loadnumbers();
     } else if (Eventmessage.subject == "count down") {
         var objgame = JSON.parse(Eventmessage.message);
-        console.log(objgame)
+        //console.log(objgame)
         countdown(objgame.timeremaining, objgame.gameid);
 
         if (objgame.timeremaining <= 10) {
@@ -37,7 +37,7 @@ connection.on("ReceiveMessage", function (Eventmessage) {
 
     }
     else if (Eventmessage.subject == "start result") {
-        console.log("start result");
+        //console.log("start result");
 
         var objresult = JSON.parse(Eventmessage.message);
         $("#result-date").html(
@@ -46,7 +46,7 @@ connection.on("ReceiveMessage", function (Eventmessage) {
         <span class="font-style-2">` + objresult.ResultDate.substr(11, 8) + `</span>
         `
         );
-        console.log("Loaded result date");
+       // console.log("Loaded result date");
 
         //var objresult = JSON.parse(Eventmessage.message);
         //var resultinfo = ""
@@ -60,13 +60,13 @@ connection.on("ReceiveMessage", function (Eventmessage) {
     } else if (Eventmessage.subject == "result1") {
         var resultstring = Eventmessage.message;
         //console.log("resultstring1:" + resultstring);
-        console.log("test" + resultstring);
+        //console.log("test" + resultstring);
         load_result(1, resultstring);
         //playaudiofromcontrol("audioplayer_result");
     } else if (Eventmessage.subject == "result1stop") {
         load_drawing();
     } else if (Eventmessage.subject == "end result") {
-        console.log("end result:");
+       // console.log("end result:");
         var jsonresult = Eventmessage.message;
         show_result(jsonresult);
         stop_drawing("");
@@ -109,7 +109,7 @@ function DisplayResult() {
 
 
     if (iCurPrize == 0 || iCurPrize == 3) {
-        console.log('ក្រាស់');
+        //console.log('ក្រាស់');
         $("#div_result3").addClass("result-active");
 
         $("#div_result3 .jak").addClass("jakepot").append((iCurPrize == 0 ? 'X5' : 'X3'));
@@ -117,7 +117,7 @@ function DisplayResult() {
         $("#span3").addClass("white");
     }
     else if (iCurPrize == 1 || iCurPrize == 4) {
-        console.log('ស្តើង');
+        //console.log('ស្តើង');
         $("#div_result1").addClass("result-active");
 
         $("#div_result1 .jak").addClass("jakepot").append((iCurPrize == 1 ? 'X3' : 'X5'));
@@ -125,7 +125,7 @@ function DisplayResult() {
         $("#span1").addClass("white");
     }
     else if (iCurPrize == 2 || iCurPrize == 5) {
-        console.log('ស្មើ');
+        //console.log('ស្មើ');
         $("#div_result2").addClass("result-active");
 
         $("#div_result2 .jak").addClass("jakepot").append((iCurPrize == 2 ? 'X2' : 'X10'));
@@ -234,10 +234,10 @@ function get_latestresult() {
         data: '',
         success: function (data) {
             console.log("LatesResult");
-            console.log(data);
+            //console.log(data);
             show_latest_result(data)
 
-            console.log(data[0]);
+            //console.log(data[0]);
             $("#div_resultinfo").html("");
         },
         error: function (result) {
@@ -250,7 +250,7 @@ function get_latestresult() {
 
 
 function get_currentgame() {
-    console.log("get current game");
+    //console.log("get current game");
     $.ajax({
         //cache: false,
         async: false,
@@ -276,23 +276,23 @@ function get_currentgame() {
 
 function show_result_html(datajson) {
     var data = JSON.parse(datajson);
-    console.log("display result on result list");
-    console.log(data);
+    //console.log("display result on result list");
+    //console.log(data);
 
     var html_result = '';
-    console.log("result:" + data.Result1);
+    //console.log("result:" + data.Result1);
     var resultint = parseInt(data.Result1);
     if (resultint == 1) {
-        console.log('ក្រាស់');
+        //console.log('ក្រាស់');
         html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;font-weight:bold;">ក្រាស់ X5</span>'
 
     }
     else if (resultint == 2) {
-        console.log('ស្តើង');
+        //console.log('ស្តើង');
         html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;font-weight:bold;">ស្តើង X3</span>'
     }
     else if (resultint == 3) {
-        console.log('ស្មើ');
+        //console.log('ស្មើ');
         html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;font-weight:bold;">ស្មើ X2</span>'
     }
     else if (resultint == 4) {
@@ -302,7 +302,7 @@ function show_result_html(datajson) {
         html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;font-weight:bold;">ស្តើង X5</span>'
     }
     else if (resultint == 6) {
-        console.log('ស្មើ');
+        //console.log('ស្មើ');
         html_result = '<span class="result-small-active" style="border-radius: 2vh;padding:1vh;font-weight:bold;">ស្មើ X10</span>'
     }
 
@@ -332,7 +332,7 @@ function show_result_html(datajson) {
     result1str = data.Result1;
 
 
-    console.log(html);
+    //console.log(html);
 
 
 
@@ -354,7 +354,7 @@ function clientTimer(secondsout) {
 var totalminute = 0;
 var timespent = 0;
 function countdown(timeremaining, gameid) {
-    console.log("start count:" + timeremaining);
+    //console.log("start count:" + timeremaining);
 
     totalminute = parseInt((timeremaining) / 60);
 
@@ -422,7 +422,7 @@ function show_latest_result(data) {
 
     var arrlength = data.length;
     for (var i = 0; i < arrlength; i++) {
-        console.log(data[i]);
+        //console.log(data[i]);
         show_result_html(data[i]);
 
     }
