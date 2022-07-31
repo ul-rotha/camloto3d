@@ -8,7 +8,7 @@ connection.on("ReceiveMessage", function (Eventmessage) {
     if (Eventmessage.subject == "start new game") {
         //$("#div_printpopup").hide();
         var objgame = JSON.parse(Eventmessage.message);
-        if (objgame.gameid % 10 == 0) {
+        if (objgame.gameid % 30 == 0) {
             window.location = window.location.href;
         }
         loadgameinfo(objgame.gameid, objgame.createddate);

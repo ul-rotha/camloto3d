@@ -11,7 +11,7 @@ namespace SignalR.MessageWorker
     public sealed class messageworker: BackgroundService
        
     {
-        string game_stage = "start new game";
+        string game_stage = "wait for new game";
         ClResult clResult;
         private IHubContext<ChatHub> _messageContext;
         public messageworker(IHubContext<ChatHub> messageContext)
@@ -106,12 +106,20 @@ namespace SignalR.MessageWorker
                 else if (game_stage == "wait for new game")
                 {
                     waitingcount++;
-                    if (waitingcount > 12)
+                    if (waitingcount == 1)
                     {
-                        game_stage = "start new game";
-                        waitingcount = 0;
+                        clGame = await dalGlobal.getNewGame();
                     }
-                    
+                    else
+                    {
+                        if (waitingcount > 12)
+                        {
+                            game_stage = "start new game";
+                            waitingcount = 0;
+                        }
+
+                    }
+
                 }
 
 
